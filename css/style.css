@@ -2,17 +2,34 @@ body{
   margin: auto;
   padding: 0;
   height: 100%;
-  width: 700px;
-  background-color: #f9efeb;
+  width: 100%;
+  background-color: #ffffff;
 }
 
-div{
+header {
+  padding: 10px;
+  text-align: center;
+  background:#3A4B69;
+  color: white;
+}
+
+#logoIMG {
+  max-width: 150px;
+  float: left;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.box {
   border-style: dotted;
   border-width: 3px;
-  border-radius: 25px;
+  border-radius: 15px;
   border-color: black;
   width: 700px;
   margin: auto;
+  margin-top: 10px;
+  padding: 5px;
 
 }
 
@@ -27,4 +44,18 @@ img{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px
+}
+
+footer {
+  background-color: #3A4B69;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+#wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
