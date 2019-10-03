@@ -46,6 +46,10 @@ img{
   margin-bottom: 5px
 }
 
+.side {
+  border: 2px solid black;
+}
+
 footer {
   background-color: #3A4B69;
   width: 100%;
