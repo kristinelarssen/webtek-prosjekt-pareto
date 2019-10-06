@@ -64,6 +64,24 @@ div.box > ul > li {
   margin: 10px;
 } 
 
-div.box > ul > li > ul > li {
-  margin: 5px;
+div.box > ul > ul > li {
+  margin: 10px;
+}
+
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 3px;
+  margin-bottom: 20px;
+
+}
+
+th, td {
+  padding: 6px;
+}
+
+table, th, td {
+  border: 1px solid #3A4B69;
+  
 }
