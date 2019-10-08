@@ -55,8 +55,18 @@ hvilket punkt fra oppgaven vi skriver om.-->
     <div class="box">
       <h3>Navigation Structure</h3>
       <p>
-        Her kommer et avsnitt.
+        Navigasjonsstrukturen på siden til Pareto Linjeforening vil være en såkalt "clique", som er illustrert i figuren
+        under. Det vil altså si at man skal ha mulighet til å komme seg til alle sidene fra alle sidene. Altså hvis man
+        er inne på "Kontakt Oss" vil det være mulig å komme seg til for eksempel "Ny Student?", eller hvilken som helst
+        annen side uten å gå via noen andre sider. Dette gjøres ved hjelp av top-baren/menyen som vil være tilgjengelig
+        øverst på alle sidene.
       </p>
+      <p>Grunnen til at vi har gjort det slik, er fordi klienten ønsker at det skal være en enkel side å bruke, og det
+        skal ikke være noe problem å finne frem til det man leter etter. De ønsker at brukerne skal få så mye frihet som
+        mulig når de er inne på nettsiden, og lett kunne manøvrereseg rundt på den. Dette vil gjøre siden oversiktlig
+        for brukerne, og forhåpentlig gi dem en godopplevelse av siden som gjør at de vil besøke den oftere.</p>
+
+      <img src="../img/navigasjonsstruktur.png" class="side" alt="Bilde av navigasjonsstruktren">
     </div>
 
     <br>
@@ -85,7 +95,7 @@ hvilket punkt fra oppgaven vi skriver om.-->
 
       <p>
         - Vi bruker skrifttypen Roboto overalt, evt Arial hvis Roboto ikke fungerer. I Navbaren bruker vi
-        skriftstørrelse 18 på hovedelementene, og 15 på elementene i nedtrekksmenyen. i Footeren vil skriften
+        skriftstørrelse 18 på hovedelementene, og 15 på elementene i nedtrekksmenyen. I footeren vil skriften
         være i størrelsen 12. skriftstørrelsen på resten av sidene vil avhenge av innholdet på siden.
       </p>
       <p>
@@ -125,7 +135,7 @@ hvilket punkt fra oppgaven vi skriver om.-->
     <!-- Punkt 6 -->
     <div class="box">
       <h3>Content</h3>
-      <p>Nettsiden kommer til å ha ni forskjellige sider, det er da:</p>
+      <p>Nettsiden kommer til å ha ti forskjellige sider, det er da:</p>
 
       <ol>
         <li>
@@ -141,6 +151,23 @@ hvilket punkt fra oppgaven vi skriver om.-->
             hvor mange komiteer de har. Nederst kommer er bilde (lagret som en thumbnail for å spare lasting?) av
             lederen for
             foreningen sammen med et sitat av henne/ham som står til høyre for bildet.</p>
+          <br>
+        </li>
+
+        <li>
+          <b>styret.html</b>
+          <p>Denne siden kommer til å ligge som en underside under "om oss" på meny-linja. Her kan brukere finne
+            informasjon om hvem som sitter i styret, hvilke stillinger de har og hva de driver med. Det kan være nyttig
+            for medlemmer av pareto og ha en oversikt over hvem som sitter i styret og hva de driver med. Samtidig kan
+            det også være nyttig fra andre linjeforeninger, slik at de vet hvem de skal kontakte ved eventuelle
+            samarbeid. </p>
+          <p>Innholdet på siden skal være midtstilt men venstrestilt i forhold til det. Det vil først være en overskrift
+            "Styret" (h1). Under vil det være et bilde (160px x 160px) av et styremedlem, etterfulgt med en
+            stillingstittel (h2) som er plassert øverst til høyre for bildet. Under denne stillingstittelen vil det være
+            navnet på personen som innehar denne stillingen (h3). Under navnet vil det være et lite avsnitt om hvem
+            personen er og hva personen gjør i styret. Dette vil gjentas med hvert styremedlem under hverandre, slik som
+            på bildet under. Totalt vil det være 7 slike deler. </p>
+          <img src="../img/styret.png" class="side" alt="Bilde av hvordan styret siden skal være">
           <br>
         </li>
 
@@ -179,12 +206,47 @@ hvilket punkt fra oppgaven vi skriver om.-->
             Denne siden vil tilfredsstillet målet om å spre nyttig informasjon til alle nye studenter. Av den grunn vil
             denne siden inneholde informasjon om hva fadderuka er, hva som må fikses løpet av de første dagene og hva
             som kommer til å skje de første dagene av
-            studiet. Innholdet skal være midtstilt med like stor marg (190px) på både venstre og høyre side. Teksten
+            studiet. Siden kommer til å ligge under fanen "ny student?". Innholdet skal være midtstilt med like stor
+            marg (190px) på både venstre og høyre side. Teksten
             skal i
             forhold til dette være venstrestilt med illustrerende bilder på høyre siden. Bildene vil være på 300px x
             300px.
           </p>
+          <p>Øverst vil det være en overskrift (h1) hvor dets tår "Ny student?". Under vil det være et lite introavsnitt
+            og velkommen avsnit. Under kommer tre underavsnitt med følgende undertittler (h2); "Hva er fadderperioden",
+            "Hva skjer de første dagene" og "hva bør jeg fikse de første dagene".
+          </p>
           <img src="../img/nystudent.png" class="side" alt="Bilde av hvordan Ny student siden skal være">
+          <br>
+        </li>
+
+        <li>
+          <b>vedtekter.html</b>
+          <p>
+            Denne siden vil være en av de fire sidene som ligger under "Om Oss" delen. Her vil man kunne finne
+            linjeforeningens vedtekter. Siden vil hjelpe de besøkende med å finne linjeforeningens vedtekter og med det
+            kunne få et innblikk i hva linjeforeningens står for og hvilke mål de har. Det vil kun være tekst på denne
+            siden. Selve innholdet på siden vil være midtstilt i forhold tilnettleservinduet, men tekst (p -
+            skriftstørrelse 15) og overskrift (h1) vil være venstrestilt i forhold til innholdet. Slik det er illustrert
+            på bildet over.
+          </p>
+          <img src="../img/vedtekter.png" class="side" alt="Bilde av hvordan siden vedtekter skal se ut">
+          <br>
+        </li>
+
+        <li>
+          <b>komiteer.html</b>
+          <p>Denne siden vil være en av de tre sidene under "Om Oss" delen. Her vil brukeren finne informasjon om de
+            ulike komiteene til linjeforeningen.Denne siden vil ha en kort beskrivelse av hva de ulike komiteene i
+            linjeforeningen holder på med. Samt et bilde ved siden av som representerer den enkelte komite.</p>
+          <p>Siden vil inneholde en overskrift (h1) "komiteer" og to underoverskrifter (h2) "turkomiteen" og
+            "arrangementskomiteen" med egne paragrafer (p – skriftstørrelse 17) under med en kort presentasjon av
+            komiteen. All tekst vil være plassert til venstre på siden, mens bildene vil være til høyre vis a vis
+            teksten til sin tilhørende komite. </p>
+          <p>Bildene vil ha en størrelse som speiler størrelsen på paragrafene om komiteene, dette vil gi ensymmetri på
+            nettsiden. Derfor kan vi ikke ut fra designet her si med sikkerhet akkurat hvor store bildene vil være. Men
+            malen/eksempelet gir en god illustrasjon av hvordan det vil se ut.</p>
+          <img src="../img/komite.png" class="side" alt="Bilde av hvordan komite siden skal se ut">
           <br>
         </li>
 
@@ -431,7 +493,7 @@ hvilket punkt fra oppgaven vi skriver om.-->
               <tr>
                 <td>skjema.js</td>
                 <td>Input- og skjemavalidering </td>
-                <td>Bjørn Are</td>
+                <td>Bjørn Are og Ingrid</td>
                 <td>03/11/19</td>
               </tr>
 
@@ -452,6 +514,7 @@ hvilket punkt fra oppgaven vi skriver om.-->
 
             </tbody>
           </table>
+          <br>
 
 
     </div>
