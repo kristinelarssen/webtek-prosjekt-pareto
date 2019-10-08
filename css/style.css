@@ -76,15 +76,12 @@ div.box > ul > ul > li {
 
 
 table {
-  display: table;
-  border-collapse: separate;
-  border-spacing: 3px;
-  margin-bottom: 20px;
+  border-collapse: collapse;
 
 }
 
 th, td {
-  padding: 6px;
+  padding: 7px;
 }
 
 table, th, td {
