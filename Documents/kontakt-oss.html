@@ -15,16 +15,34 @@
     <header>
       <p>header</p>
     </header>
+
     <div id="kontaktOssBox">
+      <div id="kontaktOssLine"></div>
       <h1 id="kontaktOssh1">Kontakt oss</h1>
       <p id="kontaktOssKommentar">Har du en kommentar, et spørsmål eller
         en tilbakemelding? Gi oss beskjed! Alle
         henvendelser vil bli behandlet så fort
         som mulig </p>
-      <div id="kontaktOssForm">
 
-      </div>
+      <form method="post" id="kontaktOssForm">
+        <label for="kontaktOssNavnInput">Navn</label><br>
+        <input type="text" id="kontaktOssNavnInput" name="navn" required><br><br>
+
+        <label for="kontaktOssEpostInput">Epostadresse</label><br>
+        <input type="email" id="kontaktOssEpostInput" name="epost" required><br><br>
+
+        <label for="kontaktOssEmneInput">Emne</label><br>
+        <input type="text" id="kontaktOssEmneInput" name="emne" required><br><br>
+
+        <label for="kontaktOssMeldingInput">Melding</label><br>
+        <textarea id="kontaktOssMeldingInput" name="melding" rows="6" cols="40" required></textarea><br><br>
+
+        <button type="submit" form="kontaktOssForm" value="submit">Send inn</button>
+
+      </form>
+
     </div>
+
     <footer>
       <p>hei</p>
     </footer>
