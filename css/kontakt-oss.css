@@ -105,8 +105,14 @@ p {
   resize: none
 }
 
-#kontaktOssForm button {
-  margin-left: 34.5%
+.kontaktOssButton {
+  margin-left: 34.5%;
+  background-color: #3A4B69;
+  border: none;
+  color: white;
+  border-radius: 28px;
+  cursor: pointer;
+  width:40%;
 }
 
 .kontaktOssIcon {
