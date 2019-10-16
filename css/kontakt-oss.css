@@ -22,43 +22,46 @@ header {
 }
 
 
-#kontaktOssBox {
-  width: 77%;
+#kontaktOssBox { 
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(50%, 1fr) );
+  grid-gap: 1px solid;
+  width: 78%;
   height: 100%;
   background-color: white;
-  margin-left: 11.5%;
-  margin-right: 11.5%;
+  margin-left: 11%;
+  margin-right: 11%;
   }
 
+.kontaktOssGrid {
+  padding: 20px;
+  width:50%;
+  border-right: 1px solid black;
+  grid-column: span 1;
+}
 
-/*#kontaktOssLine {
-  border-right: 1px solid #3A4B69 ;
-  height: 470px;
-  margin-left: 370px;
-  margin-top:70px;
-  position: relative;
-}*/
+.kontaktOssGrid:last-child{
+  border-right: none;
+}
 
 #kontaktOssh1{ 
 position: relative;
 width: 20%;
 height: 1.5%;
-left: 8%;
-top: 10%;
-font-style: normal;
-font-size: 95%;
-line-height: 150%;
-color: rgba(0, 0, 0, 0.8);
-margin-top: 7%;
+left: 12%;
+top: 2%;
 }
 
-#kontaktOssKommentar {
-  position: relative;
-  width: 23%;
-  height: 8%;
-  left: 8%;
-  top: 30%;
-  margin-top: 0.3%;
+h1{
+  font-style: normal;
+  font-size: 95%;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 6%;
+}
+
+p {
+  margin-top: 0%;
   font-style: normal;
   font-weight: normal;
   font-size: 75%;
@@ -66,20 +69,74 @@ margin-top: 7%;
   color: rgba(0, 0, 0, 0.6);
 }
 
+#kontaktOssKommentar {
+  position: relative;
+  width: 47%;
+  height: 8%;
+  left: 12%;
+  top: 1%;
+}
+
+#kontaktOssAdresse {
+  position: relative;
+}
+
+#kontaktOssForm {
+  position: relative;
+  margin-top: 8%;
+  left:12%;
+  font-size: 75%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#kontaktOssForm input {
+  min-width: 46%;
+  border: 0.5px solid;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.6);
+  font-size: 100%;
+}
+
+#kontaktOssForm textarea {
+  min-width: 46%;
+  border: 0.5px solid;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.6);
+  resize: none
+}
+
+#kontaktOssForm button {
+  margin-left: 34.5%
+}
+
+.kontaktOssIcon {
+  position: relative;
+  width: 6%;
+  height: 2%;
+}
+
+.kontaktOssKart {
+  position: relative;
+  width: 50%;
+  height: 20%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 3%;
+}
 
 footer {
   background-color: #3A4B69;
   width: 100%;
-  padding-top:6%;
+  padding-top:5%;
   color: white;
   text-align: center;
   margin-top:auto;
+  padding-bottom: 3%
 }
 
-#kontaktOssWrapper{
+/*#kontaktOssWrapper{
   height: 100%;
   display: flex;
   flex-direction: column;
   flex: 1;
-}
+}*/
 

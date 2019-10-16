@@ -17,32 +17,42 @@
     </header>
 
     <div id="kontaktOssBox">
-      <div id="kontaktOssLine"></div>
-      <h1 id="kontaktOssh1">Kontakt oss</h1>
-      <p id="kontaktOssKommentar">Har du en kommentar, et spørsmål eller
-        en tilbakemelding? Gi oss beskjed! Alle
-        henvendelser vil bli behandlet så fort
-        som mulig </p>
+      <div class="kontaktOssGrid">
+        <h1 id="kontaktOssh1">Kontakt oss</h1>
+        <p id="kontaktOssKommentar">Har du en kommentar, et spørsmål eller
+          en tilbakemelding? Gi oss beskjed! Alle
+          henvendelser vil bli behandlet så fort
+          som mulig </p>
 
-      <form method="post" id="kontaktOssForm">
-        <label for="kontaktOssNavnInput">Navn</label><br>
-        <input type="text" id="kontaktOssNavnInput" name="navn" required><br><br>
+        <form method="post" id="kontaktOssForm">
+          <label for="kontaktOssNavnInput">Navn</label><br>
+          <input type="text" id="kontaktOssNavnInput" name="navn" required><br><br>
 
-        <label for="kontaktOssEpostInput">Epostadresse</label><br>
-        <input type="email" id="kontaktOssEpostInput" name="epost" required><br><br>
+          <label for="kontaktOssEpostInput">Epostadresse</label><br>
+          <input type="email" id="kontaktOssEpostInput" name="epost" required><br><br>
 
-        <label for="kontaktOssEmneInput">Emne</label><br>
-        <input type="text" id="kontaktOssEmneInput" name="emne" required><br><br>
+          <label for="kontaktOssEmneInput">Emne</label><br>
+          <input type="text" id="kontaktOssEmneInput" name="emne" required><br><br>
 
-        <label for="kontaktOssMeldingInput">Melding</label><br>
-        <textarea id="kontaktOssMeldingInput" name="melding" rows="6" cols="40" required></textarea><br><br>
+          <label for="kontaktOssMeldingInput">Melding</label><br>
+          <textarea id="kontaktOssMeldingInput" name="melding" rows="8" required></textarea><br>
 
-        <button type="submit" form="kontaktOssForm" value="submit">Send inn</button>
+          <button type="submit" form="kontaktOssForm" value="submit">Send inn</button>
 
-      </form>
+        </form>
 
+      </div>
+      <div class="kontaktOssGrid">
+        <h1>Kontakt</h1>
+        <img src="../img/hus.png" class="kontaktOssIcon" alt="hus">
+        <p id="kontaktOssAdresse">NTNU Adolf Øien Bygget <br><br>Klæbuveien 72</p>
+        <h1>Styret</h1>
+        <img src="../img/email.png" class="kontaktOssIcon" alt="email">
+        <p id="kontaktOssStyret">pareto.linjeforening@gmail.com <br><br>Leder: Oda Katrine Valen Leynse </p>
+        <img src="../img/mazemap.png" class="kontaktOssKart" alt="mazemap">
+        <img src="../img/googlemaps.png" class="kontaktOssKart" alt="google">
+      </div>
     </div>
-
     <footer>
       <p>hei</p>
     </footer>
