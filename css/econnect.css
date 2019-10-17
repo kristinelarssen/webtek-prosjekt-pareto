@@ -19,6 +19,109 @@ header {
   height: 10%
 }
 
+h1 {
+  font-weight: normal;
+  font-size: 95%;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+p{
+  margin-top: 0%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 85%;
+  line-height: 250%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+#econnectBanner {
+  width:100%;
+}
+
+#econnectBox{
+  width: 78%;
+  height: 100%;
+  background-color: white;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+#econnectLogo{
+  width: 17%;
+  position: relative;
+  margin-left: 6%;
+  margin-top: 2.9%;
+}
+
+#econnectLink {
+  position: relative;
+  margin-left: 6%;
+  margin-top: 5%;
+}
+
+a:link {
+  font-size: 98%;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  font-size: 95%;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color:rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+h5{
+  font-weight:normal;
+  font-size: 87%;
+}
+
+.econnectOm{
+  margin-left: 6%;
+  font-weight:normal;
+  margin-top: 0%;
+  max-width: 90%;
+}
+
+#econnectTopParagrahp{
+  max-width: 40%;
+  margin-left: 3.5%;
+}
+
+#econnectBilde {
+  width: 50%;
+  float:right;
+  margin-top: -50%;
+  margin-right: 5%;
+  border-radius: 5px;
+}
+
+.econnectKontakt {
+  margin-left: 6%;
+  font-weight:normal;
+  margin-top: 0%;
+  max-width: 45%;
+  padding: 5% 0% 10% 0%;
+  }
+
 footer {
   background-color: #3A4B69;
   width: 100%;
@@ -28,3 +131,4 @@ footer {
   margin-top:auto;
   padding-bottom: 3%
 }
+
