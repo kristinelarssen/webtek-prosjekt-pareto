@@ -1,20 +1,27 @@
 function createNavbar(tarElement) {
-    createModElement("img","",tarElement,"",[["src","img/pareto_logo.png"],["id","js-header-logo"],["alt","Pareto-logo"]]);
-    createModElement("a", "Om Pareto",tarElement,"om_pareto.html",["class","js-header-element"]);
-    createModElement("a", "Arrangmenter",tarElement,"arrangementer.html",["class","js-header-element"]);
-    createModElement("a", "Ny student?",tarElement,"ny_student.html",["class","js-header-element"]);
-    createModElement("a", "Bli medlem",tarElement,"bli_medlem.html",["class","js-header-element"]);
-    createModElement("a", "Kontakt oss",tarElement,"kontakt.html",["class","js-header-element"]);
-    createModElement("a", "Econnect",tarElement,"econnect.html",["class","js-header-element"]);
+    createModElement("nav","",tarElement,"",["id","js-navbar"])
+
+    const navbar = document.querySelector("#js-navbar")
+    createModElement("img",navbar,"","",[["src","img/pareto_logo.png"],["id","js-header-logo"],["alt","Pareto-logo"]]);
+
+    createModElement("ul")
+
+    createModElement("a", navbar, "Om Pareto","om_pareto.html",["class","js-header-element"]);
+    createModElement("a", navbar, "Arrangmenter","arrangementer.html",["class","js-header-element"]);
+    createModElement("a", navbar, "Ny student?","ny_student.html",["class","js-header-element"]);
+    createModElement("a", navbar, "Bli medlem","bli_medlem.html",["class","js-header-element"]);
+    createModElement("a", navbar, "Kontakt oss","kontakt.html",["class","js-header-element"]);
+    createModElement("a", navbar, "Econnect","econnect.html",["class","js-header-element"]);
 }
 
-function createFooter() {
+function createFooter(tarElement) {
+    create
 
 }
 
 
 // eleattr = enten et array med ["attribute","verdi"] eller matrise [["attribute","verdi"],["attribute","verdi"], ..., ...]
-function createModElement(tagName, content, tar, url = "", eleattr = "") {
+function createModElement(tagName, tar, content ="", url = "", eleattr = "") {
     const node = document.createElement(tagName);
     const textnode = document.createTextNode(content);
     node.appendChild(textnode);
@@ -35,5 +42,7 @@ function createModElement(tagName, content, tar, url = "", eleattr = "") {
 }
 
 //test
-const headertarget = document.querySelector("#js-header");
-createNavbar(headertarget)
+const headertar = document.querySelector("#js-header");
+const footertar = document.querySelector("js-footer")
+createNavbar(headertar)
+createFooter
