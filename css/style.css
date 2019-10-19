@@ -68,7 +68,7 @@ footer {
 
 div.box > ul > li {
   margin: 10px;
-} 
+}
 
 div.box > ul > ul > li {
   margin: 10px;
@@ -86,5 +86,5 @@ th, td {
 
 table, th, td {
   border: 1px solid #3A4B69;
-  
+
 }
