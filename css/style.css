@@ -39,7 +39,7 @@ h3{
   color: black;
 }
 
-img{
+img.p1p2img {
   width:500px;
   display: block;
   margin-left: auto;
@@ -87,4 +87,35 @@ th, td {
 table, th, td {
   border: 1px solid #3A4B69;
   
+}
+
+/* Javascriptelementer */
+
+#js-header {
+  background-color: #3A4B69;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+}
+
+#js-header-logo {
+  height: 80px;
+}
+
+#js-header-ul {
+  display: inline;
+  text-align: right;
+  
+}
+
+.js-header-li {
+  display: inline;
+  margin-left: 1em;
+}
+
+.js-header-link {
+  text-decoration: none;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
 }
