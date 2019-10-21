@@ -1,3 +1,10 @@
+// Targets for å opprette navbar og footer i html.
+const headertar = document.querySelector("#js-header");
+const footertar = document.querySelector("#js-footer");
+createNavbar(headertar);
+createFooter(footertar);
+
+
 function createNavbar(tarElement) {
     createModElement("nav", tarElement, "", "", ["id", "js-navbar"]);
 
@@ -77,9 +84,3 @@ function createModElement(tagName, tar, content = "", url = "", eleattr = "") {
     }
     tar.appendChild(node);
 }
-
-//test
-const headertar = document.querySelector("#js-header");
-const footertar = document.querySelector("#js-footer");
-createNavbar(headertar);
-createFooter(footertar);
