@@ -33,6 +33,27 @@ function createFooter(tarElement) {
     createModElement("ul", divikon, "", "", ["id", "ulikon"]);
     createModElement("ul", divkontakt, "", "", ["id", "ulkontakt"]);
     createModElement("ul", divadresse, "", "", ["id", "uladresse"]);
+
+    const ulikon = document.querySelector("#ulikon");
+    const ulkontakt = document.querySelector("#ulkontakt");
+    const uladresse = document.querySelector("#uladresse");
+
+    createModElement("li",ulikon);
+    createModElement("li",ulikon);
+    createModElement("li",ulikon);
+
+    createModElement("p",ulkontakt,"Kontakt","",["id","js-footer-kontakthead"]);
+    createModElement("li",ulkontakt);
+    createModElement("li",ulkontakt);
+    createModElement("li",ulkontakt);
+    createModElement("li",ulkontakt);
+
+    createModElement("p",uladresse,"Besøksadresse");
+    createModElement("li",uladresse,"Etasje 3, 3056");
+    createModElement("li",uladresse,"NTNU Adolf Øien Bygget");
+    createModElement("li",uladresse,"Klæbuveien 72");
+    createModElement("li",uladresse,"7030 Trondheim");
+    
 }
 
 
