@@ -134,10 +134,20 @@ table, th, td {
 
 /* Javascript-footer */
 
+#bodywrapper {
+  position: relative;                   /* Så footer kan posisjoneres absolute */
+  min-height: calc(100% - 180px);        /* Gjør at content på siden bruker hele siden, selv om det ikke er nok til å fylle skjermen. Setter også av plass til footer mha. calc() */
+  padding: 0;
+  padding-bottom: 180px;                 /* Setter av plass til footer, slik at content ikke overlapper med footer */
+}
+
 #js-footer {
+  position: absolute;                   /* Settes til absolute for å kunne bruke bottom: 0; under */
+  bottom: 0;                            /* Footer legges helt nederst i boksen */
+  height: 180px;
+  width: 100%;                          /* Footer skal dekke bredden til skjermen*/
   background-color: #3A4B69;
   width: 100%;
-  height: 180px;
   display: flex;
 }
 
