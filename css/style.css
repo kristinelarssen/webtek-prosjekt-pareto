@@ -1,100 +1,67 @@
-body{
-  margin: auto;
+/* Generelt - p, h1-6, osv. */
+
+* {
+  font-family: Roboto, arial;
+}
+
+p {
+
+}
+
+h1 {
+  font-style: normal;
+  font-size: 95%;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 6%;
+ }
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* Setup for body/header/footer spacing */
+
+html, body {
+  margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
-  background-color: #ffffff;
-  line-height: 1.5em;
 }
 
-header {
-  padding: 10px;
-  text-align: center;
-  background:#3A4B69;
-  color: white;
+#wrapperbody {
+  position: relative;                   /* Så footer kan posisjoneres absolute */
+  min-height: calc(100% - 180px);        /* Gjør at content på siden bruker hele siden, selv om det ikke er nok til å fylle skjermen. Setter også av plass til footer mha. calc() */
+  padding: 0;
+  padding-bottom: 180px;                 /* Setter av plass til footer, slik at content ikke overlapper med footer */
 }
-
-#logoIMG {
-  max-width: 150px;
-  float: left;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-}
-
-.box {
-  border-style: dotted;
-  border-width: 3px;
-  border-radius: 15px;
-  border-color: black;
-  width: 800px;
-  margin: auto;
-  margin-top: 10px;
-  padding: 15px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-h3{
-  font-family: 'Courier New', Courier, monospace;
-  color: black;
-}
-
-img.p1p2img {
-  width:500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px
-}
-
-.side {
-  border: 2px solid black;
-  width: 750px
-}
-
-footer {
-  background-color: #3A4B69;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
-
-#wrapper{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-div.box > ul > li {
-  margin: 10px;
-} 
-
-div.box > ul > ul > li {
-  margin: 10px;
-}
-
-
-table {
-  border-collapse: collapse;
-
-}
-
-th, td {
-  padding: 7px;
-}
-
-table, th, td {
-  border: 1px solid #3A4B69;
-  
-}
-
-/* Javascript-header */
 
 #js-header {
   background-color: #3A4B69;
   width: 100%;
   height: 90px;
+}
+
+footer {
+  position: absolute;                   /* Settes til absolute for å kunne bruke bottom: 0; under */
+  bottom: 0;                            /* Footer legges helt nederst i boksen */
+  height: 180px;
+  width: 100%;                          /* Footer skal dekke bredden til skjermen*/
+  background-color: #3A4B69;
+  width: 100%;
+}
+
+#js-footer {
+  display: flex;
+  height: 100%;
+  width:100%;
+}
+
+/* Javascript-headerelementer */
+
+#js-header > * {
+  color: white;
 }
 
 #js-navbar {
@@ -127,28 +94,14 @@ table, th, td {
 
 .js-header-link {
   text-decoration: none;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Javascript-footer */
+/* Javascript-footerelementer */
 
-#bodywrapper {
-  position: relative;                   /* Så footer kan posisjoneres absolute */
-  min-height: calc(100% - 180px);        /* Gjør at content på siden bruker hele siden, selv om det ikke er nok til å fylle skjermen. Setter også av plass til footer mha. calc() */
-  padding: 0;
-  padding-bottom: 180px;                 /* Setter av plass til footer, slik at content ikke overlapper med footer */
-}
-
-#js-footer {
-  position: absolute;                   /* Settes til absolute for å kunne bruke bottom: 0; under */
-  bottom: 0;                            /* Footer legges helt nederst i boksen */
-  height: 180px;
-  width: 100%;                          /* Footer skal dekke bredden til skjermen*/
-  background-color: #3A4B69;
-  width: 100%;
-  display: flex;
+#js-footer > * {
+  color: white;
 }
 
 #js-footer-divikon {
