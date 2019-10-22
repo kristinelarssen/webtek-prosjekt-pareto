@@ -48,17 +48,22 @@ p{
   margin-right: 11%;
 }
 
+.econnectGrid {
+  display: grid;
+  grid-template-areas: 50% 50%;
+}
+
 #econnectLogo{
   width: 30%;
   /* position: relative; */
-  margin-left: 53%;
-  margin-top: 7%;
+  /* margin-left: 53%; */
+  /* margin-top: 7%; */
 }
 
 #econnectLink {
   position: relative;
-  margin-left: 6%;
-  margin-top: -14%;
+  /* margin-left: 6%; */
+  /* margin-top: -14%; */
 }
 
 a:link {
@@ -90,15 +95,15 @@ a:active {
 }
 
 .econnectOm{
-  margin-left: 6%;
+  /* margin-left: 6%; */
   font-weight:normal;
   /* margin-top: 0%; */
   /* max-width: 90%; */
 }
 
 #econnectTopParagrahp{
-  max-width: 40%;
-  margin-left: 3.5%;
+  /* max-width: 40%; */
+  /* margin-left: 3.5%; */
 }
 
 #econnectBilde {
