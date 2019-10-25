@@ -9,13 +9,13 @@ body{
 
 
 
-header {
+/* header {
   padding: 0.5%;
   text-align: center;
   background:#3A4B69;
   color: white;
   height: 10%;
-}
+} */
 
 
 
@@ -119,7 +119,7 @@ p {
   margin-left: -10%;
 }
 
-footer {
+/* footer {
   background-color: #3A4B69;
   width: 100%;
   padding-top:5%;
@@ -127,7 +127,7 @@ footer {
   text-align: center;
   margin-top:auto;
   padding-bottom: 3%
-}
+} */
 
 
 @media only screen and (max-width: 800px) {
