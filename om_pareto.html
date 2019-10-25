@@ -1,38 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/om_oss.css">
   </head>
 
   <body>
-    <h1>Om Pareto</h1>
+    <div id="wrapperbody">
+    <div id="js-header"></div>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-      fugiat nulla pariatur.
-    </p>
+    <!-- <div id="venstre_sidekant"></div>
+    <div id="høyre_sidekant"></div> -->
 
-    <img src="../img/face.png" id="hovedleder_ansikt" alt="Bilde av hovedlederen av Pareto.">
+    <div id="innhold_midt">
+      <h1>Om Pareto</h1>
 
-    <p id="sitat_hovedleder">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat.
-    </p>
+      <p class="p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur.
+      </p>
 
-    <div class="boks_om_pareto">9 <br> Komiteer</div>
-    <div class="boks_om_pareto">320 <br> Medlemmer</div>
-    <div class="boks_om_pareto">1982 <br> År stiftet</div>
+      <div id="sitat">
+        <img src="./img/face.png" class="sitat" alt="Bilde av hovedlederen av Pareto." id="sitat_img">
+        <div id="sitat_hovedleder" class="sitat">
+          <p id="sitat_p">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua."
+            - Oda Katrine Valen Leynse, hovedleder
+          </p>
+        </div>
+      </div>
+      <br>
 
+      <div id="faktabokser">
+        <div class="boks_om_pareto">
+          <p class="faktaboks_tall">9</p>
+          <p class="faktaboks_tekst">Komiteer</p>
+        </div>
+        <div class="boks_om_pareto" id="boks_om_pareto_2/grid_medlemmer">
+          <p class="faktaboks_tall">320</p>
+          <p class="faktaboks_tekst">Medlemmer</p>
+        </div>
+        <div class="boks_om_pareto" id="boks_om_pareto_3">
+          <p class="faktaboks_tall">1982</p>
+          <p class="faktaboks_tekst">År stiftet</p>
+        </div>
+      </div>
+    </div>
+
+<footer>
+  <div id="js-footer"></div>
+</footer>
+
+</div>
+
+<script src="scripts/navbar.js" charset="utf-8"></script>
   </body>
 
 </html>
 
 
 <!--
-Kommentarer:
-- har ikke lagt inn streken foran sitatet
-
+Spørsmål:
+- hvorfor det ikke kommer helt opp i kantene
+- hvorvidt har det noe å  si om siden fungerer som den er akkurat nå, men om innholdet endres så blir det rart?
 -->
