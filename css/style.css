@@ -75,8 +75,10 @@ footer {
   display: inline-block;
 }
 
+
 #js-header-logoimg {
   height: 100%;
+
 }
 
 #js-header-ul {
@@ -113,6 +115,7 @@ footer {
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
+
 
 #js-footer-divadresse {
   flex: 1;
