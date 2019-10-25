@@ -137,7 +137,6 @@ footer {
      "First" ;
     padding:0rem;
     padding-bottom: 5rem;
-    width:100%
  }
  #KontaktOssGridFirst {
   grid-area: First;
@@ -151,5 +150,9 @@ footer {
 
 .kontaktOssGridItem{
   border-right:none;
+}
+
+#kontaktOssKommentar {
+  width:100%;
 }
 }
