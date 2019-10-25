@@ -1,0 +1,143 @@
+/*
+body {
+  margin: auto;
+  background-color: #f5f5f5;
+}
+
+header {
+  padding:0.5%;
+  text-align: center;
+  background: #3A4B69;
+  color:white;
+}
+
+#innhold_midt {
+  background-color: white;
+  margin-left: 11%;
+  margin-right: 11%;
+
+}
+
+footer{
+  background-color: #3A4B69;
+  width:100%;
+  padding-top: 5%;
+  color: white;
+  text-align: center;
+  margin-top:3 rem;
+  padding-bottom:3%;
+  padding-top:3%;
+}
+*/
+
+#venstre_sidekant {
+  background-color: #dedede;
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  margin-right: 90%;
+}
+
+#høyre_sidekant {
+  background-color: #dedede;
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  margin-left: 90%
+}
+
+#innhold_midt {
+  margin-left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+h1 {
+
+}
+
+.p {
+    font-family: roboto, arial
+    font-size: 17px;
+}
+
+
+/* SITATBOKS */
+
+#sitat {
+  margin-top: 35px;
+  box-sizing: border-box;
+}
+
+.sitat {
+  float: left;
+}
+
+#sitat_img {
+  width: 33%;
+}
+
+#sitat_hovedleder {
+  display: inline;
+  border-left-style: solid;
+  font-size: 17px;
+  padding-left: 10px;
+  margin-left: 15px;
+  width: 59%
+}
+
+#sitat_p {
+  margin-top: 0;
+}
+
+
+
+/* FAKTABOKSER */
+
+#faktabokser {
+    margin-top: 200px;
+}
+
+.boks_om_pareto {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 0px;
+  /*width: 33.33%;*/
+  width: 100px;
+  height: 100px;
+
+  border-style: solid;
+  border-color: #C4C4C4;
+  border-radius: 12px;
+  border-width: 1.5px;
+
+  text-align: center;
+  font-size: 17px;
+}
+
+.faktaboks_tall {
+  margin-top: 40%;
+  margin-bottom: 0;
+  font-size: 140%;
+}
+
+.faktaboks_tekst {
+  margin-bottom: 0;
+  margin-top: 10%;
+}
+
+
+/*
+egen grid-div til alt
+inni den har så ange id-diverdiver som antall elementer du skal ha, en for topp, en for bilde, en for sitat,
+en for hver av boksene. alle divene i griden må ha samme klasse. men hver må ha egen id. I hoveddiven må du starte
+med display:grid i cssen.
+*/
+
+
+/*
+SPØRSMÅL:
+- Hvorfor plasseres i utgangspunktet faktaboker-div'en oppå sitatet? Nå bruker jeg veldig lang margin-top for at
+  faktaboksene skal komme under sitatet?
+
+*/
