@@ -142,20 +142,21 @@ footer {
   padding-bottom: 3%
 }
 
-@media only screen and (max-width: 800px) {
-  #kontaktOssGrid {
+/* @media only screen and (max-width: 1000px) {
+  #econnectGrid {
     grid-template-areas:
-     "Last" 
-     "First" ;
+     "First" 
+     "Last" ;
     padding:0rem;
     padding-bottom: 5rem;
  }
- #KontaktOssGridFirst {
+ #econnectGridFirst {
   grid-area: First;
   margin-left:40%
 }
 
-#KontaktOssGridLast {
+#econnectGridLast {
   grid-area: Last;
   margin-left: 40%;
 }
+} */
