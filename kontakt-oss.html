@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/a.png">
+  <title>Kontakt oss</title>
+  <link rel="stylesheet" href="css/kontakt-oss.css">
+
+</head>
+
+<body>
+  <div id="kontaktOssWrapper">
+    <header>
+      <p>header</p>
+    </header>
+
+    <div id="kontaktOssGrid">
+      <div class="kontaktOssGridItem" id="KontaktOssGridFirst">
+        <h1 id="kontaktOssh1">Kontakt oss</h1>
+        <p id="kontaktOssKommentar">Har du en kommentar, et spørsmål eller
+          en tilbakemelding? Gi oss beskjed! Alle
+          henvendelser vil bli behandlet så fort
+          som mulig!
+        </p>
+
+        <form method="post" id="kontaktOssForm">
+          <label for="kontaktOssNavnInput">Navn</label><br>
+          <input type="text" id="kontaktOssNavnInput" name="navn" required><br><br>
+
+          <label for="kontaktOssEpostInput">Epostadresse</label><br>
+          <input type="email" id="kontaktOssEpostInput" name="epost" required><br><br>
+
+          <label for="kontaktOssEmneInput">Emne</label><br>
+          <input type="text" id="kontaktOssEmneInput" name="emne" required><br><br>
+
+          <label for="kontaktOssMeldingInput">Melding</label><br>
+          <textarea id="kontaktOssMeldingInput" name="melding" rows="8" required></textarea><br>
+
+          <button type="submit" class="kontaktOssButton" form="kontaktOssForm" value="submit">Send inn</button>
+
+        </form>
+
+      </div>
+      <div class="kontaktOssGridItem" id="KontaktOssGridLast">
+
+        <h1>Kontakt</h1>
+
+        <p>
+          <img src="img/hus.png" class="kontaktOssIcon" alt="hus">
+          NTNU Adolf Øien Bygget</p>
+        <p class="kontaktOssLineTwo">Klæbuveien 72</p>
+
+        <h1 class="kontaktOssStyret">Styret</h1>
+
+        <p>
+          <img src="img/email.png" class="kontaktOssIcon" alt="email">
+          pareto.linjeforening@gmail.com </p>
+        <p class="kontaktOssLineTwo">Leder: Oda Katrine Valen Leynse </p>
+
+        <p>
+          <img src="img/mazemap.png" class="kontaktOssKart" id="kontaktOssMazemap" alt="mazemap">
+          <img src="img/googlemaps.png" class="kontaktOssKart" alt="google">
+        </p>
+
+      </div>
+    </div>
+    <footer>
+      <p>hei</p>
+    </footer>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
