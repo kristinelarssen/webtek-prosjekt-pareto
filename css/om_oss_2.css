@@ -1,0 +1,94 @@
+#om_oss_grid_container {
+  display: grid;
+  grid-template-columns: 13.1% 24.6% 24.6% 24.6% 13.1%;
+  /*grid-row-gap: 3%;*/
+  width: 60%;
+  margin-left: 20%;
+}
+
+#om_oss_intro_grid {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+#om_oss_sitatbilde_grid {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 20%;
+}
+
+#om_oss_sitat_grid {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+#om_oss_faktaboks_tom1_grid {
+  grid-column-start: 1;
+  grid-column-end: 1.25;
+}
+
+#om_oss_faktaboks1_grid {
+  grid-column-start: 1.25;
+  grid-column-end: 2.75;
+}
+
+#om_oss_faktaboks2_grid {
+  grid-column-start: 2.75;
+  grid-column-end: 4.25;
+}
+
+#om_oss_faktaboks3_grid {
+  grid-column-start: 4.25;
+  grid-column-end: 5.75;
+}
+
+#om_oss_faktaboks_tom2_grid {
+  grid-column-start: 5.75;
+  grid-column-end: 6;
+}
+
+h1 {
+  font-size: 230%;
+}
+
+#sitat_img {
+  width: 100%;
+  margin-top: 0;
+}
+
+#om_oss_sitat {
+  border-left-style: solid;
+  font-size: 100%;
+  /*padding: 5% auto 2% 2%;*/
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-bottom: 3%;
+  margin: 10% auto auto 4%;
+}
+
+.om_oss_faktabokser {       /* Vil få disse kvadratiske selv om man justerer vinduet. Må kanskje også lengre opp. */
+  /*margin: 30% 10% auto 10%;*/
+  margin-top: 70%;
+  margin-left: 15%;
+  width: 70%;
+  height: 70%;
+
+  border-style: solid;
+  border-color: #C4C4C4;
+  border-radius: 12px;
+  border-width: 1.5px;
+
+  text-align: center;
+  font-size: 17px;
+}
+
+/*
+MANGLER PÅ DENNE SIDEN:
+- Få på header og footer
+- Få boksene til å bli kvadratiske og passe fint inn på siden
+- Font
+- Få fakta-tallene større og flytte faktateksten lengre ned i boksen
+- Få språket på norsk (godta Å)
+- Få bildet til å komme øverst i boksen
+
+*/
