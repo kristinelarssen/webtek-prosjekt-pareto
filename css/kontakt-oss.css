@@ -49,13 +49,13 @@ h1{
   color: rgba(0, 0, 0, 0.8);
 }
 
-p {
+#kontaktOssGrid p {
   font-style: normal;
   font-weight: normal;
   font-size: 80%;
   line-height: 250%;
   color: rgba(0, 0, 0, 0.6);
-}
+} 
 
 #kontaktOssKommentar {
   width: 68%;
