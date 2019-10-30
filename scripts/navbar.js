@@ -32,7 +32,7 @@ function createNavbar(tarElement) {
     createModElement("a", lielements[1], "Arrangementer", "arrangementer.html", ["class", "js-header-link"]);
     createModElement("a", lielements[2], "Ny student?", "ny_student.html", ["class", "js-header-link"]);
     createModElement("a", lielements[3], "Bli medlem", "bli_medlem.html", ["class", "js-header-link"]);
-    createModElement("a", lielements[4], "Kontakt oss", "kontakt.html", ["class", "js-header-link"]);
+    createModElement("a", lielements[4], "Kontakt oss", "kontakt-oss.html", ["class", "js-header-link"]);
     createModElement("a", lielements[5], "Econnect", "econnect.html", ["class", "js-header-link"]);
 }
 
