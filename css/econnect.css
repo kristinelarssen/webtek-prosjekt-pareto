@@ -1,84 +1,21 @@
-body{
-  margin: auto;
-  /* padding: 0; */
-  /* height: 100%; */
-  /* width: 100%; */
-  background-color: #f5f5f5;
-  /* line-height: 1.5em; */
-  /* display: flex; */
-  /* min-height: 100%; */
-  /* flex-direction: column; */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/* header {
-  padding: 0.5%;
-  text-align: center;
-  background:#3A4B69;
-  color: white;
-  height: 10% 
-} 
-*/
-h1 {
-  /* font-weight: normal; */
-  font-size: 95%;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-#econnectBox p{
-  margin-top: 0%;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.2vw;
-  line-height: 250%;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-
 #econnectBanner {
-  width:100%;
-}
-
-#econnectBox{
-  /* width: 78%; */
-  /* height: 100%; */
-  background-color: white;
-  margin-left: 11%;
-  margin-right: 11%;
+  width:100.1%;
 }
 
 #econnectGrid {
   display: grid;
-  /* margin: 0 11%; */
   padding: 5rem;
   grid-template-columns: 5fr 4fr ;
-  column-gap: 3rem;
-  background-color: white;
-}
-
-.econnectGridItem {
-  display: inline-block;
-  text-align: left;
+  column-gap: 2rem;
 }
 
 #econnectLogo{
   width: 50%;
   padding:10%;
-  margin-right: 30%
-  /* position: relative; */
-  /* margin-left: 53%; */
-  /* margin-top: 7%; */
-}
-
-#econnectLink {
-  position: relative;
-  /* margin-left: 6%; */
-  /* margin-top: -14%; */
 }
 
 #econnectLink:link {
-  font-size: 98%;
+  font-size: 1.3vw;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
   background-color: transparent;
@@ -86,7 +23,7 @@ h1 {
 }
 
 #econnectLink:visited {
-  font-size: 95%;
+  font-size: 1.3vw;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
   background-color: transparent;
@@ -106,10 +43,7 @@ h1 {
 }
 
 .econnectOm{
-  /* margin-left: 6%; */
   font-weight:normal;
-  /* margin-top: 0%; */
-  /* max-width: 100%; */
 }
 
 #econnectBottomParagrahp {
@@ -118,52 +52,53 @@ h1 {
 }
 #econnectBilde {
   width: 100%;
-  /* float:right; */
   margin-top: 15%;
-  /* margin-right: 5%; */
   border-radius: 5px;
 }
 
-.econnectKontakt {
+#econnectKontakt {
   margin-left: 5rem;
-  font-weight:normal;
-  margin-top: 0%;
-  max-width: 45%;
   padding: 5% 0% 10% 0%;
   }
 
-/* footer {
-  background-color: #3A4B69;
-  width: 100%;
-  padding-top:5%;
-  color: white;
-  text-align: center;
-  margin-top:auto;
-  padding-bottom: 3%
-} */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   #econnectGrid {
+    grid-template-columns:1fr;
     grid-template-areas:
      "one" 
-     "two" 
-     /* "Three" */
-     ;
-    padding:0rem;
+     "two";
+    padding:5rem;
     padding-bottom: 5rem;
  }
  #econnectGridOne {
   grid-area: one;
-  margin-left:50%
+  margin-left:0%;
 }
 
 #econnectGridTwo {
   grid-area: two;
-  margin-left: 50%;
+  margin-left: 0%;
 }
 
-/* #econnectGridThree {
-  grid-area:three;
-  margin-left:40% 
-} */
+#econnectBottomParagrahp {
+  max-width: 100%;
+  margin-right:5rem;
+  padding-top:2rem;
+}
+
+.econnectOm {
+  margin-left:0%;
+  padding-left:0%;
+}
+
+#econnectLogo{
+  display:none;
+}
+
+#econnectBilde{
+  width:70%;
+  margin:0rem 2rem 0rem 2rem;
+}
+
 } 
