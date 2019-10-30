@@ -45,6 +45,9 @@ function createFooter(tarElement) {
     const divkontakt = document.querySelector("#js-footer-divkontakt");
     const divadresse = document.querySelector("#js-footer-divadresse");
 
+    createModElement("h3",divkontakt,"Kontakt","",["class","js-footer-lh"])
+    createModElement("h3",divadresse,"Besøksadresse","",["class","js-footer-lh"])
+
     createModElement("ul", divikon, "", "", ["id", "ulikon"]);
     createModElement("ul", divkontakt, "", "", ["id", "ulkontakt"]);
     createModElement("ul", divadresse, "", "", ["id", "uladresse"]);
@@ -57,13 +60,11 @@ function createFooter(tarElement) {
     createModElement("li",ulikon);
     createModElement("li",ulikon);
 
-    createModElement("p",ulkontakt,"Kontakt","",["id","js-footer-kontakthead"]);
     createModElement("li",ulkontakt);
     createModElement("li",ulkontakt);
     createModElement("li",ulkontakt);
     createModElement("li",ulkontakt);
 
-    createModElement("p",uladresse,"Besøksadresse");
     createModElement("li",uladresse,"Etasje 3, 3056");
     createModElement("li",uladresse,"NTNU Adolf Øien Bygget");
     createModElement("li",uladresse,"Klæbuveien 72");
