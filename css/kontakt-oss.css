@@ -133,19 +133,19 @@ h1{
 @media only screen and (max-width: 800px) {
   #kontaktOssGrid {
     grid-template-areas:
-     "Last" 
-     "First" ;
-    padding:0rem;
-    padding-bottom: 5rem;
+     "Last Last" 
+     "First First" ;
+    padding:1rem 3rem 5rem 3rem;
+    /* padding-bottom: 5rem; */
  }
  #KontaktOssGridFirst {
   grid-area: First;
-  margin-left:40%
+  margin-left:20%
 }
 
 #KontaktOssGridLast {
   grid-area: Last;
-  margin-left: 40%;
+  /* margin-left: 0%; */
 }
 
 .kontaktOssGridItem{
@@ -153,6 +153,6 @@ h1{
 }
 
 #kontaktOssKommentar {
-  width:100%;
+  /* width:100%; */
 }
 }
