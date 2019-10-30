@@ -5,7 +5,7 @@
 #econnectGrid {
   display: grid;
   padding: 5rem;
-  grid-template-columns: 5fr 4fr ;
+  grid-template-columns: 5fr 4fr;
   column-gap: 2rem;
 }
 
@@ -15,7 +15,7 @@
 }
 
 #econnectLink:link {
-  font-size: 1.3vw;
+  font-size: 1rem;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
   background-color: transparent;
@@ -23,7 +23,7 @@
 }
 
 #econnectLink:visited {
-  font-size: 1.3vw;
+  font-size: 1rem;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
   background-color: transparent;
@@ -51,8 +51,8 @@
   margin-top: -5rem;
 }
 #econnectBilde {
-  width: 100%;
-  margin-top: 15%;
+  width: 80%;
+  margin-top: 4%;
   border-radius: 5px;
 }
 
@@ -62,7 +62,7 @@
   }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   #econnectGrid {
     grid-template-columns:1fr;
     grid-template-areas:
