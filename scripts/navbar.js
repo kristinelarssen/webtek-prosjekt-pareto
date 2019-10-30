@@ -22,7 +22,7 @@ function createNavbar(tarElement) {
     const lielements = document.getElementsByClassName("js-header-li");
     /* createModElement("a", lielements[0], "Om Pareto", "om_pareto.html", [["class", "js-header-link"], "id", "js-dropdown"]); */
     createModElement("div",lielements[0],"","",[["class","dropdown"],["id","js-dropcontainer"]]);
-    createModElement("a",document.getElementById("js-dropcontainer"),"Om Oss","",[["onclick","dropdownFunction()"],["class","dropdownButton"],["class","js-header-link"]])
+    createModElement("a",document.getElementById("js-dropcontainer"),"Om oss ˅ ","",[["onclick","dropdownFunction()"],["class","dropdownButton"],["class","js-header-link"],["id","dropdownOmOss"]])
     createModElement("div",document.getElementById("js-dropcontainer"),"","",[["id","Dropdown"],["class","dropdownItems"]])
     createModElement("a",document.getElementById("Dropdown"),"Om Pareto","om_pareto.html",["class","js-header-link"])
     createModElement("a",document.getElementById("Dropdown"),"Komiteer","komiteer.html",["class","js-header-link"])
