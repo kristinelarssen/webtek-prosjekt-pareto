@@ -4,10 +4,14 @@
 }
 
 
+
 .dropdown:hover .dropdownItems {
   display:block;
 }
 
+.dropdown:hover #dropdownOmOss {
+  padding-bottom: 160%;
+}
 
 .dropdownItems {
   display: none;
@@ -33,7 +37,8 @@
 
 #dropdownOmOss{
   cursor: pointer;
-  padding-bottom: 160%;
 }
 
-.show {display: block;}
+.show {
+  display: block;
+}
