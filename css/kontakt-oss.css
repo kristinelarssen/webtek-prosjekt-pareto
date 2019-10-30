@@ -140,16 +140,24 @@ h1{
  }
  #KontaktOssGridFirst {
   grid-area: First;
-  margin-left:20%
+  /* margin-left:20% */
 }
 
 #KontaktOssGridLast {
   grid-area: Last;
-  /* margin-left: 0%; */
+  margin-left: 0%;
+  
 }
 
 .kontaktOssGridItem{
   border-right:none;
+}
+
+#kontaktOssGrid{
+  margin: 0%;
+}
+#kontaktOssMazemap{
+  margin:0%;
 }
 
 }
