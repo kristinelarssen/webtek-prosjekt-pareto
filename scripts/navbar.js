@@ -20,7 +20,15 @@ function createNavbar(tarElement) {
     }
 
     const lielements = document.getElementsByClassName("js-header-li");
-    createModElement("a", lielements[0], "Om Pareto", "om_pareto.html", [["class", "js-header-link"], "id", "js-dropdown"]);
+    /* createModElement("a", lielements[0], "Om Pareto", "om_pareto.html", [["class", "js-header-link"], "id", "js-dropdown"]); */
+    createModElement("div",lielements[0],"","",[["class","dropdown"],["id","js-dropcontainer"]]);
+    createModElement("a",document.getElementById("js-dropcontainer"),"Om Oss","",[["onclick","dropdownFunction()"],["class","dropdownButton"],["class","js-header-link"]])
+    createModElement("div",document.getElementById("js-dropcontainer"),"","",[["id","Dropdown"],["class","dropdownItems"]])
+    createModElement("a",document.getElementById("Dropdown"),"Om Pareto","om_pareto.html",["class","js-header-link"])
+    createModElement("a",document.getElementById("Dropdown"),"Komiteer","komiteer.html",["class","js-header-link"])
+    createModElement("a",document.getElementById("Dropdown"),"Styret","styret.html",["class","js-header-link"])
+    createModElement("a",document.getElementById("Dropdown"),"Vedtekter","vedteker.html",["class","js-header-link"])
+
     createModElement("a", lielements[1], "Arrangementer", "arrangementer.html", ["class", "js-header-link"]);
     createModElement("a", lielements[2], "Ny student?", "ny_student.html", ["class", "js-header-link"]);
     createModElement("a", lielements[3], "Bli medlem", "bli_medlem.html", ["class", "js-header-link"]);
