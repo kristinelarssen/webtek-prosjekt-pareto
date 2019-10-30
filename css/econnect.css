@@ -70,6 +70,7 @@
      "two";
     padding:5rem;
     padding-bottom: 5rem;
+    padding-top:0rem;
  }
  #econnectGridOne {
   grid-area: one;
