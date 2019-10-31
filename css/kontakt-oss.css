@@ -140,12 +140,12 @@ h1{
  }
  #KontaktOssGridFirst {
   grid-area: First;
-  /* margin-left:20% */
+  align-content: center;
 }
 
 #KontaktOssGridLast {
   grid-area: Last;
-  margin-left: 0%;
+  text-align: center;
   
 }
 
