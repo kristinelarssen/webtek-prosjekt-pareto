@@ -142,3 +142,38 @@ div#content {
 #js-footer-divadresse {
   flex: 1;
 }
+
+
+/* Vedtekter */
+
+.vedtekter{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#overskriftVedtekter{
+  font-weight: normal;
+  font-size: 200%;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: -2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#listeVedtekter{
+
+  margin-top: 0%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#vedtekterbox{
+    
+  margin: 0 11%;
+  padding: 5rem;
+  background-color: white;
+}
