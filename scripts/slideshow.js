@@ -5,6 +5,7 @@ WHEN: November 2019
 PURPOSE: Bildeshow på fremsiden. Manuell og automatisk bytting av bilder
 */
 
+// Inspirert av: https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 // setter bilde-index til 1, slik at første bilde vises når siden blir lastet inn
 let photoIndex = 1;

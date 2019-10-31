@@ -532,10 +532,10 @@ div#content {
 
 
 
+
 /***********************/
 /* css til ny_student */
 /***********************/
-
 
 /*Lager grå marger på siden*/
 #box{
@@ -544,9 +544,8 @@ div#content {
   margin-right: 11%;
 }
 
-
 /*Sentrerer innholdet*/
-#nyStudentgrid {
+#nyStudentGrid {
   display: grid;
   padding: 5rem;
   grid-template-columns: 5fr 4fr ;
@@ -560,14 +559,36 @@ div#content {
 }
 
 .nyStudentBilde {
-  width: 85%;
-  /* float:right; */
+  width: 100%;
   margin-top: 15%;
   margin-bottom: 10%;
-  /* margin-right: 5%; */
   border-radius: 5px;
 }
 
+/* For mindre skjermer */
+@media only screen and (max-width: 1000px) {
+  #nyStudentGrid {
+    grid-template-columns:1fr;
+    grid-template-areas:
+     "one"
+     "two";
+    padding:5rem;
+  }
+  .gridItem {
+    padding-bottom: 2%;
+  }
+  .nyStudentBilde {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px; 
+  }
+  .nyStudentBildeDiv img{
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 
 
@@ -675,10 +696,6 @@ h1 {
 /* css til Styret */
 /*******************/
 
-
-/*Lager grå marger på siden*/
-
-
 /*Sentrerer innholdet*/
 #styretGrid {
   display: grid;
@@ -688,17 +705,32 @@ h1 {
   background-color: white;
 }
 
-
 .styrebilde {
   width: 100%;
-  /* float:right; */
   margin-top: 30%;
   margin-bottom: 10%; 
-  /* margin-right: 5%; */
-  /* border-radius: 5px; */
 }
 
+/* For mindre skjermer */
+@media only screen and (max-width: 1000px) {
+  #styretGrid {
+    grid-template-columns:1fr;
+    grid-template-areas:
+     "one"
+     "two";
+    padding:5rem;
+  }
+  .styrebilde {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px; 
+  }
+  .gridItem {
+    padding-bottom: 2%;
+  }
 
+}
 
 
 
@@ -747,7 +779,6 @@ h1 {
   background-color: rgba(0,0,0,0);
   opacity: 100;
 }
-
 
 
 /* Faded overgang fra bilde til bilde */
