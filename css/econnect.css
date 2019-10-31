@@ -2,6 +2,15 @@
   width:100.1%;
 }
 
+
+.kontaktOsscontent p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80%;
+  line-height: 250%;
+  color: rgba(0, 0, 0, 0.6);
+} 
+
 #econnectGrid {
   display: grid;
   padding: 5rem;
@@ -50,11 +59,11 @@
   margin-left: 5rem;
   margin-top: -5rem;
 }
-#econnectBilde {
-  width: 80%;
+/* #econnectBilde {
+  width: 1000px;
   margin-top: 4%;
   border-radius: 5px;
-}
+} */
 
 #econnectKontakt {
   margin-left: 5rem;
