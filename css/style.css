@@ -218,6 +218,21 @@ div#content {
   width:100.1%;
 }
 
+.econnectContent h1 {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.econnectContent p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80%;
+  line-height: 250%;
+  color: rgba(0, 0, 0, 0.6);
+} 
+
 #econnectGrid {
   display: grid;
   padding: 5rem;
@@ -226,7 +241,7 @@ div#content {
 }
 
 #econnectLogo{
-  width: 50%;
+  width: 70%;
   padding:10%;
 }
 
@@ -491,7 +506,7 @@ div#content {
   top:160%;
   left:-10%;
   background-color: #5c687e;
-  min-width: 130%;
+  min-width: 150%;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
