@@ -246,11 +246,12 @@ div#content {
   margin-left: 5rem;
   margin-top: -5rem;
 }
-/* #econnectBilde {
-  width: 300px;
-  margin-top: 4%;
+#econnectBilde {
+  position: sticky;
+  width: 350px;
+  margin-top: 3rem;
   border-radius: 5px;
-} */
+}
 
 #econnectKontakt {
   margin-left: 5rem;
@@ -420,12 +421,12 @@ div#content {
  }
  #KontaktOssGridFirst {
   grid-area: First;
-  align-content: center;
+  margin-left:10%;
 }
 
 #KontaktOssGridLast {
   grid-area: Last;
-  text-align: center;
+  margin-left:-10%;
   
 }
 
@@ -433,9 +434,9 @@ div#content {
   border-right:none;
 }
 
-#kontaktOssGrid{
+/* #kontaktOssGrid{
   margin: 0%;
-}
+} */
 #kontaktOssMazemap{
   margin:0%;
 }
