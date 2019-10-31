@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html charset="utf-8">
   <head>
-    <link rel="stylesheet" href="./css/arrangementer.css">
-    <!--title-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Arrangementer</title>
   </head>
 
   <body>
 
-    <div id="arr_wrapperbody">
+    <div id="wrapperbody">
+      
+      <header>
+        <div id="js-header"></div>
+      </header>
+
+      <div id="content">
       <div id="arr_grid_container">
 
         <div id="arr_tittel_grid">
@@ -15,75 +21,130 @@
         </div>
 
         <div id="arr_kategorier_grid">
-          <h3>Kategorier</h3>
-          <p class="arr_bulletpoints">Aktivitet</p>
-          <p class="arr_bulletpoints">Begivenhet</p>
-          <p class="arr_bulletpoints">Faglig</p>
-          <p class="arr_bulletpoints">Fest</p>
+          <h3 id="arr_kategorier_tittel">Kategorier</h3>
+          <p class="arr_bulletpoints"> <img src="./img/gul_ball.png" class="arr_ikon_kuler" alt="Gult punk" width="17px" height="17px"> Aktivitet</p>
+          <p class="arr_bulletpoints"> <img src="./img/rød_ball.png" class="arr_ikon_kuler" alt="Rødt punk" width="17px" height="17px"> Begivenhet</p>
+          <p class="arr_bulletpoints"> <img src="./img/blå_ball.png" class="arr_ikon_kuler" alt="Blått punk" width="17px" height="17px"> Faglig</p>
+          <p class="arr_bulletpoints"> <img src="./img/grønn_ball.png" class="arr_ikon_kuler" alt="Grønt punk" width="17px" height="17px"> Fest</p>
         </div>
 
         <div id="arr_prikkregler_grid">
           <h3>Prikkregler</h3>
-          <p>
+          <p class="arr_prikkregler">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid
-            ex ea commodo consequat.
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et
-            dolore magna aliqua.
+          <p class="arr_prikkregler">
+            Ikke medlem enda? Meld deg inn <a class="arr_link" href="./om_pareto.html">her</a> for å kunne melde deg på arrangementer og få billigere billetter.
           </p>
         </div>
 
+        <!-- Arrangement 1 -->
         <div id="arr_arr1_grid">
-          <div class="arrangement">
-            <h3>Filmkveld med Koskom</h3>
-            <p>Dato</p>
-            <p>Dato</p>
-            <p>Antall</p>
-            <p>Hvem</p>
-            <img src="" alt="">
+          <div class="arr_begivenhet arr_arrangement_grid">
+            <div class="arr_arrtittel_grid">
+              <h2 class="arr_arrtittel">Julebord med Px3</h2>
+            </div>
+
+            <div class="arr_tekst_grid">
+              <p class="arr_påmelding_tekstbakikon">
+                <img src="./img/kalenderikon_liten.png" class="arr_ikon" height="15px" width="15px" alt="Kalenderikon">
+                15. nov 2019
+              </p>
+
+              <p class="arr_påmelding_tekstbakikon">
+                <img src="./img/ringeklokkeikon_liten.png" class="arr_ikon" height="15px" width="15px" alt="Ringeklokke-ikon">
+                <a class="arr_link" target="_blank" href="https://www.facebook.com/events/691309131391886/">Påmeldingen er åpen</a>
+              </p>
+
+              <div class="arr_plasser">
+                <p>0 / 80</p>
+              </div>
+
+              <p>Alle klassetrinn</p>
+            </div>
+
+            <div class="arr_bilde_grid">
+              <img src="./img/julebord.jpeg" alt="Julebord" class="arr_bilde">
+            </div>
           </div>
         </div>
 
+
+        <!-- Arrangement 2 -->
         <div id="arr_arr2_grid">
-          <div class="arrangement">
-            <h3>Navn arrangement</h3>
-            <p>Dato</p>
-            <p>Dato</p>
-            <p>Antall</p>
-            <p>Hvem</p>
-            <img src="" alt="">
+          <div class="arr_arrangement_grid arr_fest">
+            <div class="arr_arrtittel_grid">
+              <h2 class="arr_arrtittel">Eksamensfest</h2>
+            </div>
+
+            <div class="arr_tekst_grid">
+              <p class="arr_påmelding_tekstbakikon">
+                <img src="./img/kalenderikon_liten.png" class="arr_ikon" height="15px" width="15px" alt="Kalenderikon">
+                12. des 2019
+              </p>
+
+              <p class="arr_påmelding_tekstbakikon">
+                <img src="./img/ringeklokkeikon_liten.png" class="arr_ikon" height="15px" width="15px" alt="Ringeklokke-ikon">
+                <a class="arr_link" target="_blank" href="https://www.facebook.com/events/404613036891476/">Påmeldingen er åpen</a>
+              </p>
+
+              <div class="arr_plasser">
+                <p>0 / ∞</p>
+              </div>
+
+              <p>Alle klassetrinn</p>
+            </div>
+
+            <div class="arr_bilde_grid">
+              <img src="./img/eksamensfest.jpeg" alt="Eksamensfest" class="arr_bilde">
+            </div>
           </div>
         </div>
 
+
+        <!-- Arrangement 3 -->
         <div id="arr_arr3_grid">
-          <div class="arrangement">
-            <h3>Navn arrangement</h3>
-            <p>Dato</p>
-            <p>Dato</p>
-            <p>Antall</p>
-            <p>Hvem</p>
-            <img src="" alt="">
-          </div>
-        </div>
+          <div class="arr_arrangement_grid arr_begivenhet">
+            <div class="arr_arrtittel_grid">
+              <h2 class="arr_arrtittel">Pareto drar til Åre</h2>
+            </div>
 
-        <div id="arr_arr4_grid">
-          <div class="arrangement">
-            <h3>Navn arrangement</h3>
-            <p>Dato</p>
-            <p>Dato</p>
-            <p>Antall</p>
-            <p>Hvem</p>
-            <img src="" alt="">
+            <div class="arr_tekst_grid">
+              <p class="arr_påmelding_tekstbakikon">
+                <img src="./img/kalenderikon_liten.png" class="arr_ikon" height="15px" width="15px" alt="Kalenderikon">
+                12. jan 2020
+              </p>
+
+              <p class="arr_påmelding_tekstbakikon">
+                <img src="./img/ringeklokkeikon_liten.png" class="arr_ikon" height="15px" width="15px" alt="Ringeklokke-ikon">
+                <a class="arr_link" target="_blank" href="https://www.facebook.com/events/2305051802877511/">Påmeldingen er full</a>
+              </p>
+
+              <div class="arr_plasser">
+                <p>80 / 80</p>
+              </div>
+
+              <p>Alle klassetrinn</p>
+            </div>
+
+            <div class="arr_bilde_grid">
+              <img src="./img/åre.jpeg" alt="Julebord" class="arr_bilde">
+            </div>
           </div>
         </div>
 
       </div>
+      </div>
+
+      <footer>
+        <div id="js-footer"></div>
+      </footer>
+
     </div>
 
-
-    <footer></footer>
+    <script src="./scripts/navbar.js" type="text/javascript"></script>
+    <script src="./scripts/dropdown.js" type="text/javascript"></script>
 
   </body>
 
