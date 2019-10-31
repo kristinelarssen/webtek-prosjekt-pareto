@@ -5,27 +5,32 @@
 }
 
 p {
-  font-size: 15px;
-  font-weight: 200;
+  font-size: 1.2vw;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 0%;
+  line-height: 250%;
+
 }
 
 h1 {
-  font-size: 40px;
-  font-weight: lighter;
-  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2vw;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
  }
 
 h2 {
 
   font-weight: normal;
-  font-size: 1.2vw;
+  font-size: 1.6vw;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
 }
 
 h3 {
   font-weight: normal;
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
 
@@ -527,12 +532,9 @@ div#content {
 
 
 
-
-
-
-
-
-/* ------------ css til ny_student --------------- */
+/***********************/
+/* css til ny_student */
+/***********************/
 
 
 /*Lager grå marger på siden*/
@@ -669,11 +671,9 @@ h1 {
 
 
 
-
-
-
-
-/* -------- css til Styret ------------- */
+/*******************/
+/* css til Styret */
+/*******************/
 
 
 /*Lager grå marger på siden*/
@@ -692,67 +692,70 @@ h1 {
 .styrebilde {
   width: 100%;
   /* float:right; */
-  margin-top: 15%;
-  margin-bottom: 10%;
+  margin-top: 30%;
+  margin-bottom: 10%; 
   /* margin-right: 5%; */
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 
 
 
 
-
-/* ------------------ css til Slideshow -----------------*/
+/**********************/
+/* css til Slideshow */
+/**********************/
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+/* Bildeshow container */
+.photoshow-container {
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
+/* Gjømmer bildene som default */
+.photo {
   display: none;
+  width: 100%;
 }
 
-/* Next & previous buttons */
+/* Neste og forrige knapp */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 17px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 10vw;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  opacity: 0;
 }
 
-/* Position the "next button" to the right */
+/* Plasserer "neste" knappen til høyre */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Hva som skjer når man holder over knapene */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0);
+  opacity: 100;
 }
 
 
-/* Fading animation */
+
+/* Faded overgang fra bilde til bilde */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.4s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.4s;
 }
 
 @-webkit-keyframes fade {

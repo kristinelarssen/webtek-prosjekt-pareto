@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="img/a.png">
-    <title>Document</title>
+
+    <title>Pareto</title>
+    <link rel="icon" href="img/a.png" type="image">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,26 +18,25 @@
         <div id="content">
 
         </div>
+        <!-- Bildeshow-container -->
+        <div class="photoshow-container">
 
-        <!-- Slideshow container -->
-        <div class="slideshowContainer">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <img src="img/slideshow1.png" style="width:100%">
+            <!-- Full bredde på bildene -->
+            <div class="photo fade">
+                <img src="img/photoshow.png" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
-                <img src="img/slideshow2.png" style="width:100%">
+            <div class="photo fade">
+                <img src="img/photoshow2.png" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
-                <img src="img/nystudent3.png" style="width:100%">
+            <div class="photo fade">
+                <img src="img/photoshow3.jpg" style="width:100%">
             </div>
 
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="changeSlide(-1)">&#9664;</a>
-            <a class="next" onclick="changeSlide(1)">&#9654;</a>
+            <!-- Neste og forrige knapper -->
+            <a class="prev" onclick="changePhoto(-1)">&#8249;</a>
+            <a class="next" onclick="changePhoto(1)">&#8250;</a>
         </div>
         <br>
 
@@ -43,6 +44,7 @@
             <div id="js-footer"></div>
         </footer>
     </div>
+
     <script src="scripts/navbar.js"></script>
     <script src="scripts/dropdown.js"></script>
     <script src="scripts/slideshow.js"></script>
