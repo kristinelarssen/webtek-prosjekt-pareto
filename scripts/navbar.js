@@ -27,7 +27,7 @@ function createNavbar(tarElement) {
     createModElement("a",document.getElementById("Dropdown"),"Om Pareto","om_pareto.html",["class","js-header-link"])
     createModElement("a",document.getElementById("Dropdown"),"Komiteer","komiteer.html",["class","js-header-link"])
     createModElement("a",document.getElementById("Dropdown"),"Styret","styret.html",["class","js-header-link"])
-    createModElement("a",document.getElementById("Dropdown"),"Vedtekter","vedteker.html",["class","js-header-link"])
+    createModElement("a",document.getElementById("Dropdown"),"Vedtekter","vedtekter.html",["class","js-header-link"])
 
     createModElement("a", lielements[1], "Arrangementer", "arrangementer.html", ["class", "js-header-link"]);
     createModElement("a", lielements[2], "Ny student?", "ny_student.html", ["class", "js-header-link"]);
