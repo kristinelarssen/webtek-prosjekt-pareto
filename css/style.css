@@ -16,18 +16,19 @@ h1 {
  }
 
 h2 {
-  /* Forslag, trenger ikke å bli bra
-  font-style: normal;
+
   font-weight: normal;
-  line-height: 26px;
-  font-size: 21px; */
+  font-size: 1.2vw;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 h3 {
-  /* Forslag, trenger ikke å bli bra
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px; */
+  font-weight: normal;
+  font-size: 1.1vw;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+
 }
 
 /*  */
@@ -515,6 +516,44 @@ div#content {
 
 
 
+
+/* ------------ css til ny_student --------------- */
+
+
+/*Lager grå marger på siden*/
+#box{
+  background-color: white;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+
+/*Sentrerer innholdet*/
+#nyStudentgrid {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 5fr 4fr ;
+  column-gap: 3rem;
+  background-color: white;
+}
+
+.gridItem {   /* Gjenbrukes også hos: styret.html */
+  display: inline-block;
+  text-align: left;
+}
+
+.nyStudentBilde {
+  width: 85%;
+  /* float:right; */
+  margin-top: 15%;
+  margin-bottom: 10%;
+  /* margin-right: 5%; */
+  border-radius: 5px;
+}
+
+
+
+
 /*********************/
 /* CSS til om_pareto */
 /*********************/
@@ -616,6 +655,100 @@ h1 {
 
 
 
+
+
+
+/* -------- css til Styret ------------- */
+
+
+/*Lager grå marger på siden*/
+
+
+/*Sentrerer innholdet*/
+#styretGrid {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 3fr 6fr ;
+  column-gap: 3rem;
+  background-color: white;
+}
+
+
+.styrebilde {
+  width: 100%;
+  /* float:right; */
+  margin-top: 15%;
+  margin-bottom: 10%;
+  /* margin-right: 5%; */
+  border-radius: 5px;
+}
+
+
+
+
+
+
+/* ------------------ css til Slideshow -----------------*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 
 
@@ -893,3 +1026,4 @@ h1 {
   width: 60%;
   margin-bottom: 15%;
 }
+
