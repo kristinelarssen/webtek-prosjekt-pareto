@@ -213,6 +213,14 @@ div#content {
   width:100.1%;
 }
 
+.kontaktOsscontent p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80%;
+  line-height: 250%;
+  color: rgba(0, 0, 0, 0.6);
+} 
+
 #econnectGrid {
   display: grid;
   padding: 5rem;
