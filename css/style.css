@@ -552,7 +552,7 @@ div#content {
   background-color: white;
 }
 
-.gridItem {   /* Gjenbrukes også hos: styret.html */
+.gridItem {   
   display: inline-block;
   text-align: left;
 }
@@ -703,11 +703,29 @@ h1 {
   column-gap: 3rem;
   background-color: white;
 }
+#startEndGrid { /* Gjenbrukes også i ny_student.html */
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
 .styrebilde {
   width: 100%;
   margin-top: 30%;
   margin-bottom: 10%; 
+}
+
+.boldFont {
+  font-weight: bold;
+}
+
+.italicFont {
+  font-style: oblique;
+}
+
+.styreGridItem {   /* Gjenbrukes også hos: styret.html */
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 50px;
 }
 
 /* For mindre skjermer */
@@ -717,7 +735,7 @@ h1 {
     grid-template-areas:
      "one"
      "two";
-    padding:5rem;
+    padding:3rem;
   }
   .styrebilde {
     width: 100%;
@@ -725,8 +743,13 @@ h1 {
     margin-bottom: 5%;
     border-radius: 5px; 
   }
-  .gridItem {
+  .styreGridItem {
     padding-bottom: 2%;
+  }
+
+  #startEndGrid {  /* Gjenbrukes også i ny_student.html */
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
 }
