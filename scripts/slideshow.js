@@ -1,27 +1,49 @@
+/*
+FILE NAME: slideshow.js
+WRITTEN BY: Kristine Larssen
+WHEN: November 2019
+PURPOSE: Bildeshow på fremsiden. Manuell og automatisk bytting av bilder
+*/
 
-// setter index til 1, slik at første bilde vises først når siden er lastet inn
-let slideIndex = 1;
 
-// sørger for å vise bildene når sida lastes inn
-showSlides(slideIndex);
+// setter bilde-index til 1, slik at første bilde vises når siden blir lastet inn
+let photoIndex = 1;
 
-// viser en bilde-slide
-function showSlides(n) {
-    let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {
-        slideIndex = 1
-    }
+// Viser bildene
+function showPhotos(n) {
+    let photos = document.getElementsByClassName("photo");
     if (n < 1) {
-        slideIndex = slides.length
+        photoIndex = photos.length;
     }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    if (n > photos.length) {
+        photoIndex = 1;
     }
-    slides[slideIndex - 1].style.display = "block";
+    for (let i = 0; i < photos.length; i++) {
+        photos[i].style.display = "none";
+    }
+    photos[photoIndex - 1].style.display = "block";
 
 }
 
-// Blar til neste slide
-function changeSlide(n) {
-    showSlides(slideIndex += n);
+// Blar til neste/forrige bilde
+function changePhoto(n) {
+    showPhotos(photoIndex += n);
 }
+
+// sørger for at bildene byttes hver 4 sekund
+function autoChange() {
+    let photos = document.getElementsByClassName('photo');
+    if (photoIndex > photos.length) {
+        photoIndex = 1;
+    }
+    for (i = 0; i < photos.length; i++) {
+        photos[i].style.display = "none";
+    }
+    photos[photoIndex - 1].style.display = "block";
+    photoIndex++;
+    setTimeout(autoChange, 6000);
+}
+
+// sørger for å vise bildene når sida lastes inn, og bytte automaisk hvert 6 sekund
+showPhotos(photoIndex);
+autoChange();
