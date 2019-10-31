@@ -201,8 +201,8 @@ div#content {
 #econnectGrid {
   display: grid;
   padding: 5rem;
-  grid-template-columns: 5fr 4fr;
-  column-gap: 2rem;
+  grid-template-columns: 6fr 3fr;
+  column-gap: 1rem;
 }
 
 #econnectLogo{
