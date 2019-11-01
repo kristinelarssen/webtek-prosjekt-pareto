@@ -84,7 +84,6 @@ footer {
   height: 180px;
   width: 100%;                          /* Footer skal dekke bredden til skjermen*/
   background-color: #3A4B69;
-  width: 100%;
 }
 
 #js-footer {
@@ -137,7 +136,7 @@ div#content {
 
 .js-header-link {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: calc(10px + 0.5rem);
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -167,16 +166,102 @@ div#content {
 }
 
 .js-footer-ulhead {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+
+  }
+
+#uladresse, #ulkontakt {
+  list-style: none;
+  text-align: center;
+}
+
+
+/* CSS/Media query < 1000px for footer/header */
+@media only screen and (max-width: 868px) {
+  #js-header {
+    height: auto;
+    text-align: center;
+  }
+  #js-header-logoimg {
+    display: block;
+  }
+  #js-header-ul {
+    display: block;
+    position: relative;
+    padding: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f5f5f5;
+  }
+  
+  #wrapperbody {
+    position: relative;
+    min-height: unset;
+    padding: 0;
+    padding-bottom: 0;
+  }
+  
+  #js-header {
+    height: auto;
+    text-align: center;
+  }
+
+  div#content {
+    margin: 0;
+    background-color: white;
+  }
+
+  footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #3A4B69;
+  }
+  
+  #js-footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
+    text-align: center;
   }
 
 
 
+
+  #js-header {
+    height: auto;
+    text-align: center;
+  }
+  #js-header-logoimg {
+    display: block;
+  }
+  #js-header-ul {
+    display: block;
+    position: relative;
+  }
+  .js-header-li {
+    display: block;
+    padding: 5px,0,5px,0;
+  }
+
+#js-footer-divkontakt {
+  border: 0;
+}
+
+#uladresse, #ulkontakt {
+  padding: 0;
+}
+
+
+
+}
 
 
 /*********************/
