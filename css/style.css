@@ -5,8 +5,12 @@
 }
 
 p {
-  font-size: 15px;
-  font-weight: 200;
+  font-size: 1.2vw;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 0%;
+  line-height: 250%;
+
 }
 
 h1 {
@@ -16,12 +20,20 @@ h1 {
   margin-top: 10%;
  }
 
-h2 {
-  /* Forslag, trenger ikke å bli bra.
+/*h2 {
+  Forslag, trenger ikke å bli bra.
   font-style: normal;
   font-weight: normal;
-  line-height: 26px;
-  font-size: 21px; */
+  font-size: 2.2vw;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+ }*/
+
+h2 {
+  font-weight: normal;
+  font-size: 1.6vw;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 h3 {
@@ -29,6 +41,10 @@ h3 {
   font-style: normal;
   font-weight: 300;
   font-size: 20px; */
+  font-weight: normal;
+  font-size: 1.4vw;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /*  */
@@ -47,7 +63,6 @@ html, body {
   padding: 0;
   height: 100%;
   background-color: #f5f5f5;
-  line-height: 1.5em;
 }
 
 #wrapperbody {
@@ -151,7 +166,14 @@ div#content {
   flex: 1;
 }
 
-
+.js-footer-ulhead {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
 
 
 
@@ -213,6 +235,21 @@ div#content {
   width:100.1%;
 }
 
+.econnectContent h1 {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.econnectContent p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80%;
+  line-height: 250%;
+  color: rgba(0, 0, 0, 0.6);
+} 
+
 #econnectGrid {
   display: grid;
   padding: 5rem;
@@ -221,7 +258,7 @@ div#content {
 }
 
 #econnectLogo{
-  width: 50%;
+  width: 70%;
   padding:10%;
 }
 
@@ -486,7 +523,7 @@ div#content {
   top:160%;
   left:-10%;
   background-color: #5c687e;
-  min-width: 130%;
+  min-width: 150%;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -513,6 +550,62 @@ div#content {
 
 
 
+/***********************/
+/* css til ny_student */
+/***********************/
+
+/*Lager grå marger på siden*/
+#box{
+  background-color: white;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+/*Sentrerer innholdet*/
+#nyStudentGrid {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 5fr 4fr ;
+  column-gap: 3rem;
+  background-color: white;
+}
+
+.gridItem {   
+  display: inline-block;
+  text-align: left;
+}
+
+.nyStudentBilde {
+  width: 100%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  border-radius: 5px;
+}
+
+/* For mindre skjermer */
+@media only screen and (max-width: 1000px) {
+  #nyStudentGrid {
+    grid-template-columns:1fr;
+    grid-template-areas:
+     "one"
+     "two";
+    padding:5rem;
+  }
+  .gridItem {
+    padding-bottom: 2%;
+  }
+  .nyStudentBilde {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px; 
+  }
+  .nyStudentBildeDiv img{
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 
 
@@ -617,7 +710,135 @@ h1 {
 
 
 
+/*******************/
+/* css til Styret */
+/*******************/
 
+/*Sentrerer innholdet*/
+#styretGrid {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 3fr 6fr ;
+  column-gap: 3rem;
+  background-color: white;
+}
+#startEndGrid { /* Gjenbrukes også i ny_student.html */
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.styrebilde {
+  width: 100%;
+  margin-top: 30%;
+  margin-bottom: 10%; 
+}
+
+.boldFont {
+  font-weight: bold;
+}
+
+.italicFont {
+  font-style: oblique;
+}
+
+.styreGridItem {   /* Gjenbrukes også hos: styret.html */
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+/* For mindre skjermer */
+@media only screen and (max-width: 1000px) {
+  #styretGrid {
+    grid-template-columns:1fr;
+    grid-template-areas:
+     "one"
+     "two";
+    padding:3rem;
+  }
+  .styrebilde {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px; 
+  }
+  .styreGridItem {
+    padding-bottom: 2%;
+  }
+
+  #startEndGrid {  /* Gjenbrukes også i ny_student.html */
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+}
+
+
+
+/**********************/
+/* css til Slideshow */
+/**********************/
+
+* {box-sizing:border-box}
+
+/* Bildeshow container */
+.photoshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Gjømmer bildene som default */
+.photo {
+  display: none;
+  width: 100%;
+}
+
+/* Neste og forrige knapp */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 17px;
+  color: white;
+  font-weight: bold;
+  font-size: 10vw;
+  transition: 0.6s ease;
+  opacity: 0;
+}
+
+/* Plasserer "neste" knappen til høyre */
+.next {
+  right: 0;
+
+}
+
+/* Hva som skjer når man holder over knapene */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+  opacity: 100;
+}
+
+
+/* Faded overgang fra bilde til bilde */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 
 
@@ -895,4 +1116,35 @@ h1 {
 #medlem_vipps_bilde {
   width: 60%;
   margin-bottom: 15%;
+}
+
+/*Komiteer */
+#komiteGrid {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 5fr 4fr ;
+  column-gap: 2rem;
+
+}
+@media only screen and (max-width: 800px) {
+  #komiteGrid {
+    grid-template-columns:1fr;
+    grid-template-areas:
+     "one" 
+     "two";
+    padding:5rem;
+    padding-bottom: 5rem;
+ }
+ #komiteGridOne {
+  grid-area: one;
+  margin-left:0%;
+}
+
+#komiteGridTwo {
+  grid-area: two;
+  margin-left: 0%;
+}
+
+#komiteGridOne #komite_arrbilde{
+  margin-top: 30px;
 }
