@@ -5,10 +5,12 @@
 }
 
 p {
-  font-size: 1.2vw;
+  font-size: 15px;
   font-style: normal;
   font-weight: 200;
+  line-height: 22px;
   /* Tror det var dette som ødela sidene. Kommenterte det ut for å få det tilbake til vanlig:
+  font-size: 1.2vw;
   font-weight: normal;
   margin-top: 0%;
   line-height: 250%;*/
@@ -33,7 +35,8 @@ h1 {
 
 h2 {
   font-weight: normal;
-  font-size: 1.6vw;
+  /* vw gjør skriften om te maur når du krympe skjermen.
+  font-size: 1.6vw;*/
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -694,7 +697,7 @@ h1 {
 #om_oss_sitat {
   border-left-style: solid;
   border-color: #5c5c5c;
-  font-size: 100%;
+  /*font-size: 100%;*/
   /*padding: 5% auto 2% 2%;*/
   padding-top: 1%;
   padding-left: 2%;
@@ -856,6 +859,13 @@ h1 {
 
 
 
+
+
+
+
+
+
+
 /*************************/
 /* CSS til arrangementer */
 /*************************/
@@ -916,7 +926,17 @@ h1 {
   grid-row-end: 5;
 }
 
+#arr_tittel {
+  margin-bottom: 1%;
+}
+
 /* Høyre side */
+.arr_h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
 .arr_ikon_kuler {
   position: relative;
   margin-bottom: -3px;
@@ -925,8 +945,8 @@ h1 {
 
 .arr_prikkregler {
   font-size: 13px;
-  font-weight: 200;
-  line-height: 16px;
+  /* Denne er nå blitt standard: font-weight: 200;*/
+  line-height: 18px;
 }
 
 /* Arrangement-grid */
@@ -982,6 +1002,10 @@ h1 {
 }
 
 /* Innhold i arrangement */
+.arr_tekst_i_bokser {
+  line-height: normal;
+}
+
 .arr_ikon {
   position: relative;
   margin-bottom: -2px;
@@ -1123,6 +1147,7 @@ h1 {
 
 #medlem_vippsnummer_nummer {
   font-size: 23px;
+  font-weight: 500;
   margin: 2% auto 8% 2%;
 }
 
