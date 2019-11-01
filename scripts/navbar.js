@@ -60,6 +60,13 @@ function createFooter(tarElement) {
     createModElement("li",ulikon);
     createModElement("li",ulikon);
 
+    createModElement("a",ulikon.children[0],"","",["id","js-parico"])
+    createModElement("a",ulikon.children[1],"","",["id","js-faceico"])
+    createModElement("a",ulikon.children[2],"","",["id","js-instaico"])
+
+    createModElement("img",document.getElementById("js-parico"),"","",[["src","img/ico/pareto.png"],["alt","Pareto"],["width","32"]])
+    createModElement("img",document.getElementById("js-faceico"),"","",[["src","img/ico/facebook.png"],["alt","Facebook"],["width","32"]])
+    createModElement("img",document.getElementById("js-instaico"),"","",[["src","img/ico/instagram.png"],["alt","Instagram"],["width","32"]])
     
     createModElement("li",ulkontakt);
     createModElement("li",ulkontakt);

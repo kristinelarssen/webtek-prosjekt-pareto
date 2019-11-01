@@ -169,11 +169,21 @@ div#content {
 
   }
 
-#uladresse, #ulkontakt {
+#uladresse, 
+
+#ulkontakt {
   list-style: none;
   text-align: center;
+  list-style: url("../img/ico/email.png")
 }
 
+#ulikon {
+  list-style: none;
+}
+
+#ulikon > li {
+  display: inline;
+}
 
 /* CSS/Media query < 1000px for footer/header */
 @media only screen and (max-width: 868px) {
