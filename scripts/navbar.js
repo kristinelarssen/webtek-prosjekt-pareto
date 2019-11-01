@@ -68,10 +68,15 @@ function createFooter(tarElement) {
     createModElement("img",document.getElementById("js-faceico"),"","",[["src","img/ico/facebook.png"],["alt","Facebook"],["width","32"]])
     createModElement("img",document.getElementById("js-instaico"),"","",[["src","img/ico/instagram.png"],["alt","Instagram"],["width","32"]])
     
+    createModElement("li",ulkontakt,"Styret: ");
     createModElement("li",ulkontakt);
-    createModElement("li",ulkontakt);
-    createModElement("li",ulkontakt);
-    createModElement("li",ulkontakt);
+    createModElement("li",ulkontakt,"Turkom: ");
+    createModElement("li",ulkontakt,"Fadderkom: ");
+
+    createModElement("a",ulkontakt.children[0],"pareto.linjeforening@gmail.com","mailto:pareto.linjeforening@gmail.com")
+    createModElement("a",ulkontakt.children[1],"Vilfredo Pareto","https://www.facebook.com/vilfredo.pareto.370")
+    createModElement("a",ulkontakt.children[2],"pareto.linjeforening.tur@gmail.com","mailto:pareto.linjeforening.tur@gmail.com")
+    createModElement("a",ulkontakt.children[3],"pareto.fadderkom@gmail.com","mailto:pareto.fadderkom@gmail.com")
 
     
     createModElement("li",uladresse,"Etasje 3, 3056");

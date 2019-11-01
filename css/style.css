@@ -113,11 +113,14 @@ div#content {
 #js-header-logo {
   height: 80%;
   display: inline-block;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 
 #js-header-logoimg {
-  height: 100%;
+  height: 62px;
+  width: 167px;
 
 }
 
@@ -126,6 +129,7 @@ div#content {
   right: 0;
   bottom: 0;
   display: inline;
+  padding-right: 10px;
 }
 
 .js-header-li {
@@ -152,6 +156,7 @@ div#content {
 
 #js-footer-divikon {
   flex: 1;
+  position: relative;
 }
 
 #js-footer-divkontakt {
@@ -166,24 +171,43 @@ div#content {
 }
 
 .js-footer-ulhead {
-
+  text-align: center;
   }
 
-#uladresse, 
-
-#ulkontakt {
+#ulikon {
+  position: absolute;
   list-style: none;
   text-align: center;
-  list-style: url("../img/ico/email.png")
+  padding: 0;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
-#ulikon {
-  list-style: none;
-}
-
+  
 #ulikon > li {
-  display: inline;
+   display: inline-block;
+   padding-right: 10px;
+   padding-left: 10px;
+   width: 33%;
 }
+
+#ulkontakt {
+  text-align: left;
+  list-style: url("../img/ico/email.png");
+  font-size: calc(4px + 0.5rem);
+}
+
+#ulkontakt > li > a {
+  color: white;
+}
+
+#uladresse {
+  list-style: none;
+  text-align: center;
+  font-size: calc(5px + 0.5rem);
+  padding: 0;
+} 
 
 /* CSS/Media query < 1000px for footer/header */
 @media only screen and (max-width: 868px) {
@@ -198,6 +222,8 @@ div#content {
     display: block;
     position: relative;
     padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -242,9 +268,6 @@ div#content {
     text-align: center;
   }
 
-
-
-
   #js-header {
     height: auto;
     text-align: center;
@@ -258,18 +281,40 @@ div#content {
   }
   .js-header-li {
     display: block;
-    padding: 5px,0,5px,0;
+    padding-top:12px;
+    padding-bottom:12px;
+    margin:0;
   }
 
-#js-footer-divkontakt {
-  border: 0;
-}
+  #js-footer-divkontakt {
+    border: 0;
+  }
+  
+  #uladresse, #ulkontakt {
+    padding: 0;
+  }
 
-#uladresse, #ulkontakt {
-  padding: 0;
-}
+  #ulikon {
+    padding: 0;
+    margin-top: 20px;
+    position: relative;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    top: unset;
+    left: unset;
+    -ms-transform: none;
+    transform: none;
+  }
+  
+  #ulikon > li {
+    padding: 10px,20px,0,20px;
+    width: unset;
+  }
 
-
+  #ulkontakt {
+    text-align: center;
+  }
 
 }
 
