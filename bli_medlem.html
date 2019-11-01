@@ -37,7 +37,7 @@
 
             <label for="fornavn" class="medlem_form_label">Fornavn:
               <br>
-              <input type="text" name="fornavn" id="fornavn" autofocus required class="medlem_skjema_input">
+              <input type="text" name="fornavn" id="fornavn" pattern="[A-Za-z]{2,70}" autofocus required class="medlem_skjema_input">
             </label>
             <br><br>
 
@@ -88,10 +88,6 @@
         </div>
         </div>
 
-        <div>
-          <footer></footer>
-        </div>
-
       </div>
 
       <footer>
@@ -102,6 +98,7 @@
 
     <script src="./scripts/navbar.js" type="text/javascript"></script>
     <script src="./scripts/dropdown.js" type="text/javascript"></script>
+    <script src="./scripts/bli_medlem.js" type="text/javascript"></script>
 
   </body>
 
