@@ -172,6 +172,9 @@ div#content {
 
 .js-footer-ulhead {
   text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
   }
 
 #ulikon {
@@ -193,9 +196,15 @@ div#content {
 }
 
 #ulkontakt {
-  text-align: left;
+  text-align: center;
   list-style: inside url("../img/ico/email.png");
   font-size: calc(4px + 0.5rem);
+  padding-inline-start: 10px;
+}
+
+#ulkontakt > li {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #ulkontakt > li > a {
@@ -210,7 +219,7 @@ div#content {
 } 
 
 /* CSS/Media query < 1000px for footer/header */
-@media only screen and (max-width: 868px) {
+@media only screen and (max-width: 900px) {
   #js-header {
     height: auto;
     text-align: center;
