@@ -14,14 +14,22 @@ p {
 }
 
 h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  font-style: normal;
+  margin-top: 10%;
+ }
+
+/*h2 {
+  Forslag, trenger ikke å bli bra.
+  font-style: normal;
   font-weight: normal;
   font-size: 2.2vw;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
- }
+ }*/
 
 h2 {
-
   font-weight: normal;
   font-size: 1.6vw;
   line-height: 150%;
@@ -29,11 +37,14 @@ h2 {
 }
 
 h3 {
+  /* Forslag, trenger ikke å bli bra.
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px; */
   font-weight: normal;
   font-size: 1.4vw;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
-
 }
 
 /*  */
@@ -665,11 +676,12 @@ h1 {
 #om_oss_sitat_img {
   width: 100%;
   position: relative;
-  bottom: 17%;
+  bottom: 3.3%;
 }
 
 #om_oss_sitat {
   border-left-style: solid;
+  border-color: #5c5c5c;
   font-size: 100%;
   /*padding: 5% auto 2% 2%;*/
   padding-top: 1%;
@@ -678,9 +690,9 @@ h1 {
   margin: 10% auto auto 4%;
 }
 
-.om_oss_faktabokser {       /* Vil få disse kvadratiske selv om man justerer vinduet. Må kanskje også lengre opp. */
+.om_oss_faktabokser {
   /*margin: 30% 10% auto 10%;*/
-  /*margin-top: 70%;*/
+  margin-top: 40%;
   margin-left: 15%;
   margin-bottom: 45%;
   width: 95px;;
@@ -1085,18 +1097,19 @@ h1 {
 }
 
 #medlem_pareto_linjeforening {
-  font-size: 25px;
+  font-size: 24px;
   font-style: bold;
+  font-weight: 400;
   margin: 12% auto 5% 2%;
 }
 
 #medlem_vippsnummer_tekst {
-  font-size: 10px;
+  font-size: 13px;
   margin: 0 auto 0 2%;
 }
 
 #medlem_vippsnummer_nummer {
-  font-size: 20px;
+  font-size: 23px;
   margin: 2% auto 8% 2%;
 }
 
