@@ -17,7 +17,7 @@ h1 {
   font-size: 40px;
   font-weight: lighter;
   font-style: normal;
-  margin-top: 10%;
+  margin-top: 10%; 
  }
 
 /*h2 {
@@ -47,6 +47,13 @@ h3 {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.boldFont {
+  font-weight: bold;
+}
+
+.italicFont {
+  font-style: oblique;
+}
 /*  */
 
 /*  */
@@ -310,7 +317,7 @@ div#content {
   }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1025px) {
   #econnectGrid {
     grid-template-columns:1fr;
     grid-template-areas:
@@ -564,10 +571,13 @@ div#content {
 /*Sentrerer innholdet*/
 #nyStudentGrid {
   display: grid;
-  padding: 5rem;
+  /*padding: 5rem; */
   grid-template-columns: 5fr 4fr ;
   column-gap: 3rem;
   background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 10%;
 }
 
 .gridItem {   
@@ -589,7 +599,7 @@ div#content {
     grid-template-areas:
      "one"
      "two";
-    padding:5rem;
+    /*padding:5rem; */
   }
   .gridItem {
     padding-bottom: 2%;
@@ -717,10 +727,14 @@ h1 {
 /*Sentrerer innholdet*/
 #styretGrid {
   display: grid;
-  padding: 5rem;
+  /*padding: 5rem; */
   grid-template-columns: 3fr 6fr ;
   column-gap: 3rem;
   background-color: white;
+  row-gap: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 10%;
 }
 #startEndGrid { /* Gjenbrukes også i ny_student.html */
   grid-column-start: 1;
@@ -733,18 +747,9 @@ h1 {
   margin-bottom: 10%; 
 }
 
-.boldFont {
-  font-weight: bold;
-}
-
-.italicFont {
-  font-style: oblique;
-}
-
 .styreGridItem {   /* Gjenbrukes også hos: styret.html */
   display: inline-block;
   text-align: left;
-  padding-bottom: 50px;
 }
 
 /* For mindre skjermer */
@@ -754,16 +759,15 @@ h1 {
     grid-template-areas:
      "one"
      "two";
-    padding:3rem;
+    /*padding:3rem; */
+    row-gap: 0.2rem;
+   
   }
   .styrebilde {
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 5px; 
-  }
-  .styreGridItem {
-    padding-bottom: 2%;
   }
 
   #startEndGrid {  /* Gjenbrukes også i ny_student.html */
@@ -779,13 +783,14 @@ h1 {
 /* css til Slideshow */
 /**********************/
 
-* {box-sizing:border-box}
+/** {box-sizing:border-box}*/
 
 /* Bildeshow container */
 .photoshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
+  
 }
 
 /* Gjømmer bildene som default */
@@ -798,27 +803,33 @@ h1 {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -20px;
   padding: 17px;
+  top: 5%;
   color: white;
   font-weight: bold;
   font-size: 10vw;
   transition: 0.6s ease;
+ padding-top: 16%;
+  padding-bottom: 16%; 
   opacity: 0;
 }
 
 /* Plasserer "neste" knappen til høyre */
 .next {
   right: 0;
+  padding-left: 45%;
+}
 
+.prev {
+  padding-right: 45%;
 }
 
 /* Hva som skjer når man holder over knapene */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0);
-  opacity: 100;
+ opacity: 100; 
 }
 
 
