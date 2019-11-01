@@ -194,7 +194,7 @@ div#content {
 
 #ulkontakt {
   text-align: left;
-  list-style: url("../img/ico/email.png");
+  list-style: inside url("../img/ico/email.png");
   font-size: calc(4px + 0.5rem);
 }
 
@@ -272,6 +272,11 @@ div#content {
     height: auto;
     text-align: center;
   }
+
+  #js-header-logo {
+    padding-left: 0;
+  }
+
   #js-header-logoimg {
     display: block;
   }
