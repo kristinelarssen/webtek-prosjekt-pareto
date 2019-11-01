@@ -1,5 +1,5 @@
 
-h1{
+#overskriftVedtekter{
     font-weight: normal;
     font-size: 200%;
     line-height: 150%;
@@ -33,7 +33,7 @@ p{
     background-color: white;
   }
 
-ul{
+#listeVedtekter{
 
     margin-top: 0%;
     font-style: normal;

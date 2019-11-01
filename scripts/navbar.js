@@ -22,12 +22,12 @@ function createNavbar(tarElement) {
     const lielements = document.getElementsByClassName("js-header-li");
     /* createModElement("a", lielements[0], "Om Pareto", "om_pareto.html", [["class", "js-header-link"], "id", "js-dropdown"]); */
     createModElement("div",lielements[0],"","",[["class","dropdown"],["id","js-dropcontainer"]]);
-    createModElement("a",document.getElementById("js-dropcontainer"),"Om oss ˅ ","",[["onclick","dropdownFunction()"],["class","dropdownButton"],["class","js-header-link"],["id","dropdownOmOss"]])
+    createModElement("a",document.getElementById("js-dropcontainer"),"Om oss ˅ ","",[["onclick","dropdownFunction()"],["class","dropdownButton js-header-link"],["id","dropdownOmOss"]])
     createModElement("div",document.getElementById("js-dropcontainer"),"","",[["id","Dropdown"],["class","dropdownItems"]])
     createModElement("a",document.getElementById("Dropdown"),"Om Pareto","om_pareto.html",["class","js-header-link"])
     createModElement("a",document.getElementById("Dropdown"),"Komiteer","komiteer.html",["class","js-header-link"])
     createModElement("a",document.getElementById("Dropdown"),"Styret","styret.html",["class","js-header-link"])
-    createModElement("a",document.getElementById("Dropdown"),"Vedtekter","vedteker.html",["class","js-header-link"])
+    createModElement("a",document.getElementById("Dropdown"),"Vedtekter","vedtekter.html",["class","js-header-link"])
 
     createModElement("a", lielements[1], "Arrangementer", "arrangementer.html", ["class", "js-header-link"]);
     createModElement("a", lielements[2], "Ny student?", "ny_student.html", ["class", "js-header-link"]);
@@ -45,6 +45,9 @@ function createFooter(tarElement) {
     const divkontakt = document.querySelector("#js-footer-divkontakt");
     const divadresse = document.querySelector("#js-footer-divadresse");
 
+    createModElement("h5",divadresse,"Besøksadresse","",["class","js-footer-ulhead"]);
+    createModElement("h5",divkontakt,"Kontakt","",["class","js-footer-ulhead"]);
+
     createModElement("ul", divikon, "", "", ["id", "ulikon"]);
     createModElement("ul", divkontakt, "", "", ["id", "ulkontakt"]);
     createModElement("ul", divadresse, "", "", ["id", "uladresse"]);
@@ -57,13 +60,13 @@ function createFooter(tarElement) {
     createModElement("li",ulikon);
     createModElement("li",ulikon);
 
-    createModElement("p",ulkontakt,"Kontakt","",["id","js-footer-kontakthead"]);
+    
     createModElement("li",ulkontakt);
     createModElement("li",ulkontakt);
     createModElement("li",ulkontakt);
     createModElement("li",ulkontakt);
 
-    createModElement("p",uladresse,"Besøksadresse");
+    
     createModElement("li",uladresse,"Etasje 3, 3056");
     createModElement("li",uladresse,"NTNU Adolf Øien Bygget");
     createModElement("li",uladresse,"Klæbuveien 72");

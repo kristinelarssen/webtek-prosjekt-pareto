@@ -1,39 +1,62 @@
 /* Generelt - p, h1-6, osv. */
 
 * {
-  font-family: Roboto, arial;
+  font-family: Roboto, sans-serif, arial;  /* Endret alt. 2 til sans-serif. Hvis det kødder til alt tar vi den bare bort. */
 }
 
 p {
-  margin-top: 0%;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.2vw;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 0%;
   line-height: 250%;
-  color: rgba(0, 0, 0, 0.6);
+
 }
 
 h1 {
-  font-weight: normal;
-  font-size: 1.3vw;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  font-weight: lighter;
+  font-style: normal;
+  margin-top: 10%;
  }
 
-h2 {
+/*h2 {
+  Forslag, trenger ikke å bli bra.
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2vw;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+ }*/
 
+h2 {
+  font-weight: normal;
+  font-size: 1.6vw;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 h3 {
-
+  /* Forslag, trenger ikke å bli bra.
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px; */
+  font-weight: normal;
+  font-size: 1.4vw;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
 }
-/*  */
 
 /*  */
 
 /*  */
 
+/*  */
+
+
+/****************************************/
 /* Setup for body/header/footer spacing */
+/****************************************/
 
 html, body {
   margin: 0;
@@ -141,3 +164,989 @@ div#content {
 
 #js-footer-divadresse {
   flex: 1;
+}
+
+.js-footer-ulhead {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+
+
+
+
+
+/*********************/
+/* CSS til Vedtekter */
+/*********************/
+
+.vedtekter{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#overskriftVedtekter{
+  font-weight: normal;
+  font-size: 200%;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: -2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#listeVedtekter{
+
+  margin-top: 0%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#vedtekterbox{
+
+  margin: 0 11%;
+  padding: 5rem;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************/
+/* css til econnect */
+/********************/
+
+#econnectBanner {
+  width:100.1%;
+}
+
+.econnectContent h1 {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.econnectContent p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80%;
+  line-height: 250%;
+  color: rgba(0, 0, 0, 0.6);
+} 
+
+#econnectGrid {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 5fr 4fr;
+  column-gap: 2rem;
+}
+
+#econnectLogo{
+  width: 70%;
+  padding:10%;
+}
+
+#econnectLink:link {
+  font-size: 1rem;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#econnectLink:visited {
+  font-size: 1rem;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#econnectLink:hover {
+  color:rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#econnectLink:active {
+  color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  text-decoration: underline lightgrey;
+}
+
+.econnectOm{
+  font-weight:normal;
+}
+
+#econnectBottomParagrahp {
+  margin-left: 5rem;
+  margin-top: -5rem;
+}
+#econnectBilde {
+  width: 80%;
+  margin-top: 4%;
+  border-radius: 5px;
+}
+
+#econnectKontakt {
+  margin-left: 5rem;
+  padding: 5% 0% 10% 0%;
+  }
+
+
+@media only screen and (max-width: 1000px) {
+  #econnectGrid {
+    grid-template-columns:1fr;
+    grid-template-areas:
+     "one"
+     "two";
+    padding:5rem;
+    padding-bottom: 5rem;
+    padding-top:0rem;
+ }
+ #econnectGridOne {
+  grid-area: one;
+  margin-left:0%;
+}
+
+#econnectGridTwo {
+  grid-area: two;
+  margin-left: 0%;
+}
+
+#econnectBottomParagrahp {
+  max-width: 100%;
+  margin-right:5rem;
+  padding-top:2rem;
+}
+
+.econnectOm {
+  margin-left:0%;
+  padding-left:0%;
+}
+
+#econnectLogo{
+  display:none;
+}
+
+#econnectBilde{
+  width:70%;
+  margin:0rem 2rem 0rem 2rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/***********************/
+/* css til kontakt oss */
+/***********************/
+
+#kontaktOssGrid {
+  display: grid;
+  margin: 0 11%;
+  padding: 5rem;
+  grid-template-columns: 18fr 22fr ;
+  column-gap: 3rem;
+  background-color: white;
+}
+
+.kontaktOssGridItem {
+  display: inline-block;
+  text-align: left;
+  border-right: 1px solid #3A4B69;
+}
+
+
+.kontaktOssGridItem:last-child{
+  border-right: none;
+  margin-left:25%;
+}
+
+.kontaktOssh1 {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#kontaktOssGrid p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80%;
+  line-height: 250%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#kontaktOssKommentar {
+  width: 68%;
+}
+
+#kontaktOssForm {
+  font-size: 75%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#kontaktOssForm input {
+  min-width: 68%;
+  border: 0.5px solid;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.6);
+  font-size: 100%;
+}
+
+#kontaktOssForm textarea {
+  min-width: 68%;
+  border: 0.5px solid;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.6);
+  resize: none
+}
+
+.kontaktOssButton {
+  background-color: #3A4B69;
+  border: none;
+  color: white;
+  border-radius: 28px;
+  cursor: pointer;
+  width:25%;
+  float: right;
+  margin-right: 30%;
+}
+
+.kontaktOssLineTwo {
+  margin-right:30%;
+}
+
+.kontaktOssIcon {
+  width: 5%;
+  margin-left: -5%;
+}
+
+#kontaktOssStyret{
+  padding-top: 3%;
+}
+
+.kontaktOssKart {
+  width: 45%;
+  height: 20%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 3%;
+  margin: 2%;
+  margin-top:20%;
+}
+
+#kontaktOssMazemap{
+  margin-left: -10%;
+}
+
+@media only screen and (max-width: 800px) {
+  #kontaktOssGrid {
+    grid-template-areas:
+     "Last Last"
+     "First First" ;
+    padding:1rem 3rem 5rem 3rem;
+    /* padding-bottom: 5rem; */
+ }
+ #KontaktOssGridFirst {
+  grid-area: First;
+  align-content: center;
+}
+
+#KontaktOssGridLast {
+  grid-area: Last;
+  text-align: center;
+
+}
+
+.kontaktOssGridItem{
+  border-right:none;
+}
+
+#kontaktOssGrid{
+  margin: 0%;
+}
+#kontaktOssMazemap{
+  margin:0%;
+}
+
+}
+
+
+
+
+
+
+/********************/
+/* css til dropdown */
+/********************/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdownItems {
+  display:block;
+}
+
+.dropdown:hover #dropdownOmOss {
+  padding-bottom: 160%;
+}
+
+.dropdownItems {
+  display: none;
+  position: absolute;
+  top:160%;
+  left:-10%;
+  background-color: #5c687e;
+  min-width: 150%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#Dropdown > a{
+  display: block;
+  font-size: 120%;
+  padding: 0.5rem 1rem;
+}
+.dropdownItems a:hover {
+  text-shadow:0px 0px 20px white;
+  transition: all 0.2s ease-in;
+  text-decoration:none;
+}
+
+#dropdownOmOss{
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+
+
+
+/***********************/
+/* css til ny_student */
+/***********************/
+
+/*Lager grå marger på siden*/
+#box{
+  background-color: white;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+/*Sentrerer innholdet*/
+#nyStudentGrid {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 5fr 4fr ;
+  column-gap: 3rem;
+  background-color: white;
+}
+
+.gridItem {   
+  display: inline-block;
+  text-align: left;
+}
+
+.nyStudentBilde {
+  width: 100%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  border-radius: 5px;
+}
+
+/* For mindre skjermer */
+@media only screen and (max-width: 1000px) {
+  #nyStudentGrid {
+    grid-template-columns:1fr;
+    grid-template-areas:
+     "one"
+     "two";
+    padding:5rem;
+  }
+  .gridItem {
+    padding-bottom: 2%;
+  }
+  .nyStudentBilde {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px; 
+  }
+  .nyStudentBildeDiv img{
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+/*********************/
+/* CSS til om_pareto */
+/*********************/
+
+/* Grid */
+#om_oss_grid_container {
+  display: grid;
+  grid-template-columns: 13.1% 24.6% 24.6% 24.6% 13.1%;
+  /*grid-row-gap: 3%;*/
+  width: 60%;
+  margin-left: 20%;
+}
+
+#om_oss_intro_grid {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+#om_oss_sitatbilde_grid {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 20%;
+}
+
+#om_oss_sitat_grid {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+#om_oss_faktaboks_tom1_grid {
+  grid-column-start: 1;
+  grid-column-end: 1.25;
+}
+
+#om_oss_faktaboks1_grid {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: 9%;
+}
+
+#om_oss_faktaboks2_grid {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-left: 9%;
+}
+
+#om_oss_faktaboks3_grid {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin-left: 9%;
+}
+
+#om_oss_faktaboks_tom2_grid {
+  grid-column-start: 5.75;
+  grid-column-end: 6;
+}
+
+/* Annet */
+/*
+Måtte ta bort denne for å ikke overkjøre. Sjekk hvordan det ser ut nå og evt. endre den/legge til id på denne.
+h1 {
+  font-size: 230%;
+}*/
+
+#om_oss_sitat_img {
+  width: 100%;
+  position: relative;
+  bottom: 3.3%;
+}
+
+#om_oss_sitat {
+  border-left-style: solid;
+  border-color: #5c5c5c;
+  font-size: 100%;
+  /*padding: 5% auto 2% 2%;*/
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-bottom: 3%;
+  margin: 10% auto auto 4%;
+}
+
+.om_oss_faktabokser {
+  /*margin: 30% 10% auto 10%;*/
+  margin-top: 40%;
+  margin-left: 15%;
+  margin-bottom: 45%;
+  width: 95px;;
+  height: 95px;
+
+  border-style: solid;
+  border-color: #C4C4C4;
+  border-radius: 12px;
+  border-width: 1.5px;
+
+  text-align: center;
+  font-size: 17px;
+}
+
+
+
+
+/*******************/
+/* css til Styret */
+/*******************/
+
+/*Sentrerer innholdet*/
+#styretGrid {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 3fr 6fr ;
+  column-gap: 3rem;
+  background-color: white;
+}
+#startEndGrid { /* Gjenbrukes også i ny_student.html */
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.styrebilde {
+  width: 100%;
+  margin-top: 30%;
+  margin-bottom: 10%; 
+}
+
+.boldFont {
+  font-weight: bold;
+}
+
+.italicFont {
+  font-style: oblique;
+}
+
+.styreGridItem {   /* Gjenbrukes også hos: styret.html */
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+/* For mindre skjermer */
+@media only screen and (max-width: 1000px) {
+  #styretGrid {
+    grid-template-columns:1fr;
+    grid-template-areas:
+     "one"
+     "two";
+    padding:3rem;
+  }
+  .styrebilde {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px; 
+  }
+  .styreGridItem {
+    padding-bottom: 2%;
+  }
+
+  #startEndGrid {  /* Gjenbrukes også i ny_student.html */
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+}
+
+
+
+/**********************/
+/* css til Slideshow */
+/**********************/
+
+* {box-sizing:border-box}
+
+/* Bildeshow container */
+.photoshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Gjømmer bildene som default */
+.photo {
+  display: none;
+  width: 100%;
+}
+
+/* Neste og forrige knapp */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 17px;
+  color: white;
+  font-weight: bold;
+  font-size: 10vw;
+  transition: 0.6s ease;
+  opacity: 0;
+}
+
+/* Plasserer "neste" knappen til høyre */
+.next {
+  right: 0;
+
+}
+
+/* Hva som skjer når man holder over knapene */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+  opacity: 100;
+}
+
+
+/* Faded overgang fra bilde til bilde */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+/*************************/
+/* CSS til arrangementer */
+/*************************/
+
+#arr_grid_container {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: auto;
+  grid-auto-rows: 1fr;
+  grid-row-gap: 5%;
+  /*width: 70%;*/
+  height: 100%;
+  margin-left: 9.25%;
+  margin-right: 9.25%;
+}
+
+#arr_tittel_grid {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#arr_kategorier_grid {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#arr_kategorier_tittel {
+  margin-top: 0;
+}
+
+#arr_prikkregler_grid {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+#arr_arr1_grid {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#arr_arr2_grid {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#arr_arr3_grid {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/* Høyre side */
+.arr_ikon_kuler {
+  position: relative;
+  margin-bottom: -3px;
+  margin-right: 3px;
+}
+
+.arr_prikkregler {
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 16px;
+}
+
+/* Arrangement-grid */
+.arr_arrangement_grid {
+  display: grid;
+  height:100%;
+  grid-template-columns: 53% 47%;
+  grid-template-rows: 1 1fr;
+  width: 100%;
+  padding: 1% 5% 0% 5%;
+  background-color: #F4F4F4;
+  border-left-style: solid;
+  border-width: 5px;
+  border-radius: 0 4% 4% 0;
+}
+
+.arr_arrtittel_grid {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.arr_arrtittel {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.arr_tekst_grid {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.arr_bilde_grid {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+}
+
+/* Kantfarge ut i fra kategori */
+.arr_aktivitet {
+  border-color: #F2E252;
+}
+
+.arr_begivenhet {
+  border-color: #F3316B;
+}
+
+.arr_faglig {
+  border-color: #62AAFE;
+}
+
+.arr_fest {
+  border-color: #58E255;
+}
+
+/* Innhold i arrangement */
+.arr_ikon {
+  position: relative;
+  margin-bottom: -2px;
+  margin-right: 3px;
+}
+
+.arr_link {
+  color: black;
+  text-decoration: underline;
+}
+
+.arr_plasser {
+  background-color: #E3E1E1;
+  border-radius: 2px;
+  width: 35%;
+  text-align: center;
+}
+
+.arr_bilde {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/**********************/
+/* CSS til Bli medlem */
+/**********************/
+
+
+/* Grid */
+#medlem_grid_container {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  width: 76%;
+  margin-left: 12%;
+}
+
+#medlem_intro_grid {
+  grid-column-start: 1;
+  grid-column-end: 11;
+  margin-bottom: 3%;
+}
+
+#medlem_skjema_grid {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+#medlem_medlemsfordeler_grid {
+  grid-column-start: 7;
+  grid-column-end: 11;
+}
+
+#medlem_vipps_grid {
+  grid-column-start: 7;
+  grid-column-end: 11;
+}
+
+/* Andre ting */
+#medlem_tittel {
+  margin-top: 7%;
+}
+
+/* Skjema */
+#medlem_skjema {
+  background-color: #d3d3d354;
+  border-radius: 6px;
+  padding: 1% 10% 8% 10%;
+  font-size: 15px;
+}
+
+#medlem_form_overskrift {
+  margin-top: 7%;
+}
+
+#medlem_skjema_info {
+  font-size: 80%;
+  color: grey;
+  margin-top: 8%;
+}
+
+.medlem_form_label {
+  line-height: 27px;
+  margin-bottom: 50px;
+}
+
+.medlem_skjema_input {
+  padding: 1%;
+  font-size: 12px;
+  border-radius: 3px;
+  border-color: grey;
+  border-width: 1px;
+}
+
+#medlem_button {
+  padding: 6px;
+  border-radius: 3px;
+  border-color: rgba(52, 177, 50, 0.67);
+  font-size: 13px;
+  background-color: rgba(52, 177, 50, 0.67);
+  color: white;
+}
+
+/* Medlemsfordeler */
+#medlem_medlemsfordeler {
+  border-style: solid;
+  border-color: #C5C5C5;
+  border-radius: 6px;
+  border-width: 2px;
+  padding: 1% 7% 11% 10%;
+}
+
+#medlem_medlemsfordeler_liste {
+  padding-left: 11%;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.medlem_medlemsfordeler_li {
+  margin-bottom: 8%;
+}
+
+#medlem_pareto_linjeforening {
+  font-size: 24px;
+  font-style: bold;
+  font-weight: 400;
+  margin: 12% auto 5% 2%;
+}
+
+#medlem_vippsnummer_tekst {
+  font-size: 13px;
+  margin: 0 auto 0 2%;
+}
+
+#medlem_vippsnummer_nummer {
+  font-size: 23px;
+  margin: 2% auto 8% 2%;
+}
+
+#medlem_vipps_bilde {
+  width: 60%;
+  margin-bottom: 15%;
+}
+
+/*Komiteer */
+#komiteGrid {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 5fr 4fr ;
+  column-gap: 2rem;
+
+}
+@media only screen and (max-width: 800px) {
+  #komiteGrid {
+    grid-template-columns:1fr;
+    grid-template-areas:
+     "one" 
+     "two";
+    padding:5rem;
+    padding-bottom: 5rem;
+ }
+ #komiteGridOne {
+  grid-area: one;
+  margin-left:0%;
+}
+
+#komiteGridTwo {
+  grid-area: two;
+  margin-left: 0%;
+}
+
+#komiteGridOne #komite_arrbilde{
+  margin-top: 30px;
+}
+}
+

@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+
+    <title>Pareto</title>
+    <link rel="icon" href="img/a.png" type="image">
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dropdown.css">
 </head>
 
 <body>
@@ -14,14 +16,38 @@
             <div id="js-header"></div>
         </header>
         <div id="content">
-            
+
         </div>
+        <!-- Bildeshow-container -->
+        <div class="photoshow-container">
+
+            <!-- Full bredde på bildene -->
+            <div class="photo fade">
+                <img src="img/photoshow.png" style="width:100%">
+            </div>
+
+            <div class="photo fade">
+                <img src="img/photoshow2.png" style="width:100%">
+            </div>
+
+            <div class="photo fade">
+                <img src="img/photoshow3.jpg" style="width:100%">
+            </div>
+
+            <!-- Neste og forrige knapper -->
+            <a class="prev" onclick="changePhoto(-1)">&#8249;</a>
+            <a class="next" onclick="changePhoto(1)">&#8250;</a>
+        </div>
+        <br>
+
         <footer>
             <div id="js-footer"></div>
         </footer>
     </div>
+
     <script src="scripts/navbar.js"></script>
     <script src="scripts/dropdown.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 
 </html>
