@@ -2,47 +2,44 @@
 FILE NAME: slideshow.js
 WRITTEN BY: Kristine Larssen
 WHEN: November 2019
-PURPOSE: Bildeshow på fremsiden. Manuell og automatisk bytting av bilder
+PURPOSE: Bildeshow på fremsiden. Manuell og automatisk bytting av bilder.
 */
 
-// Inspirert av: https://www.w3schools.com/howto/howto_js_slideshow.asp
 
-// setter bilde-index til 1, slik at første bilde vises når siden blir lastet inn
-let photoIndex = 1;
+// setter bilde-index til 0, slik at første bilde vises når siden blir lastet inn
+let photoIndex = 0;
+let slideshow = document.getElementById("slideshow");
+let photos = ["img/photoshow.png", "img/photoshow2.png", "img/photoshow3.png", "img/photoshow4.png", "img/photoshow5.png"];
 
-// Viser bildene
-function showPhotos(n) {
-    let photos = document.getElementsByClassName("photo");
-    if (n < 1) {
-        photoIndex = photos.length;
-    }
-    if (n > photos.length) {
-        photoIndex = 1;
-    }
-    for (let i = 0; i < photos.length; i++) {
-        photos[i].style.display = "none";
-    }
-    photos[photoIndex - 1].style.display = "block";
 
+// Viser bildene; viser bildet med bestemt bildeindeks, og gjømmer de andre
+const showPhotos = (i) => {
+    if (i > photos.length - 1) {  // når man er komt til enden, starter man på nytt
+        photoIndex = 0;
+    }
+
+    if (i < 0) {  // om man er komt til starten, blar man til bakerste bilde
+        photoIndex = photos.length - 1;
+    }
+
+    slideshow.setAttribute("src", photos[photoIndex]);
 }
 
 // Blar til neste/forrige bilde
-function changePhoto(n) {
-    showPhotos(photoIndex += n);
+const changePhoto = (i) => {
+    showPhotos(photoIndex += i);
 }
 
 // sørger for at bildene byttes hver 4 sekund
-function autoChange() {
-    let photos = document.getElementsByClassName('photo');
-    if (photoIndex > photos.length) {
-        photoIndex = 1;
+const autoChange = () => {
+    if (photoIndex > photos.length - 1) {
+        photoIndex = 0;  // om man er komt til enden, starter man på nytt
     }
-    for (i = 0; i < photos.length; i++) {
-        photos[i].style.display = "none";
-    }
-    photos[photoIndex - 1].style.display = "block";
+
+    slideshow.setAttribute("src", photos[photoIndex]);
     photoIndex++;
-    setTimeout(autoChange, 6000);
+
+    setTimeout(autoChange, 6000);  // venter 6 sekund før funksjonen kalles på nytt
 }
 
 // sørger for å vise bildene når sida lastes inn, og bytte automaisk hvert 6 sekund
