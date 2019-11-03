@@ -19,10 +19,8 @@
 
         <div id="medlem_intro_grid">
           <h1 id="medlem_tittel">Bli medlem</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur.
+          <p>Det koster 350,- å bli medlem, men ofte redusert pris hvis du blir medlem under fadderuka.
+              Fra andre året av vil det koste 40kr å fornye medlemskapet sitt et år til.
           </p>
         </div>
 
@@ -33,21 +31,21 @@
             </div>
 
             <div id="medlem_skjema">
-            <h3 id="medlem_form_overskrift">Meld deg inn:</h3>
+            <h3 id="medlem_form_overskrift" class="arr_h3">Meld deg inn:</h3>
 
             <label for="fornavn" class="medlem_form_label">Fornavn:
               <br>
-              <input type="text" name="fornavn" id="fornavn" pattern="[A-Za-z]{2,70}" autofocus required class="medlem_skjema_input">
+              <input type="text" name="fornavn" id="fornavn" pattern="[a-zA-Z-æøåÆØÅ]{2,70}" autofocus required class="medlem_skjema_input">
             </label>
             <br><br>
 
             <label for="etternavn" class="medlem_form_label">Etternavn:
               <br>
-              <input type="text" name="etternavn" id="etternavn" required class="medlem_skjema_input">
+              <input type="text" name="etternavn" id="etternavn" pattern="[a-zA-Z-æøåÆØÅ]{1,70}" required class="medlem_skjema_input">
             </label>
             <br><br>
 
-            <label for="email" class="medlem_form_label">e-mail:
+            <label for="email" class="medlem_form_label">E-mail:
               <br>
               <input type="email" name="email" id="email" required class="medlem_skjema_input">
             </label>
@@ -61,7 +59,7 @@
 
             <p id="medlem_skjema_info">
               Husk at du må vippse riktig beløp til Pareto
-              før medlemsforespørselen blir godkjent. Betalingsinformasjon finner du til høyre.
+              før medlemsforespørselen blir godkjent. Betalingsinformasjon finner du nederst på siden.
             </p>
             <br>
 
@@ -73,10 +71,10 @@
 
         <div id="medlem_medlemsfordeler_grid">
           <div id="medlem_medlemsfordeler">
-            <h3>Medlemsfordeler:</h3>
+            <h3 class="arr_h3">Medlemsfordeler:</h3>
             <ul id="medlem_medlemsfordeler_liste">
-              <li class="medlem_medlemsfordeler_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-              <li class="medlem_medlemsfordeler_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+              <li class="medlem_medlemsfordeler_li">Redusert pris på alle vår betalende arrangementer, turer og begivenheter.</li>
+              <li class="medlem_medlemsfordeler_li">Gratis inngang og garderobe på studio 26 hver fredag og lørdag.</li>
               <li class="medlem_medlemsfordeler_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
               <li class="medlem_medlemsfordeler_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
             </ul>

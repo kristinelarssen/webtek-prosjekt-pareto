@@ -11,7 +11,7 @@ p {
   line-height: 22px;
   /* Tror det var dette som ødela sidene. Kommenterte det ut for å få det tilbake til vanlig:
   font-size: 1.2vw;
-  font-weight: normal;
+  /*font-weight: normal;
   margin-top: 0%;
   line-height: 250%;*/
 
@@ -199,7 +199,7 @@ div#content {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-  
+
 #ulikon > li {
    display: inline-block;
    padding-right: 10px;
@@ -228,7 +228,7 @@ div#content {
   text-align: center;
   font-size: calc(5px + 0.5rem);
   padding: 0;
-} 
+}
 
 /* CSS/Media query < 1000px for footer/header */
 @media only screen and (max-width: 900px) {
@@ -256,14 +256,14 @@ div#content {
     height: 100%;
     background-color: #f5f5f5;
   }
-  
+
   #wrapperbody {
     position: relative;
     min-height: unset;
     padding: 0;
     padding-bottom: 0;
   }
-  
+
   #js-header {
     height: auto;
     text-align: center;
@@ -280,7 +280,7 @@ div#content {
     width: 100%;
     background-color: #3A4B69;
   }
-  
+
   #js-footer {
     display: flex;
     flex-direction: column;
@@ -315,7 +315,7 @@ div#content {
   #js-footer-divkontakt {
     border: 0;
   }
-  
+
   #uladresse, #ulkontakt {
     padding: 0;
   }
@@ -332,7 +332,7 @@ div#content {
     -ms-transform: none;
     transform: none;
   }
-  
+
   #ulikon > li {
     padding: 10px,20px,0,20px;
     width: unset;
@@ -343,6 +343,17 @@ div#content {
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*********************/
@@ -393,8 +404,13 @@ div#content {
 
 
 
+
+
+
+
+
 /********************/
-/* css til econnect */
+/* Css til econnect */
 /********************/
 
 #econnectBanner {
@@ -666,6 +682,13 @@ div#content {
 
 
 
+
+
+
+
+
+
+
 /********************/
 /* css til dropdown */
 /********************/
@@ -712,6 +735,14 @@ div#content {
 .show {
   display: block;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -778,6 +809,21 @@ div#content {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*********************/
 /* CSS til om_pareto */
 /*********************/
@@ -787,8 +833,8 @@ div#content {
   display: grid;
   grid-template-columns: 13.1% 24.6% 24.6% 24.6% 13.1%;
   /*grid-row-gap: 3%;*/
-  width: 60%;
-  margin-left: 20%;
+  width: 76%;
+  margin-left: 12%;
 }
 
 #om_oss_intro_grid {
@@ -836,11 +882,6 @@ div#content {
 }
 
 /* Annet */
-/*
-Måtte ta bort denne for å ikke overkjøre. Sjekk hvordan det ser ut nå og evt. endre den/legge til id på denne.
-h1 {
-  font-size: 230%;
-}*/
 
 #om_oss_sitat_img {
   width: 100%;
@@ -875,6 +916,58 @@ h1 {
   text-align: center;
   font-size: 17px;
 }
+
+@media only screen and (max-width: 900px) {
+  #om_oss_faktaboks1_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  #om_oss_faktaboks2_grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  #om_oss_faktaboks3_grid {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    margin-left: 47%;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #om_oss_faktaboks1_grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  #om_oss_faktaboks2_grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  #om_oss_faktaboks3_grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -935,6 +1028,20 @@ h1 {
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1020,6 +1127,13 @@ h1 {
 
 
 
+
+
+
+
+
+
+
 /*************************/
 /* CSS til arrangementer */
 /*************************/
@@ -1027,9 +1141,10 @@ h1 {
 #arr_grid_container {
   display: grid;
   grid-template-columns: 60% 20% 20%;
-  grid-template-rows: auto;
-  grid-auto-rows: 1fr;
+  /*grid-template-rows: auto;*/
+  /*grid-auto-rows: 1fr;*/
   grid-row-gap: 5%;
+  grid-row-gap: 40px;
   /*width: 70%;*/
   height: 100%;
   margin-left: 9.25%;
@@ -1166,6 +1281,10 @@ h1 {
   margin-right: 3px;
 }
 
+.arr_øverste_tekst_arr {
+  margin-top: 0;
+}
+
 .arr_link {
   color: black;
   text-decoration: underline;
@@ -1181,6 +1300,168 @@ h1 {
 .arr_bilde {
   width: 100%;
 }
+
+.arr_bilde_smal {
+  display: none;
+}
+
+#arr_kategorier_grid_smal {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .arr_bilde {
+    display: none;
+  }
+
+  .arr_bilde_smal {
+    display: block;
+    height: 120px;
+    margin-left: 25%;
+    /*width: 80%;
+    margin-right: 0;
+    text-align: right;*/
+  }
+}
+
+/*@media only screen and (max-width: 768px) {*/
+@media only screen and (max-width: 786px) {
+  #arr_grid_container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    /*grid-auto-rows: 1fr;*/
+    /*grid-row-gap: 5%;*/
+    grid-row-gap: 40px;
+    margin-left: 9.25%;
+    margin-right: 9.25%;
+  }
+
+  #arr_tittel_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #arr_kategorier_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #arr_prikkregler_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+
+  #arr_arr1_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  #arr_arr2_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  #arr_arr3_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  #arr_kategorier_grid {
+    display: none;
+  }
+
+  #arr_kategorier_grid_smal {
+    display: block;
+  }
+
+  #arr_prikkregler_siste {
+    padding-bottom: 40px;
+  }
+
+
+  /*#arr_kategorier_grid p {
+    display: inline;
+    margin-bottom: 0;
+  }*/
+
+  .arr_arrangement_grid {
+    display: grid;
+    height:100%;
+    grid-template-columns: 53% 47%;
+    grid-template-rows: 1 1fr;
+    width: 90%;
+    padding: 1% 5% 0% 5%;
+    background-color: #F4F4F4;
+    border-left-style: solid;
+    border-width: 5px;
+    border-radius: 0 4% 4% 0;
+  }
+
+  .arr_bulletpoints {
+    display: inline;
+    margin-left: 6%;
+  }
+
+  #arr_bulletpoints_first {
+    margin-left: 0;
+  }
+
+  /*.arr_bilde {
+    display: block;
+  }
+
+  .arr_bilde_smal {
+    display: none;
+  }*/
+}
+
+@media only screen and (max-width: 558px) {
+  .arr_bulletpoints {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+/* Prøver med den ovenfor i stedet for.
+@media only screen and (max-width: 488px) {
+  .arr_bilde {
+    display: none;
+  }
+
+  .arr_bilde_smal {
+    display: none;
+  }
+
+  .arr_arrangement_grid {
+    display: block;
+    height:100%;
+  }
+
+  .arr_øverste_tekst_arr {
+    margin-top: 15px;
+  }
+}*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1243,7 +1524,8 @@ h1 {
 #medlem_skjema_info {
   font-size: 80%;
   color: grey;
-  margin-top: 8%;
+  margin-top: 5%;
+  line-height: 20px;
 }
 
 .medlem_form_label {
@@ -1295,7 +1577,7 @@ h1 {
 }
 
 #medlem_vippsnummer_tekst {
-  font-size: 13px;
+  font-size: 15px;
   margin: 0 auto 0 2%;
 }
 
@@ -1309,6 +1591,71 @@ h1 {
   width: 60%;
   margin-bottom: 15%;
 }
+
+@media only screen and (max-width: 648px) {
+  #medlem_grid_container {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 76%;
+    margin-left: 12%;
+  }
+
+  #medlem_intro_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-bottom: 3%;
+  }
+
+  #medlem_skjema_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #medlem_medlemsfordeler_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #medlem_vipps_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #medlem_skjema {
+    background-color: #d3d3d354;
+    border-radius: 10px;
+    padding: 1% 10% 8% 10%;
+    font-size: 15px;
+    margin-bottom: 10%;
+  }
+
+  #medlem_vipps_bilde {
+    width: 40%;
+    margin-bottom: 15%;
+  }
+
+  #medlem_medlemsfordeler {
+    border-style: solid;
+    border-color: #C5C5C5;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 1% 8% 3% 5%;
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Komiteer */
 #komiteGrid {
