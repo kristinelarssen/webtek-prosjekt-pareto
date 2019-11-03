@@ -166,9 +166,6 @@ div#content {
   color: white;
 }
 
-#js-footer > div {
-
-}
 
 #js-footer-divikon {
   flex: 1;
@@ -222,7 +219,7 @@ div#content {
 #ulikon > li {
    display: inline;
    padding-right: 10px;
-   padding-left: 10px;
+   padding-left: 0;
 }
 
 #ulkontakt {
@@ -246,6 +243,7 @@ div#content {
   text-align: center;
   font-size: calc(5px + 0.5rem);
   padding: 0;
+  padding-top: 20px;
 } 
 
 /* CSS/Media query < 1000px for footer/header */
