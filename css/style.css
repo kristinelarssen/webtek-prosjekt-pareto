@@ -166,17 +166,33 @@ div#content {
   color: white;
 }
 
+
 #js-footer-divikon {
   flex: 1;
   position: relative;
 }
 
 #js-footer-divkontakt {
+  position: relative;
   flex: 1;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  /* border-left: 1px solid white;
+  border-right: 1px solid white; */
 }
 
+/* For å få border som ikke deler footer helt, men lar det være igjen "gliper" over og under. */
+
+#js-footer-divkontakt::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 66%;
+  left: 50%;
+  top: 50%;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 #js-footer-divadresse {
   flex: 1;
@@ -201,10 +217,9 @@ div#content {
 }
   
 #ulikon > li {
-   display: inline-block;
+   display: inline;
    padding-right: 10px;
-   padding-left: 10px;
-   width: 33%;
+   padding-left: 0;
 }
 
 #ulkontakt {
@@ -228,6 +243,7 @@ div#content {
   text-align: center;
   font-size: calc(5px + 0.5rem);
   padding: 0;
+  padding-top: 20px;
 } 
 
 /* CSS/Media query < 1000px for footer/header */
