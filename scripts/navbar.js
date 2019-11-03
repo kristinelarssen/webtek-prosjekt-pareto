@@ -1,3 +1,5 @@
+//Javascript for header/navbar og footer.
+
 // Targets for å opprette navbar og footer i html.
 const headertar = document.querySelector("#js-header");
 const footertar = document.querySelector("#js-footer");
@@ -60,9 +62,9 @@ function createFooter(tarElement) {
     createModElement("li",ulikon);
     createModElement("li",ulikon);
 
-    createModElement("a",ulikon.children[0],"","",["id","js-parico"])
-    createModElement("a",ulikon.children[1],"","",["id","js-faceico"])
-    createModElement("a",ulikon.children[2],"","",["id","js-instaico"])
+    createModElement("a",ulikon.children[0],"","index.html",["id","js-parico"])
+    createModElement("a",ulikon.children[1],"","https://www.facebook.com/paretolinjeforening/",["id","js-faceico"])
+    createModElement("a",ulikon.children[2],"","https://www.instagram.com/paretolinjeforening",["id","js-instaico"])
 
     createModElement("img",document.getElementById("js-parico"),"","",[["src","img/ico/pareto.png"],["alt","Pareto"],["width","32"]])
     createModElement("img",document.getElementById("js-faceico"),"","",[["src","img/ico/facebook.png"],["alt","Facebook"],["width","32"]])
