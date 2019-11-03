@@ -15,28 +15,20 @@
         <header>
             <div id="js-header"></div>
         </header>
-        <div id="content">
-
-        </div>
         <!-- Bildeshow-container -->
-        <div class="photoshow-container">
+        <div id="slideshow_container">
 
-            <!-- Full bredde på bildene -->
-            <div class="photo fade">
-                <img src="img/photoshow.png" style="width:100%">
+            <!-- slideshowet  -->
+            <div class="fade">
+                <img src="" id="slideshow" alt="Bildeslideshow" style="width:100%">
             </div>
 
-            <div class="photo fade">
-                <img src="img/photoshow2.png" style="width:100%">
-            </div>
-
-            <div class="photo fade">
-                <img src="img/photoshow3.jpg" style="width:100%">
-            </div>
-
-            <!-- Neste og forrige knapper -->
+            <!-- "Neste" og "forrige" knapper -->
             <a class="prev" onclick="changePhoto(-1)">&#8249;</a>
             <a class="next" onclick="changePhoto(1)">&#8250;</a>
+        </div>
+
+        <div id="content">
         </div>
 
         <footer>
