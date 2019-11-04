@@ -85,6 +85,8 @@ function createFooter(tarElement) {
     createModElement("li",uladresse,"NTNU Adolf Øien Bygget");
     createModElement("li",uladresse,"Klæbuveien 72");
     createModElement("li",uladresse,"7030 Trondheim");
+
+    createModElement("button",divadresse,"","",["id","js-scrollup"]) /* !Button for scrollup! */
     
 }
 
