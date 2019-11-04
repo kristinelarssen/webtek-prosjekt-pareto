@@ -584,6 +584,7 @@ div#content {
   display: inline-block;
   text-align: left;
   border-right: 1px solid #3A4B69;
+  line-height: 1.5em;
 }
 
 
