@@ -441,6 +441,11 @@ div#content {
   width:100.1%;
 }
 
+.econnectInnhold{
+  padding: 5rem;		
+  padding-right:3rem;
+}
+
 .econnectContent h1 {
   font-weight: normal;
   font-size: 1rem;
@@ -456,16 +461,11 @@ div#content {
   color: rgba(0, 0, 0, 0.6);
 }
 
-#econnectGrid {
-  display: grid;
-  padding: 5rem;
-  grid-template-columns: 5fr 4fr;
-  column-gap: 2rem;
-}
-
 #econnectLogo{
-  width: 70%;
-  padding:10%;
+  width: 200px;		  
+  padding-left:50%;		  
+  margin-top:-2rem;		
+  margin-bottom: -3rem;
 }
 
 #econnectLink:link {
@@ -497,14 +497,25 @@ div#content {
   text-decoration: none;
 }
 
-.econnectOm{
+#econnectOm{
   font-weight:normal;
 }
 
-#econnectBottomParagrahp {
-  margin-left: 5rem;
-  margin-top: -5rem;
+#econnectGridOne {		
+  width: 60%;		
+  text-align: center;		
+  float: right;		
+  background-clip: content-box;		
+}		
+span{		
+  display:inline-block;		
 }
+
+#econnectGridTwo {		
+  padding-bottom:4rem;		
+  border-bottom: 1px solid #3A4B69;	
+}
+
 #econnectBilde {
   width: 80%;
   margin-top: 4%;
@@ -512,8 +523,8 @@ div#content {
 }
 
 #econnectKontakt {
-  margin-left: 5rem;
-  padding: 5% 0% 10% 0%;
+  text-align: center;		
+  margin-top:-5%;
   }
 
 
@@ -529,34 +540,27 @@ div#content {
  }
  #econnectGridOne {
   grid-area: one;
-  margin-left:0%;
+  text-align: center;
 }
 
 #econnectGridTwo {
   grid-area: two;
-  margin-left: 0%;
+  text-align: center;
 }
 
-#econnectBottomParagrahp {
-  max-width: 100%;
-  margin-right:5rem;
-  padding-top:2rem;
-}
-
-.econnectOm {
-  margin-left:0%;
-  padding-left:0%;
+#econnectOm {
+  text-align: center;
 }
 
 #econnectLogo{
   display:none;
 }
 
-#econnectBilde{
-  width:70%;
-  margin:0rem 2rem 0rem 2rem;
+#econnectGridOne{
+  float: none;		  
+  margin:auto;		
+  width:20rem;
 }
-
 }
 
 
@@ -739,7 +743,7 @@ div#content {
   top:160%;
   left:-10%;
   background-color: #5c687e;
-  min-width: 150%;
+  min-width: 180%;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
