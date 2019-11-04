@@ -436,6 +436,11 @@ div#content {
   width:100.1%;
 }
 
+.econnectInnhold{
+  padding: 5rem;		
+  padding-right:3rem;
+}
+
 .econnectContent h1 {
   font-weight: normal;
   font-size: 1rem;
@@ -451,16 +456,11 @@ div#content {
   color: rgba(0, 0, 0, 0.6);
 }
 
-#econnectGrid {
-  display: grid;
-  padding: 5rem;
-  grid-template-columns: 5fr 4fr;
-  column-gap: 2rem;
-}
-
 #econnectLogo{
-  width: 70%;
-  padding:10%;
+  width: 200px;		  
+  padding-left:50%;		  
+  margin-top:-2rem;		
+  margin-bottom: -3rem;
 }
 
 #econnectLink:link {
@@ -471,13 +471,6 @@ div#content {
   text-decoration: none;
 }
 
-#econnectLink:visited {
-  font-size: 1rem;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.8);
-  background-color: transparent;
-  text-decoration: none;
-}
 
 #econnectLink:hover {
   color:rgba(0, 0, 0, 0.8);
@@ -491,14 +484,33 @@ div#content {
   text-decoration: underline lightgrey;
 }
 
-.econnectOm{
+#econnectLink:visited {
+  font-size: 1rem;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#econnectOm{
   font-weight:normal;
 }
 
-#econnectBottomParagrahp {
-  margin-left: 5rem;
-  margin-top: -5rem;
+#econnectGridOne {		
+  width: 60%;		
+  text-align: center;		
+  float: right;		
+  background-clip: content-box;		
+}		
+span{		
+  display:inline-block;		
 }
+
+#econnectGridTwo {		
+  padding-bottom:4rem;		
+  border-bottom: 1px solid #3A4B69;	
+}
+
 #econnectBilde {
   width: 80%;
   margin-top: 4%;
@@ -506,8 +518,8 @@ div#content {
 }
 
 #econnectKontakt {
-  margin-left: 5rem;
-  padding: 5% 0% 10% 0%;
+  text-align: center;		
+  margin-top:-5%;
   }
 
 
@@ -523,34 +535,27 @@ div#content {
  }
  #econnectGridOne {
   grid-area: one;
-  margin-left:0%;
+  text-align: center;
 }
 
 #econnectGridTwo {
   grid-area: two;
-  margin-left: 0%;
+  text-align: center;
 }
 
-#econnectBottomParagrahp {
-  max-width: 100%;
-  margin-right:5rem;
-  padding-top:2rem;
-}
-
-.econnectOm {
-  margin-left:0%;
-  padding-left:0%;
+#econnectOm {
+  text-align: center;
 }
 
 #econnectLogo{
   display:none;
 }
 
-#econnectBilde{
-  width:70%;
-  margin:0rem 2rem 0rem 2rem;
+#econnectGridOne{
+  float: none;		  
+  margin:auto;		
+  width:20rem;
 }
-
 }
 
 
@@ -579,6 +584,7 @@ div#content {
   display: inline-block;
   text-align: left;
   border-right: 1px solid #3A4B69;
+  line-height: 1.5em;
 }
 
 
@@ -653,18 +659,17 @@ div#content {
 
 .kontaktOssKart {
   width: 45%;
-  height: 20%;
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 3%;
   margin: 2%;
-  margin-top:20%;
+  /* margin-top:20%; */
 }
 
 #kontaktOssMazemap{
   margin-left: -10%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   #kontaktOssGrid {
     grid-template-areas:
      "Last Last"
@@ -674,38 +679,44 @@ div#content {
  }
  #KontaktOssGridFirst {
   grid-area: First;
-  align-content: center;
+  text-align: left;
+  padding-left:5rem;
 }
 
 #KontaktOssGridLast {
   grid-area: Last;
-  text-align: center;
-
+  padding-left:5rem;
 }
 
 .kontaktOssGridItem{
   border-right:none;
+  
 }
 
-#kontaktOssGrid{
-  margin: 0%;
+.kontaktOssGridItem:last-child {
+  margin-left:0px;
 }
+
+
+
+}
+
+@media only screen and (max-width: 768px){
+  #kontaktOssGrid{
+    margin: 0%;
+}
+
 #kontaktOssMazemap{
-  margin:0%;
+  margin-bottom:5%;
+  display: block;
+  margin-left:3rem;
+}
+
+#kontaktOssGoogle{
+  margin-left:15%;
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /********************/
@@ -820,15 +831,16 @@ div#content {
     padding-bottom: 2%;
   }
   .nyStudentBilde {
+    /*
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
-    border-radius: 5px;
+    border-radius: 5px; */
   }
   .nyStudentBildeDiv img{
-    display : block;
-    margin-left: auto;
-    margin-right: auto;
+    display : none;
+   /* margin-left: auto;
+    margin-right: auto; */
   }
 
   #startEndGridNyStudent {
@@ -947,6 +959,11 @@ div#content {
   font-size: 17px;
 }
 
+.faktaboks_tall {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 900px) {
   #om_oss_faktaboks1_grid {
     grid-column-start: 1;
@@ -979,12 +996,14 @@ div#content {
   #om_oss_faktaboks2_grid {
     grid-column-start: 3;
     grid-column-end: 4;
+    margin-top: 0;
   }
 
   #om_oss_faktaboks3_grid {
     grid-column-start: 3;
     grid-column-end: 4;
     margin-left: 0;
+    margin-top: 0;
   }
 }
 
@@ -1018,6 +1037,10 @@ div#content {
   margin-right: 10%;
   padding-bottom: 10%;
 }
+
+#styretGrid > h1, h2, h3 {
+  margin: 0 0;
+}
 #startEndGrid { /* Gjenbrukes også i ny_student.html */
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1025,7 +1048,7 @@ div#content {
 
 .styrebilde {
   width: 100%;
-  margin-top: 30%;
+  margin-top: 5%;
   margin-bottom: 10%;
 }
 
@@ -1304,7 +1327,7 @@ div#content {
 }
 
 .arr_øverste_tekst_arr {
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .arr_link {
@@ -1439,13 +1462,13 @@ div#content {
     margin-left: 0;
   }
 
-  /*.arr_bilde {
+  .arr_bilde {
     display: block;
   }
 
   .arr_bilde_smal {
     display: none;
-  }*/
+  }
 }
 
 @media only screen and (max-width: 558px) {
@@ -1453,27 +1476,18 @@ div#content {
     display: block;
     margin-left: 0;
   }
-}
 
-/* Prøver med den ovenfor i stedet for.
-@media only screen and (max-width: 488px) {
   .arr_bilde {
     display: none;
   }
 
   .arr_bilde_smal {
-    display: none;
-  }
-
-  .arr_arrangement_grid {
     display: block;
-    height:100%;
+    height: 120px;
+    margin-left: 25%;
   }
+}
 
-  .arr_øverste_tekst_arr {
-    margin-top: 15px;
-  }
-}*/
 
 
 
@@ -1542,7 +1556,7 @@ div#content {
   font-size: 80%;
   color: grey;
   margin-top: 5%;
-  line-height: 20px;
+  line-height: 17px;
 }
 
 .medlem_form_label {
@@ -1647,7 +1661,7 @@ div#content {
   }
 
   #medlem_vipps_bilde {
-    width: 40%;
+    width: 200px;
     margin-bottom: 15%;
   }
 
