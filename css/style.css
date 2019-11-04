@@ -125,11 +125,14 @@ div#content {
 #js-header-logo {
   height: 80%;
   display: inline-block;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 
 #js-header-logoimg {
-  height: 100%;
+  height: 62px;
+  width: 167px;
 
 }
 
@@ -138,6 +141,7 @@ div#content {
   right: 0;
   bottom: 0;
   display: inline;
+  padding-right: 10px;
 }
 
 .js-header-li {
@@ -148,7 +152,7 @@ div#content {
 
 .js-header-link {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: calc(10px + 0.5rem);
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -162,20 +166,214 @@ div#content {
   color: white;
 }
 
+
 #js-footer-divikon {
   flex: 1;
+  position: relative;
 }
 
 #js-footer-divkontakt {
+  position: relative;
   flex: 1;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  /* border-left: 1px solid white;
+  border-right: 1px solid white; */
 }
 
+/* For å få border som ikke deler footer helt, men lar det være igjen "gliper" over og under. */
+
+ #js-footer-divkontakt::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 66%;
+  left: 50%;
+  top: 50%;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
 
 #js-footer-divadresse {
   flex: 1;
 }
+
+.js-footer-ulhead {
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+#ulikon {
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#ulikon > li {
+   display: inline;
+   padding-right: 10px;
+   padding-left: 0;
+}
+
+#ulkontakt {
+  text-align: center;
+  list-style: inside url("../img/ico/email.png");
+  font-size: calc(4px + 0.5rem);
+  padding-inline-start: 10px;
+}
+
+#ulkontakt > li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 5;
+}
+
+#ulkontakt > li > a {
+  color: white;
+  z-index: 5;
+}
+
+#uladresse {
+  list-style: none;
+  text-align: center;
+  font-size: calc(5px + 0.5rem);
+  padding: 0;
+  padding-top: 20px;
+}
+
+#js-scrollup {
+  display: none;
+}
+
+
+/* CSS/Media query < 1000px for footer/header */
+@media only screen and (max-width: 900px) {
+  #js-header {
+    height: auto;
+    text-align: center;
+  }
+  #js-header-logoimg {
+    display: block;
+  }
+  #js-header-ul {
+    display: block;
+    position: relative;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f5f5f5;
+  }
+
+  #wrapperbody {
+    position: relative;
+    min-height: unset;
+    padding: 0;
+    padding-bottom: 0;
+  }
+
+  #js-header {
+    height: auto;
+    text-align: center;
+  }
+
+  div#content {
+    margin: 0;
+    background-color: white;
+  }
+
+  footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #3A4B69;
+  }
+
+  #js-footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
+    text-align: center;
+  }
+
+  #js-header {
+    height: auto;
+    text-align: center;
+  }
+
+  #js-header-logo {
+    padding-left: 0;
+  }
+
+  #js-header-logoimg {
+    display: block;
+  }
+  #js-header-ul {
+    display: block;
+    position: relative;
+  }
+  .js-header-li {
+    display: block;
+    padding-top:12px;
+    padding-bottom:12px;
+    margin:0;
+  }
+
+  #js-footer-divkontakt {
+    border: 0;
+  }
+
+  #uladresse, #ulkontakt {
+    padding: 0;
+  }
+
+  #ulikon {
+    padding: 0;
+    margin-top: 20px;
+    position: relative;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    top: unset;
+    left: unset;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  #ulikon > li {
+    padding: 10px,20px,0,20px;
+    width: unset;
+  }
+
+  #ulkontakt {
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
 
 
 
@@ -192,24 +390,23 @@ div#content {
   margin-right: 10%;
 }
 
-#overskriftVedtekter{
-  font-weight: normal;
-  font-size: 200%;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.8);
-  margin-top: -2%;
+.overskriftVedtekter{
+  /*font-weight: lighter;*/
+  font-style: normal;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.8);
   margin-left: 10%;
-  margin-right: 10%;
 }
 
 #listeVedtekter{
 
   margin-top: 0%;
   font-style: normal;
-  font-weight: normal;
-  font-size: 100%;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.6);
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 22px;
+
+  
 }
 
 #vedtekterbox{
@@ -231,8 +428,13 @@ div#content {
 
 
 
+
+
+
+
+
 /********************/
-/* css til econnect */
+/* Css til econnect */
 /********************/
 
 #econnectBanner {
@@ -252,7 +454,7 @@ div#content {
   font-size: 80%;
   line-height: 250%;
   color: rgba(0, 0, 0, 0.6);
-} 
+}
 
 #econnectGrid {
   display: grid;
@@ -314,7 +516,7 @@ div#content {
   }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1025px) {
   #econnectGrid {
     grid-template-columns:1fr;
     grid-template-areas:
@@ -505,6 +707,13 @@ div#content {
 
 
 
+
+
+
+
+
+
+
 /********************/
 /* css til dropdown */
 /********************/
@@ -512,6 +721,7 @@ div#content {
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 100; /*La til for å få menyen over bildeslidshowet*/
 }
 
 .dropdown:hover .dropdownItems {
@@ -586,8 +796,13 @@ div#content {
 
 
 
-/* ------------ css til ny_student --------------- */
 
+
+
+
+/***********************/
+/* css til ny_student */
+/***********************/
 
 /*Lager grå marger på siden*/
 #box{
@@ -596,29 +811,78 @@ div#content {
   margin-right: 11%;
 }
 
-
 /*Sentrerer innholdet*/
-#nyStudentgrid {
+#nyStudentGrid {
   display: grid;
-  padding: 5rem;
-  grid-template-columns: 5fr 4fr ;
+  /*padding: 5rem; */
+  grid-template-columns: 6fr 3fr ;
   column-gap: 3rem;
   background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 10%;
 }
 
-.gridItem {   /* Gjenbrukes også hos: styret.html */
+.gridItem {
   display: inline-block;
   text-align: left;
 }
 
 .nyStudentBilde {
-  width: 85%;
-  /* float:right; */
+  width: 100%;
   margin-top: 15%;
   margin-bottom: 10%;
-  /* margin-right: 5%; */
   border-radius: 5px;
 }
+
+#startEndGridNyStudent { /* Gjenbrukes også i ny_student.html */
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* For mindre skjermer */
+@media only screen and (max-width: 1125px) {
+  #nyStudentGrid {
+    grid-template-columns:1fr;
+    /*grid-template-areas:
+     "one"
+     "two";
+    /*padding:5rem; */
+  }
+  .gridItem {
+    padding-bottom: 2%;
+  }
+  .nyStudentBilde {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+  }
+  .nyStudentBildeDiv img{
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #startEndGridNyStudent {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -632,8 +896,8 @@ div#content {
   display: grid;
   grid-template-columns: 13.1% 24.6% 24.6% 24.6% 13.1%;
   /*grid-row-gap: 3%;*/
-  width: 60%;
-  margin-left: 20%;
+  width: 76%;
+  margin-left: 12%;
 }
 
 #om_oss_intro_grid {
@@ -681,21 +945,17 @@ div#content {
 }
 
 /* Annet */
-/*
-Måtte ta bort denne for å ikke overkjøre. Sjekk hvordan det ser ut nå og evt. endre den/legge til id på denne.
-h1 {
-  font-size: 230%;
-}*/
 
 #om_oss_sitat_img {
   width: 100%;
   position: relative;
-  bottom: 17%;
+  bottom: 3.3%;
 }
 
 #om_oss_sitat {
   border-left-style: solid;
-  font-size: 100%;
+  border-color: #5c5c5c;
+  /*font-size: 100%;*/
   /*padding: 5% auto 2% 2%;*/
   padding-top: 1%;
   padding-left: 2%;
@@ -703,9 +963,9 @@ h1 {
   margin: 10% auto auto 4%;
 }
 
-.om_oss_faktabokser {       /* Vil få disse kvadratiske selv om man justerer vinduet. Må kanskje også lengre opp. */
+.om_oss_faktabokser {
   /*margin: 30% 10% auto 10%;*/
-  /*margin-top: 70%;*/
+  margin-top: 40%;
   margin-left: 15%;
   margin-bottom: 45%;
   width: 95px;;
@@ -720,6 +980,46 @@ h1 {
   font-size: 17px;
 }
 
+@media only screen and (max-width: 900px) {
+  #om_oss_faktaboks1_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  #om_oss_faktaboks2_grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  #om_oss_faktaboks3_grid {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    margin-left: 47%;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #om_oss_faktaboks1_grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  #om_oss_faktaboks2_grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  #om_oss_faktaboks3_grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-left: 0;
+  }
+}
 
 
 
@@ -727,29 +1027,69 @@ h1 {
 
 
 
-/* -------- css til Styret ------------- */
 
 
-/*Lager grå marger på siden*/
 
+
+
+
+
+
+/*******************/
+/* css til Styret */
+/*******************/
 
 /*Sentrerer innholdet*/
 #styretGrid {
   display: grid;
-  padding: 5rem;
+  /*padding: 5rem; */
   grid-template-columns: 3fr 6fr ;
   column-gap: 3rem;
   background-color: white;
+  row-gap: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 10%;
 }
-
+#startEndGrid { /* Gjenbrukes også i ny_student.html */
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
 .styrebilde {
   width: 100%;
-  /* float:right; */
-  margin-top: 15%;
+  margin-top: 30%;
   margin-bottom: 10%;
-  /* margin-right: 5%; */
-  border-radius: 5px;
+}
+
+.styreGridItem {
+  display: inline-block;
+  text-align: left;
+}
+
+/* For mindre skjermer */
+@media only screen and (max-width: 1025px) {
+  #styretGrid {
+  grid-template-columns:1fr;
+  /* grid-template-areas:
+     "one"
+     "two";
+    /*padding:3rem; */
+    row-gap: 0.2rem;
+
+  }
+  .styrebilde {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+  }
+
+  #startEndGrid {  /* Gjenbrukes også i ny_student.html */
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
 }
 
 
@@ -757,56 +1097,69 @@ h1 {
 
 
 
-/* ------------------ css til Slideshow -----------------*/
 
-* {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+
+
+
+
+
+
+
+
+
+/**********************/
+/* css til Slideshow */
+/**********************/
+
+/** {box-sizing:border-box}*/
+
+/* Slideshow container div */
+#slideshow_container {
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
+/* Neste og forrige knapp */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  margin-top: -20px;
+  padding: 17px;
+  top: 5%;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 10vw;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  padding-top: 16%;
+  padding-bottom: 16%;
+  opacity: 0;
 }
 
-/* Position the "next button" to the right */
+/* Plasserer "neste" knappen til høyre */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  padding-left: 45%;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+.prev {
+  padding-right: 45%;
+}
+
+/* Hva som skjer når man holder over knapene */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0);
+  opacity: 60%;
 }
 
-
-/* Fading animation */
+/* Faded overgang fra bilde til bilde */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes fade {
@@ -822,6 +1175,20 @@ h1 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*************************/
 /* CSS til arrangementer */
 /*************************/
@@ -829,9 +1196,10 @@ h1 {
 #arr_grid_container {
   display: grid;
   grid-template-columns: 60% 20% 20%;
-  grid-template-rows: auto;
-  grid-auto-rows: 1fr;
+  /*grid-template-rows: auto;*/
+  /*grid-auto-rows: 1fr;*/
   grid-row-gap: 5%;
+  grid-row-gap: 40px;
   /*width: 70%;*/
   height: 100%;
   margin-left: 9.25%;
@@ -882,7 +1250,17 @@ h1 {
   grid-row-end: 5;
 }
 
+#arr_tittel {
+  margin-bottom: 1%;
+}
+
 /* Høyre side */
+.arr_h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
 .arr_ikon_kuler {
   position: relative;
   margin-bottom: -3px;
@@ -891,8 +1269,8 @@ h1 {
 
 .arr_prikkregler {
   font-size: 13px;
-  font-weight: 200;
-  line-height: 16px;
+  /* Denne er nå blitt standard: font-weight: 200;*/
+  line-height: 18px;
 }
 
 /* Arrangement-grid */
@@ -948,10 +1326,18 @@ h1 {
 }
 
 /* Innhold i arrangement */
+.arr_tekst_i_bokser {
+  line-height: normal;
+}
+
 .arr_ikon {
   position: relative;
   margin-bottom: -2px;
   margin-right: 3px;
+}
+
+.arr_øverste_tekst_arr {
+  margin-top: 0;
 }
 
 .arr_link {
@@ -969,6 +1355,168 @@ h1 {
 .arr_bilde {
   width: 100%;
 }
+
+.arr_bilde_smal {
+  display: none;
+}
+
+#arr_kategorier_grid_smal {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .arr_bilde {
+    display: none;
+  }
+
+  .arr_bilde_smal {
+    display: block;
+    height: 120px;
+    margin-left: 25%;
+    /*width: 80%;
+    margin-right: 0;
+    text-align: right;*/
+  }
+}
+
+/*@media only screen and (max-width: 768px) {*/
+@media only screen and (max-width: 786px) {
+  #arr_grid_container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    /*grid-auto-rows: 1fr;*/
+    /*grid-row-gap: 5%;*/
+    grid-row-gap: 40px;
+    margin-left: 9.25%;
+    margin-right: 9.25%;
+  }
+
+  #arr_tittel_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #arr_kategorier_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #arr_prikkregler_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+
+  #arr_arr1_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  #arr_arr2_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  #arr_arr3_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  #arr_kategorier_grid {
+    display: none;
+  }
+
+  #arr_kategorier_grid_smal {
+    display: block;
+  }
+
+  #arr_prikkregler_siste {
+    padding-bottom: 40px;
+  }
+
+
+  /*#arr_kategorier_grid p {
+    display: inline;
+    margin-bottom: 0;
+  }*/
+
+  .arr_arrangement_grid {
+    display: grid;
+    height:100%;
+    grid-template-columns: 53% 47%;
+    grid-template-rows: 1 1fr;
+    width: 90%;
+    padding: 1% 5% 0% 5%;
+    background-color: #F4F4F4;
+    border-left-style: solid;
+    border-width: 5px;
+    border-radius: 0 4% 4% 0;
+  }
+
+  .arr_bulletpoints {
+    display: inline;
+    margin-left: 6%;
+  }
+
+  #arr_bulletpoints_first {
+    margin-left: 0;
+  }
+
+  /*.arr_bilde {
+    display: block;
+  }
+
+  .arr_bilde_smal {
+    display: none;
+  }*/
+}
+
+@media only screen and (max-width: 558px) {
+  .arr_bulletpoints {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+/* Prøver med den ovenfor i stedet for.
+@media only screen and (max-width: 488px) {
+  .arr_bilde {
+    display: none;
+  }
+
+  .arr_bilde_smal {
+    display: none;
+  }
+
+  .arr_arrangement_grid {
+    display: block;
+    height:100%;
+  }
+
+  .arr_øverste_tekst_arr {
+    margin-top: 15px;
+  }
+}*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1011,11 +1559,6 @@ h1 {
   grid-column-end: 11;
 }
 
-/* Andre ting */
-#medlem_tittel {
-  margin-top: 7%;
-}
-
 /* Skjema */
 #medlem_skjema {
   background-color: #d3d3d354;
@@ -1031,7 +1574,8 @@ h1 {
 #medlem_skjema_info {
   font-size: 80%;
   color: grey;
-  margin-top: 8%;
+  margin-top: 5%;
+  line-height: 20px;
 }
 
 .medlem_form_label {
@@ -1076,18 +1620,20 @@ h1 {
 }
 
 #medlem_pareto_linjeforening {
-  font-size: 25px;
+  font-size: 24px;
   font-style: bold;
+  font-weight: 400;
   margin: 12% auto 5% 2%;
 }
 
 #medlem_vippsnummer_tekst {
-  font-size: 10px;
+  font-size: 15px;
   margin: 0 auto 0 2%;
 }
 
 #medlem_vippsnummer_nummer {
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 500;
   margin: 2% auto 8% 2%;
 }
 
@@ -1096,3 +1642,125 @@ h1 {
   margin-bottom: 15%;
 }
 
+@media only screen and (max-width: 648px) {
+  #medlem_grid_container {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 76%;
+    margin-left: 12%;
+  }
+
+  #medlem_intro_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-bottom: 3%;
+  }
+
+  #medlem_skjema_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #medlem_medlemsfordeler_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #medlem_vipps_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #medlem_skjema {
+    background-color: #d3d3d354;
+    border-radius: 10px;
+    padding: 1% 10% 8% 10%;
+    font-size: 15px;
+    margin-bottom: 10%;
+  }
+
+  #medlem_vipps_bilde {
+    width: 40%;
+    margin-bottom: 15%;
+  }
+
+  #medlem_medlemsfordeler {
+    border-style: solid;
+    border-color: #C5C5C5;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 1% 8% 3% 5%;
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Komiteer */
+#komiteGrid {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 5fr 4fr ;
+  column-gap: 2rem;
+
+}
+@media only screen and (max-width: 800px) {
+  #komiteGrid {
+    grid-template-columns:1fr;
+    grid-template-areas:
+     "one"
+     "two";
+    padding:5rem;
+    padding-bottom: 5rem;
+ }
+ #komiteGridOne {
+  grid-area: one;
+  margin-left:0%;
+}
+
+#komiteGridTwo {
+  grid-area: two;
+  margin-left: 0%;
+}
+
+#komiteGridOne #komite_arrbilde{
+  margin-top: 30px;
+}
+}
+
+/*********/
+/* rollup style*/
+html{
+  scroll-behavior: smooth;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 8%; /* Place the button at the bottom of the page */
+  right: 2%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  /*border: none; /* Remove borders */
+  /*outline: none; /* Remove outline */
+  background-color: #3A4B69;/* Set a background color */
+  /*color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  /*padding: none; /* Some padding */
+  border-radius: 8px; /* Rounded corners */
+  /*font-size: 18px;  Increase font size */
+
+}
+
+#myBtn:hover {
+  /*background-color: #555; /* Add a dark-grey background on hover */
+}

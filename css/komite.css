@@ -1,0 +1,32 @@
+#komiteGrid {
+  display: grid;
+  /*padding: 5rem;*/
+  grid-template-columns: 5fr 4fr ;
+  column-gap: 2rem;
+}
+
+#komite_arrbilde{
+margin-top: 40px;
+}
+
+#komite_turbilde{
+margin-top: 40px;
+}
+/*#overskriftKomiteer{
+margin-left: 5rem;
+padding-top: 5rem;
+font-size: 195%;
+}*/
+
+
+@media only screen and (max-width: 800px) {
+  #komiteGrid {
+    grid-template-columns:1fr;
+    padding:5rem;
+    padding-bottom: 5rem;
+ }
+}
+
+#komiteStartEnd{
+grid-column-start: 1;
+grid-column-end: 3;}

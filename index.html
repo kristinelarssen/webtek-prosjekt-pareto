@@ -3,8 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+
+    <title>Pareto</title>
+    <link rel="icon" href="img/a.png" type="image/png">
+
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -12,39 +16,32 @@
         <header>
             <div id="js-header"></div>
         </header>
+        <!-- Bildeshow-container -->
+        <div id="slideshow_container">
+
+            <!-- slideshowet  -->
+            <div class="fade">
+                <img src="img/photoshow.png" id="slideshow" alt="Bildeslideshow" style="width:100%">
+            </div>
+
+            <!-- "Neste" og "forrige" knapper -->
+            <a class="prev" onclick="changePhoto(-1)">&#8249;</a>
+            <a class="next" onclick="changePhoto(1)">&#8250;</a>
+        </div>
+
         <div id="content">
-
         </div>
-
-        <!-- Slideshow container -->
-        <div class="slideshowContainer">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <img src="img/slideshow1.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="img/slideshow2.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="img/nystudent3.png" style="width:100%">
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="changeSlide(-1)">&#9664;</a>
-            <a class="next" onclick="changeSlide(1)">&#9654;</a>
-        </div>
-        <br>
 
         <footer>
             <div id="js-footer"></div>
         </footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="img/bluepointer2.jpg" alt="scrollicon" width="50px" height="50px" ></button>
     </div>
+
     <script src="scripts/navbar.js"></script>
     <script src="scripts/dropdown.js"></script>
     <script src="scripts/slideshow.js"></script>
+    <script src="scripts/rollup.js"></script>
 </body>
 
 </html>

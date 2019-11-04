@@ -1,3 +1,5 @@
+//Javascript for header/navbar og footer.
+
 // Targets for å opprette navbar og footer i html.
 const headertar = document.querySelector("#js-header");
 const footertar = document.querySelector("#js-footer");
@@ -22,7 +24,7 @@ function createNavbar(tarElement) {
     const lielements = document.getElementsByClassName("js-header-li");
     /* createModElement("a", lielements[0], "Om Pareto", "om_pareto.html", [["class", "js-header-link"], "id", "js-dropdown"]); */
     createModElement("div",lielements[0],"","",[["class","dropdown"],["id","js-dropcontainer"]]);
-    createModElement("a",document.getElementById("js-dropcontainer"),"Om oss ˅ ","",[["onclick","dropdownFunction()"],["class","dropdownButton"],["class","js-header-link"],["id","dropdownOmOss"]])
+    createModElement("a",document.getElementById("js-dropcontainer"),"Om oss ˅ ","",[["onclick","dropdownFunction()"],["class","dropdownButton js-header-link"],["id","dropdownOmOss"]])
     createModElement("div",document.getElementById("js-dropcontainer"),"","",[["id","Dropdown"],["class","dropdownItems"]])
     createModElement("a",document.getElementById("Dropdown"),"Om Pareto","om_pareto.html",["class","js-header-link"])
     createModElement("a",document.getElementById("Dropdown"),"Komiteer","komiteer.html",["class","js-header-link"])
@@ -45,6 +47,9 @@ function createFooter(tarElement) {
     const divkontakt = document.querySelector("#js-footer-divkontakt");
     const divadresse = document.querySelector("#js-footer-divadresse");
 
+    createModElement("h5",divadresse,"Besøksadresse","",["class","js-footer-ulhead"]);
+    createModElement("h5",divkontakt,"Kontakt","",["class","js-footer-ulhead"]);
+
     createModElement("ul", divikon, "", "", ["id", "ulikon"]);
     createModElement("ul", divkontakt, "", "", ["id", "ulkontakt"]);
     createModElement("ul", divadresse, "", "", ["id", "uladresse"]);
@@ -57,17 +62,31 @@ function createFooter(tarElement) {
     createModElement("li",ulikon);
     createModElement("li",ulikon);
 
-    createModElement("p",ulkontakt,"Kontakt","",["id","js-footer-kontakthead"]);
-    createModElement("li",ulkontakt);
-    createModElement("li",ulkontakt);
-    createModElement("li",ulkontakt);
-    createModElement("li",ulkontakt);
+    createModElement("a",ulikon.children[0],"","index.html",["id","js-parico"])
+    createModElement("a",ulikon.children[1],"","https://www.facebook.com/paretolinjeforening/",["id","js-faceico"])
+    createModElement("a",ulikon.children[2],"","https://www.instagram.com/paretolinjeforening",["id","js-instaico"])
 
-    createModElement("p",uladresse,"Besøksadresse");
+    createModElement("img",document.getElementById("js-parico"),"","",[["src","img/ico/pareto.png"],["alt","Pareto"],["width","32"]])
+    createModElement("img",document.getElementById("js-faceico"),"","",[["src","img/ico/facebook.png"],["alt","Facebook"],["width","32"]])
+    createModElement("img",document.getElementById("js-instaico"),"","",[["src","img/ico/instagram.png"],["alt","Instagram"],["width","32"]])
+    
+    createModElement("li",ulkontakt,"Styret: ");
+    createModElement("li",ulkontakt);
+    createModElement("li",ulkontakt,"Turkom: ");
+    createModElement("li",ulkontakt,"Fadderkom: ");
+
+    createModElement("a",ulkontakt.children[0],"pareto.linjeforening@gmail.com","mailto:pareto.linjeforening@gmail.com")
+    createModElement("a",ulkontakt.children[1],"Vilfredo Pareto","https://www.facebook.com/vilfredo.pareto.370")
+    createModElement("a",ulkontakt.children[2],"pareto.linjeforening.tur@gmail.com","mailto:pareto.linjeforening.tur@gmail.com")
+    createModElement("a",ulkontakt.children[3],"pareto.fadderkom@gmail.com","mailto:pareto.fadderkom@gmail.com")
+
+    
     createModElement("li",uladresse,"Etasje 3, 3056");
     createModElement("li",uladresse,"NTNU Adolf Øien Bygget");
     createModElement("li",uladresse,"Klæbuveien 72");
     createModElement("li",uladresse,"7030 Trondheim");
+
+    createModElement("button",divadresse,"","",["id","js-scrollup"]) /* !Button for scrollup! */
     
 }
 
