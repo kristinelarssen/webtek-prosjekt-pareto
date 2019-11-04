@@ -181,7 +181,7 @@ div#content {
 
 /* For å få border som ikke deler footer helt, men lar det være igjen "gliper" over og under. */
 
-#js-footer-divkontakt::after {
+ #js-footer-divkontakt::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -192,6 +192,8 @@ div#content {
   border-right: 1px solid #ffffff;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 #js-footer-divadresse {
@@ -232,10 +234,12 @@ div#content {
 #ulkontakt > li {
   padding-top: 5px;
   padding-bottom: 5px;
+  z-index: 5;
 }
 
 #ulkontakt > li > a {
   color: white;
+  z-index: 5;
 }
 
 #uladresse {
@@ -244,6 +248,10 @@ div#content {
   font-size: calc(5px + 0.5rem);
   padding: 0;
   padding-top: 20px;
+}
+
+#js-scrollup {
+  display: none;
 }
 
 
@@ -382,24 +390,23 @@ div#content {
   margin-right: 10%;
 }
 
-#overskriftVedtekter{
-  font-weight: normal;
-  font-size: 200%;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.8);
-  margin-top: -2%;
+.overskriftVedtekter{
+  /*font-weight: lighter;*/
+  font-style: normal;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.8);
   margin-left: 10%;
-  margin-right: 10%;
 }
 
 #listeVedtekter{
 
   margin-top: 0%;
   font-style: normal;
-  font-weight: normal;
-  font-size: 100%;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.6);
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 22px;
+
+  
 }
 
 #vedtekterbox{
@@ -434,6 +441,11 @@ div#content {
   width:100.1%;
 }
 
+.econnectInnhold{
+  padding: 5rem;		
+  padding-right:3rem;
+}
+
 .econnectContent h1 {
   font-weight: normal;
   font-size: 1rem;
@@ -449,16 +461,11 @@ div#content {
   color: rgba(0, 0, 0, 0.6);
 }
 
-#econnectGrid {
-  display: grid;
-  padding: 5rem;
-  grid-template-columns: 5fr 4fr;
-  column-gap: 2rem;
-}
-
 #econnectLogo{
-  width: 70%;
-  padding:10%;
+  width: 200px;		  
+  padding-left:50%;		  
+  margin-top:-2rem;		
+  margin-bottom: -3rem;
 }
 
 #econnectLink:link {
@@ -469,13 +476,6 @@ div#content {
   text-decoration: none;
 }
 
-#econnectLink:visited {
-  font-size: 1rem;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.8);
-  background-color: transparent;
-  text-decoration: none;
-}
 
 #econnectLink:hover {
   color:rgba(0, 0, 0, 0.8);
@@ -489,14 +489,33 @@ div#content {
   text-decoration: underline lightgrey;
 }
 
-.econnectOm{
+#econnectLink:visited {
+  font-size: 1rem;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#econnectOm{
   font-weight:normal;
 }
 
-#econnectBottomParagrahp {
-  margin-left: 5rem;
-  margin-top: -5rem;
+#econnectGridOne {		
+  width: 60%;		
+  text-align: center;		
+  float: right;		
+  background-clip: content-box;		
+}		
+span{		
+  display:inline-block;		
 }
+
+#econnectGridTwo {		
+  padding-bottom:4rem;		
+  border-bottom: 1px solid #3A4B69;	
+}
+
 #econnectBilde {
   width: 80%;
   margin-top: 4%;
@@ -504,8 +523,8 @@ div#content {
 }
 
 #econnectKontakt {
-  margin-left: 5rem;
-  padding: 5% 0% 10% 0%;
+  text-align: center;		
+  margin-top:-5%;
   }
 
 
@@ -521,34 +540,27 @@ div#content {
  }
  #econnectGridOne {
   grid-area: one;
-  margin-left:0%;
+  text-align: center;
 }
 
 #econnectGridTwo {
   grid-area: two;
-  margin-left: 0%;
+  text-align: center;
 }
 
-#econnectBottomParagrahp {
-  max-width: 100%;
-  margin-right:5rem;
-  padding-top:2rem;
-}
-
-.econnectOm {
-  margin-left:0%;
-  padding-left:0%;
+#econnectOm {
+  text-align: center;
 }
 
 #econnectLogo{
   display:none;
 }
 
-#econnectBilde{
-  width:70%;
-  margin:0rem 2rem 0rem 2rem;
+#econnectGridOne{
+  float: none;		  
+  margin:auto;		
+  width:20rem;
 }
-
 }
 
 
@@ -577,6 +589,7 @@ div#content {
   display: inline-block;
   text-align: left;
   border-right: 1px solid #3A4B69;
+  line-height: 1.5em;
 }
 
 
@@ -651,18 +664,17 @@ div#content {
 
 .kontaktOssKart {
   width: 45%;
-  height: 20%;
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 3%;
   margin: 2%;
-  margin-top:20%;
+  /* margin-top:20%; */
 }
 
 #kontaktOssMazemap{
   margin-left: -10%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   #kontaktOssGrid {
     grid-template-areas:
      "Last Last"
@@ -672,38 +684,44 @@ div#content {
  }
  #KontaktOssGridFirst {
   grid-area: First;
-  align-content: center;
+  text-align: left;
+  padding-left:5rem;
 }
 
 #KontaktOssGridLast {
   grid-area: Last;
-  text-align: center;
-
+  padding-left:5rem;
 }
 
 .kontaktOssGridItem{
   border-right:none;
+  
 }
 
-#kontaktOssGrid{
-  margin: 0%;
+.kontaktOssGridItem:last-child {
+  margin-left:0px;
 }
+
+
+
+}
+
+@media only screen and (max-width: 768px){
+  #kontaktOssGrid{
+    margin: 0%;
+}
+
 #kontaktOssMazemap{
-  margin:0%;
+  margin-bottom:5%;
+  display: block;
+  margin-left:3rem;
+}
+
+#kontaktOssGoogle{
+  margin-left:15%;
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /********************/
@@ -818,15 +836,16 @@ div#content {
     padding-bottom: 2%;
   }
   .nyStudentBilde {
+    /*
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
-    border-radius: 5px;
+    border-radius: 5px; */
   }
   .nyStudentBildeDiv img{
-    display : block;
-    margin-left: auto;
-    margin-right: auto;
+    display : none;
+   /* margin-left: auto;
+    margin-right: auto; */
   }
 
   #startEndGridNyStudent {
@@ -1023,6 +1042,10 @@ div#content {
   margin-right: 10%;
   padding-bottom: 10%;
 }
+
+#styretGrid > h1, h2, h3 {
+  margin: 0 0;
+}
 #startEndGrid { /* Gjenbrukes også i ny_student.html */
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1030,7 +1053,7 @@ div#content {
 
 .styrebilde {
   width: 100%;
-  margin-top: 30%;
+  margin-top: 5%;
   margin-bottom: 10%;
 }
 
@@ -1522,11 +1545,6 @@ div#content {
   grid-column-end: 11;
 }
 
-/* Andre ting */
-#medlem_tittel {
-  margin-top: 7%;
-}
-
 /* Skjema */
 #medlem_skjema {
   background-color: #d3d3d354;
@@ -1705,4 +1723,30 @@ div#content {
 #komiteGridOne #komite_arrbilde{
   margin-top: 30px;
 }
+}
+
+/*********/
+/* rollup style*/
+html{
+  scroll-behavior: smooth;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 8%; /* Place the button at the bottom of the page */
+  right: 2%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  /*border: none; /* Remove borders */
+  /*outline: none; /* Remove outline */
+  background-color: #3A4B69;/* Set a background color */
+  /*color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  /*padding: none; /* Some padding */
+  border-radius: 8px; /* Rounded corners */
+  /*font-size: 18px;  Increase font size */
+
+}
+
+#myBtn:hover {
+  /*background-color: #555; /* Add a dark-grey background on hover */
 }

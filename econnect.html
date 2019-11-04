@@ -14,48 +14,40 @@
 <body>
   <div id="wrapperbody" class="econnectContent">
     <div id="js-header"></div>
-    <img src="img/econnect-banner.png" alt="banner" id="econnectBanner">
-
-    <div id="content">
+    <div id="content" class="econnectInnhold">
       <div id="econnectGrid">
 
-        <div class="econnectGridItem" id="econnectGridOne">
           <a href="https://econnect-ntnu.no/" target="_blank" id="econnectLink">Hjemmeside</a>
           </a>
+          <a href="https://econnect-ntnu.no/" target="_blank">
+            <img src="img/econnect-logo.jpg" alt="logo" id="econnectLogo">
+          </a>
 
-          <h1 class="econnectOm">Om ECONnect:</h1>
-          <p class="econnectOm" id="econnectTopParagrahp">
-            ECONnect er fagutvalget for studenter ved Institutt for samfunnsøkonomi på NTNU.<br><br>
+          <h1 id="econnectOm">Om ECONnect:</h1>
 
+          
+          <p id="econnectTopParagrahp">
+            ECONnect er fagutvalget for studenter ved Institutt for samfunnsøkonomi på NTNU.</p>
+            
+            <div id="econnectGridOne"><span><img src="img/econnect-bilde.jpg" alt="bilde" id="econnectBilde"></span></div>
+            <p id="econnectGridTwo">
             De arbeider for økt faglig kompetanse blant studentene, samt en tettere
             kontakt mellom dem og næringslivet. Deres hovedoppgave er å fremme studentene
             som attraktive arbeidstakere for næringslivet og deres mål
             er å skape en arena der bedrifter kan profilere seg overfor studentene slik at rekrutteringen blir
             mer målrettet. Dette gjør de ved å arrangere bedriftspresentasjoner, FAGDAG, gjesteforelesninger og FAGUKA
-            m.m.
+            m.m. 
+            ECONnect er en aktiv organisasjon som over tid har bygget en sterk relasjon med
+            de 600 studentene innen samfunnsøkonomi og finansiell økonomi.
+            Resultatet er gjennomgående godt oppmøte av engasjerte studenter på arrangementer
+            i deres regi. De tilbyr en virkningsfull måte for bedrifter å profilere seg som
+            potensielle arbeidsgivere overfor økonomistudenter ved NTNU. De legger i tillegg ut eksamensbesvarelser på nettsiden deres.
           </p>
-        </div>
+        
 
-        <div class="econnectGridItem" id="econnectGridTwo">
-          <a href="https://econnect-ntnu.no/" target="_blank">
-            <img src="img/econnect-logo.jpg" alt="logo" id="econnectLogo">
-          </a><br>
-          <img src="img/econnect-bilde.jpg" alt="bilde" id="econnectBilde">
-        </div>
+       
 
       </div>
-
-      <p class="econnectOm" id="econnectBottomParagrahp">
-        ECONnect er en aktiv organisasjon som over tid har bygget en sterk relasjon med
-        de 600 studentene innen samfunnsøkonomi og finansiell økonomi.
-        Resultatet er gjennomgående godt oppmøte av engasjerte studenter på arrangementer
-        i deres regi. De tilbyr en virkningsfull måte for bedrifter å profilere seg som
-        potensielle arbeidsgivere overfor økonomistudenter ved NTNU. <br><br>
-
-        De legger i tillegg ut eksamensbesvarelser på nettsiden deres.
-      </p>
-
-
 
       <div id="econnectKontakt">
         <h1>Kontakt</h1>
@@ -74,9 +66,11 @@
     <footer>
       <div id="js-footer"></div>
     </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="img/bluepointer2.jpg" alt="scrollicon" width="50px" height="50px" ></button>
   </div>
   <script src="scripts/navbar.js"></script>
   <script src="scripts/dropdown.js"></script>
+  <script src="scripts/rollup.js"></script>
 </body>
 
 </html>
