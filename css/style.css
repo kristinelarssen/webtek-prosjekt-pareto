@@ -5,8 +5,6 @@
 }
 
 p {
-  /* font-size: 15px;
-  font-weight: 200; */
   font-size: 15px;
   font-style: normal;
   font-weight: 200;
@@ -17,30 +15,50 @@ p {
   margin-top: 0%;
   line-height: 250%;*/
 
-} 
+}
 
 h1 {
   font-size: 40px;
   font-weight: lighter;
   font-style: normal;
+  margin-top: 10%;
  }
 
-h2 {
-
+/*h2 {
+  Forslag, trenger ikke å bli bra.
+  font-style: normal;
   font-weight: normal;
-  font-size: 1.2vw;
+  font-size: 2.2vw;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+ }*/
+
+h2 {
+  font-weight: normal;
+  /* vw gjør skriften om te maur når du krympe skjermen.
+  font-size: 1.6vw;*/
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
 }
 
 h3 {
+  /* Forslag, trenger ikke å bli bra.
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px; */
   font-weight: normal;
-  font-size: 1.1vw;
+  /*font-size: 1.4vw; */
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
-
 }
 
+.boldFont {
+  font-weight: bold;
+}
+
+.italicFont {
+  font-style: oblique;
+}
 /*  */
 
 /*  */
@@ -57,7 +75,6 @@ html, body {
   padding: 0;
   height: 100%;
   background-color: #f5f5f5;
-  /* line-height: 1.5em; */
 }
 
 #wrapperbody {
@@ -79,7 +96,6 @@ footer {
   height: 180px;
   width: 100%;                          /* Footer skal dekke bredden til skjermen*/
   background-color: #3A4B69;
-  width: 100%;
 }
 
 #js-footer {
