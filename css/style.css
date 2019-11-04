@@ -5,8 +5,18 @@
 }
 
 p {
+  /* font-size: 15px;
+  font-weight: 200; */
   font-size: 15px;
+  font-style: normal;
   font-weight: 200;
+  line-height: 22px;
+  /* Tror det var dette som ødela sidene. Kommenterte det ut for å få det tilbake til vanlig:
+  font-size: 1.2vw;
+  /*font-weight: normal;
+  margin-top: 0%;
+  line-height: 250%;*/
+
 } 
 
 h1 {
@@ -47,7 +57,7 @@ html, body {
   padding: 0;
   height: 100%;
   background-color: #f5f5f5;
-  line-height: 1.5em;
+  /* line-height: 1.5em; */
 }
 
 #wrapperbody {
@@ -356,6 +366,7 @@ div#content {
   display: inline-block;
   text-align: left;
   border-right: 1px solid #3A4B69;
+  line-height: 1.5em;
 }
 
 
