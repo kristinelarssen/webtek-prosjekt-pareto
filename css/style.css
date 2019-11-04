@@ -664,18 +664,17 @@ span{
 
 .kontaktOssKart {
   width: 45%;
-  height: 20%;
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 3%;
   margin: 2%;
-  margin-top:20%;
+  /* margin-top:20%; */
 }
 
 #kontaktOssMazemap{
   margin-left: -10%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   #kontaktOssGrid {
     grid-template-areas:
      "Last Last"
@@ -685,29 +684,45 @@ span{
  }
  #KontaktOssGridFirst {
   grid-area: First;
-  align-content: center;
+  text-align: left;
+  padding-left:5rem;
 }
 
 #KontaktOssGridLast {
   grid-area: Last;
-  text-align: center;
-
+  padding-left:5rem;
 }
 
 .kontaktOssGridItem{
   border-right:none;
+  
 }
 
-#kontaktOssGrid{
-  margin: 0%;
+.kontaktOssGridItem:last-child {
+  margin-left:0px;
 }
+
+
+
+
+}
+
+@media only screen and (max-width: 768px){
+  #kontaktOssGrid{
+    margin: 0%;
+}
+
 #kontaktOssMazemap{
-  margin:0%;
+  margin-bottom:5%;
+  display: block;
+  margin-left:3rem;
+}
+
+#kontaktOssGoogle{
+  margin-left:15%;
 }
 
 }
-
-
 
 
 
