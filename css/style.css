@@ -476,13 +476,6 @@ div#content {
   text-decoration: none;
 }
 
-#econnectLink:visited {
-  font-size: 1rem;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.8);
-  background-color: transparent;
-  text-decoration: none;
-}
 
 #econnectLink:hover {
   color:rgba(0, 0, 0, 0.8);
@@ -494,6 +487,14 @@ div#content {
   color: rgba(0, 0, 0, 0.2);
   background-color: transparent;
   text-decoration: underline lightgrey;
+}
+
+#econnectLink:visited {
+  font-size: 1rem;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .econnectOm{
