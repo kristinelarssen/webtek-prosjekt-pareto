@@ -250,11 +250,6 @@ div#content {
   padding-top: 20px;
 }
 
-#js-scrollup {
-  display: none;
-}
-
-
 /* CSS/Media query < 1000px for footer/header */
 @media only screen and (max-width: 900px) {
   #js-header {
@@ -1711,12 +1706,13 @@ div#content {
 }
 }
 
-/*********/
-/* rollup style*/
+/****************/
+/*Scrollup style*/
+/****************/
 html{
   scroll-behavior: smooth;
 }
-#myBtn {
+#js-scrollup {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 8%; /* Place the button at the bottom of the page */
@@ -1731,8 +1727,4 @@ html{
   border-radius: 8px; /* Rounded corners */
   /*font-size: 18px;  Increase font size */
 
-}
-
-#myBtn:hover {
-  /*background-color: #555; /* Add a dark-grey background on hover */
 }

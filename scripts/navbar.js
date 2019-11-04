@@ -86,8 +86,11 @@ function createFooter(tarElement) {
     createModElement("li",uladresse,"Klæbuveien 72");
     createModElement("li",uladresse,"7030 Trondheim");
 
-    createModElement("button",divadresse,"","",["id","js-scrollup"]) /* !Button for scrollup! */
-    
+    // Oppretter knapp og img-element for rollup.js
+    createModElement("button",divadresse,"","",[["id","js-scrollup"],["title","Gå til toppen"]]) /* !Button for scrollup! */
+    createModElement("img",document.getElementById("js-scrollup"),"","",[["src","img/scrollupikon.jpg"],["alt","scrollicon"],["width","50"],["height","50"]])
+
+
 }
 
 
