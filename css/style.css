@@ -382,25 +382,22 @@ div#content {
   margin-right: 10%;
 }
 
-#overskriftVedtekter{
-    font-weight: lighter;
-    font-style: normal;
-    font-size: 40px;
-    line-height: 150%;
-    color: rgba(0, 0, 0, 0.8);
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%
-  }
+.overskriftVedtekter{
+  /*font-weight: lighter;*/
+  font-style: normal;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: 10%;
+}
 
 #listeVedtekter{
 
   margin-top: 0%;
   font-style: normal;
-  font-weight: normal;
-  font-size: 1.2vw;
-  line-height: 150%;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 22px;
+
   
 }
 
@@ -1709,4 +1706,30 @@ div#content {
 #komiteGridOne #komite_arrbilde{
   margin-top: 30px;
 }
+}
+
+/*********/
+/* rollup style*/
+html{
+  scroll-behavior: smooth;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 8%; /* Place the button at the bottom of the page */
+  right: 2%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  /*border: none; /* Remove borders */
+  /*outline: none; /* Remove outline */
+  background-color: #3A4B69;/* Set a background color */
+  /*color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  /*padding: none; /* Some padding */
+  border-radius: 8px; /* Rounded corners */
+  /*font-size: 18px;  Increase font size */
+
+}
+
+#myBtn:hover {
+  /*background-color: #555; /* Add a dark-grey background on hover */
 }
