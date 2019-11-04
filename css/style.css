@@ -181,7 +181,7 @@ div#content {
 
 /* For å få border som ikke deler footer helt, men lar det være igjen "gliper" over og under. */
 
-#js-footer-divkontakt::after {
+ #js-footer-divkontakt::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -192,6 +192,8 @@ div#content {
   border-right: 1px solid #ffffff;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 #js-footer-divadresse {
@@ -232,10 +234,12 @@ div#content {
 #ulkontakt > li {
   padding-top: 5px;
   padding-bottom: 5px;
+  z-index: 5;
 }
 
 #ulkontakt > li > a {
   color: white;
+  z-index: 5;
 }
 
 #uladresse {
@@ -244,6 +248,10 @@ div#content {
   font-size: calc(5px + 0.5rem);
   padding: 0;
   padding-top: 20px;
+}
+
+#js-scrollup {
+  display: none;
 }
 
 
