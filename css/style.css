@@ -964,6 +964,11 @@ span{
   font-size: 17px;
 }
 
+.faktaboks_tall {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 900px) {
   #om_oss_faktaboks1_grid {
     grid-column-start: 1;
@@ -996,12 +1001,14 @@ span{
   #om_oss_faktaboks2_grid {
     grid-column-start: 3;
     grid-column-end: 4;
+    margin-top: 0;
   }
 
   #om_oss_faktaboks3_grid {
     grid-column-start: 3;
     grid-column-end: 4;
     margin-left: 0;
+    margin-top: 0;
   }
 }
 
@@ -1325,7 +1332,7 @@ span{
 }
 
 .arr_øverste_tekst_arr {
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .arr_link {
@@ -1460,13 +1467,13 @@ span{
     margin-left: 0;
   }
 
-  /*.arr_bilde {
+  .arr_bilde {
     display: block;
   }
 
   .arr_bilde_smal {
     display: none;
-  }*/
+  }
 }
 
 @media only screen and (max-width: 558px) {
@@ -1474,27 +1481,18 @@ span{
     display: block;
     margin-left: 0;
   }
-}
 
-/* Prøver med den ovenfor i stedet for.
-@media only screen and (max-width: 488px) {
   .arr_bilde {
     display: none;
   }
 
   .arr_bilde_smal {
-    display: none;
-  }
-
-  .arr_arrangement_grid {
     display: block;
-    height:100%;
+    height: 120px;
+    margin-left: 25%;
   }
+}
 
-  .arr_øverste_tekst_arr {
-    margin-top: 15px;
-  }
-}*/
 
 
 
@@ -1563,7 +1561,7 @@ span{
   font-size: 80%;
   color: grey;
   margin-top: 5%;
-  line-height: 20px;
+  line-height: 17px;
 }
 
 .medlem_form_label {
@@ -1668,7 +1666,7 @@ span{
   }
 
   #medlem_vipps_bilde {
-    width: 40%;
+    width: 200px;
     margin-bottom: 15%;
   }
 
