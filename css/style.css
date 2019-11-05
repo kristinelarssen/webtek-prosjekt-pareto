@@ -373,16 +373,6 @@ div#content {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*********************/
 /* CSS til Vedtekter */
 /*********************/
@@ -417,22 +407,6 @@ div#content {
   padding: 5rem;
   background-color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /********************/
@@ -564,14 +538,6 @@ span{
   width:20rem;
 }
 }
-
-
-
-
-
-
-
-
 
 
 /***********************/
@@ -775,31 +741,18 @@ span{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /***********************/
 /* css til ny_student */
 /***********************/
 
-/*Lager grå marger på siden*/
 #box{
   background-color: white;
   margin-left: 11%;
   margin-right: 11%;
 }
 
-/*Sentrerer innholdet*/
 #nyStudentGrid {
   display: grid;
-  /*padding: 5rem; */
   grid-template-columns: 6fr 3fr ;
   column-gap: 3rem;
   background-color: white;
@@ -820,7 +773,7 @@ span{
   border-radius: 5px;
 }
 
-#startEndGridNyStudent { /* Gjenbrukes også i ny_student.html */
+#startEndGridNyStudent { 
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -829,25 +782,13 @@ span{
 @media only screen and (max-width: 1125px) {
   #nyStudentGrid {
     grid-template-columns:1fr;
-    /*grid-template-areas:
-     "one"
-     "two";
-    /*padding:5rem; */
   }
   .gridItem {
     padding-bottom: 2%;
   }
-  .nyStudentBilde {
-    /*
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 5px; */
-  }
+ 
   .nyStudentBildeDiv img{
     display : none;
-   /* margin-left: auto;
-    margin-right: auto; */
   }
 
   #startEndGridNyStudent {
@@ -855,22 +796,6 @@ span{
     grid-column-end: 2;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*********************/
@@ -1014,28 +939,12 @@ span{
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*******************/
 /* css til Styret */
 /*******************/
 
-/*Sentrerer innholdet*/
 #styretGrid {
   display: grid;
-  /*padding: 5rem; */
   grid-template-columns: 3fr 6fr ;
   column-gap: 3rem;
   background-color: white;
@@ -1048,7 +957,7 @@ span{
 #styretGrid > h1, h2, h3 {
   margin: 0 0;
 }
-#startEndGrid { /* Gjenbrukes også i ny_student.html */
+#startEndGrid { 
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -1067,14 +976,10 @@ span{
 /* For mindre skjermer */
 @media only screen and (max-width: 1025px) {
   #styretGrid {
-  grid-template-columns:1fr;
-  /* grid-template-areas:
-     "one"
-     "two";
-    /*padding:3rem; */
+    grid-template-columns:1fr;
     row-gap: 0.2rem;
-
   }
+
   .styrebilde {
     width: 100%;
     margin-top: 5%;
@@ -1082,7 +987,7 @@ span{
     border-radius: 5px;
   }
 
-  #startEndGrid {  /* Gjenbrukes også i ny_student.html */
+  #startEndGrid {  
     grid-column-start: 1;
     grid-column-end: 2;
   }
@@ -1090,26 +995,11 @@ span{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**********************/
 /* css til Slideshow */
 /**********************/
 
-/** {box-sizing:border-box}*/
+/* Inspirasjon er hentet fra https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
 /* Slideshow container div */
 #slideshow_container {
@@ -1160,29 +1050,14 @@ span{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
