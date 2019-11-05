@@ -12,12 +12,6 @@ p {
   font-weight: 200;
   /* line-height: 22px; */
   line-height: 200%;
-  /* Tror det var dette som ødela sidene. Kommenterte det ut for å få det tilbake til vanlig:
-  font-size: 1.2vw;
-  /*font-weight: normal;
-  margin-top: 0%;
-  line-height: 250%;*/
-
 }
 
 h1 {
@@ -26,15 +20,6 @@ h1 {
   font-style: normal;
   margin-top: 10%;
  }
-
-/*h2 {
-  Forslag, trenger ikke å bli bra.
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.2vw;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.8);
- }*/
 
 h2 {
   font-weight: normal;
@@ -50,7 +35,6 @@ h3 {
   font-weight: 300;
   font-size: 20px; */
   font-weight: normal;
-  /*font-size: 1.4vw; */
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -389,7 +373,7 @@ div#content {
   margin-left: 10%;  */
 }
 
-#listeVedtekter{
+.listeVedtekter{
   margin-top: 0%;
   font-style: normal;
   font-weight: 200;
@@ -420,7 +404,7 @@ div#content {
 }
 
 .econnectInnhold{
-  padding: 5rem;		
+  padding: 5rem;
   padding-right:3rem;
 }
 
@@ -435,9 +419,9 @@ div#content {
 } */
 
 #econnectLogo{
-  width: 200px;		  
-  padding-left:50%;		  
-  margin-top:-2rem;		
+  width: 200px;
+  padding-left:50%;
+  margin-top:-2rem;
   margin-bottom: -3rem;
 }
 
@@ -474,19 +458,19 @@ div#content {
   font-weight:normal;
 }
 
-#econnectGridOne {		
-  width: 60%;		
-  text-align: center;		
-  float: right;		
-  background-clip: content-box;		
-}		
-span{		
-  display:inline-block;		
+#econnectGridOne {
+  width: 60%;
+  text-align: center;
+  float: right;
+  background-clip: content-box;
+}
+span{
+  display:inline-block;
 }
 
-#econnectGridTwo {		
-  padding-bottom:4rem;		
-  border-bottom: 1px solid #3A4B69;	
+#econnectGridTwo {
+  padding-bottom:4rem;
+  border-bottom: 1px solid #3A4B69;
 }
 
 #econnectBilde {
@@ -496,7 +480,7 @@ span{
 }
 
 #econnectKontakt {
-  text-align: center;	
+  text-align: center;
   }
 
 
@@ -506,13 +490,19 @@ span{
     grid-template-areas:
      "one"
      "two";
-    padding:5rem;
     padding-bottom: 5rem;
     padding-top:0rem;
+    margin:0px;
  }
  #econnectGridOne {
   grid-area: one;
   text-align: center;
+  width:300px;
+  margin:0px;
+  text-align: center;
+  float: none;
+  margin:auto;
+
 }
 
 #econnectGridTwo {
@@ -528,20 +518,19 @@ span{
   display:none;
 }
 
-#econnectGridOne{
-
-  float: none;		  
-  margin:auto;		
-
-}
-
 #econnectBanner{
   display:none;
 }
 
 #econnectBilde{
-  width:300px;
+  margin-top:0px;
 }
+
+span{
+  display:inline-block;
+  margin:0px;
+}
+
 }
 
 
@@ -669,7 +658,7 @@ span{
 .kontaktOssGridItem{
   border-right:none;
 
-  
+
 }
 
 .kontaktOssGridItem:last-child {
@@ -775,7 +764,7 @@ span{
     position: relative;
     display: inline-block;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -785,20 +774,20 @@ span{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   } */
-  
+
   .dropdown:hover > a:hover {
     display:block;
   }
-  
+
   /* .show {display: block;} */
-} 
+}
 
 
 /***********************/
@@ -920,6 +909,10 @@ span{
 }
 
 /* Annet */
+
+#om_oss_grid_container p {
+  line-height: 22px;
+}
 
 #om_oss_sitat_img {
   width: 100%;
@@ -1186,6 +1179,10 @@ span{
 
 #arr_tittel {
   margin-bottom: 1%;
+}
+
+#om_oss_grid_container p {
+  line-height: 22px;
 }
 
 /* Høyre side */
@@ -1625,12 +1622,13 @@ html{
   scroll-behavior: smooth;
 }
 #js-scrollup {
-  /*display: none; /* Hidden by default */
-  position: fixed;
-  bottom: 8%;
-  right: 2%;
-  z-index: 100;
-  border: none;
+
+  display: none; /*default */
+  position: fixed; 
+  bottom: 8%; 
+  right: 2%; 
+  z-index: 100; 
+  border: none;   
   outline: none;
   background-color: #3A4B69;
   cursor: pointer;
