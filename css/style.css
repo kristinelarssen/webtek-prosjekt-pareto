@@ -1,4 +1,6 @@
-/* Generelt - p, h1-6, osv. */
+/*************/
+/* Generelt */
+/*************/
 
 * {
   font-family: Roboto, sans-serif, arial;  /* Endret alt. 2 til sans-serif. Hvis det kødder til alt tar vi den bare bort. */
@@ -59,11 +61,6 @@ h3 {
 .italicFont {
   font-style: oblique;
 }
-/*  */
-
-/*  */
-
-/*  */
 
 
 /****************************************/
@@ -372,7 +369,6 @@ div#content {
 }
 
 
-
 /*********************/
 /* CSS til Vedtekter */
 /*********************/
@@ -380,32 +376,37 @@ div#content {
 .vedtekter{
   margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 10%;
 }
 
 .overskriftVedtekter{
-  /*font-weight: lighter;*/
+  margin-top: 0;
+  /*font-weight: lighter;
   font-style: normal;
   font-size: 40px;
   color: rgba(0, 0, 0, 0.8);
-  margin-left: 10%;
+  margin-left: 10%;  */
 }
 
 #listeVedtekter{
-
   margin-top: 0%;
   font-style: normal;
   font-weight: 200;
   font-size: 15px;
   line-height: 22px;
-
-  
 }
 
 #vedtekterbox{
 
   margin: 0 11%;
-  padding: 5rem;
+  /*padding: 5rem;*/
   background-color: white;
+}
+
+#vedtektItem {
+  display: inline-block;
+  text-align: left;
+  margin-top: 10%;
 }
 
 
@@ -1059,8 +1060,6 @@ span{
   to {opacity: 1}
 }
 
-
-
 /*************************/
 /* CSS til arrangementer */
 /*************************/
@@ -1369,23 +1368,6 @@ span{
     margin-left: 25%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /**********************/
