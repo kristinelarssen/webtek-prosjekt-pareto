@@ -518,6 +518,14 @@ span{
   margin:auto;
 
 }
+
+#econnectBanner{
+  display:none;
+}
+
+#econnectBilde{
+  width:300px;
+}
 }
 
 
@@ -681,7 +689,7 @@ span{
 
 }
 
-}
+
 
 @media only screen and (max-width: 768px){
   #kontaktOssGrid{
