@@ -1558,7 +1558,7 @@ html{
   scroll-behavior: smooth;
 }
 #js-scrollup {
-  display: none; /* default */
+  display: none; /*default */
   position: fixed; 
   bottom: 8%; 
   right: 2%; 
