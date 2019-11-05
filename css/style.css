@@ -419,7 +419,7 @@ div#content {
 }
 
 .econnectInnhold{
-  padding: 5rem;		
+  padding: 5rem;
   padding-right:3rem;
 }
 
@@ -439,9 +439,9 @@ div#content {
 }
 
 #econnectLogo{
-  width: 200px;		  
-  padding-left:50%;		  
-  margin-top:-2rem;		
+  width: 200px;
+  padding-left:50%;
+  margin-top:-2rem;
   margin-bottom: -3rem;
 }
 
@@ -478,19 +478,19 @@ div#content {
   font-weight:normal;
 }
 
-#econnectGridOne {		
-  width: 60%;		
-  text-align: center;		
-  float: right;		
-  background-clip: content-box;		
-}		
-span{		
-  display:inline-block;		
+#econnectGridOne {
+  width: 60%;
+  text-align: center;
+  float: right;
+  background-clip: content-box;
+}
+span{
+  display:inline-block;
 }
 
-#econnectGridTwo {		
-  padding-bottom:4rem;		
-  border-bottom: 1px solid #3A4B69;	
+#econnectGridTwo {
+  padding-bottom:4rem;
+  border-bottom: 1px solid #3A4B69;
 }
 
 #econnectBilde {
@@ -500,7 +500,7 @@ span{
 }
 
 #econnectKontakt {
-  text-align: center;		
+  text-align: center;
   margin-top:-5%;
   }
 
@@ -534,8 +534,8 @@ span{
 }
 
 #econnectGridOne{
-  float: none;		  
-  margin:auto;		
+  float: none;
+  margin:auto;
   width:20rem;
 }
 }
@@ -664,7 +664,7 @@ span{
 
 .kontaktOssGridItem{
   border-right:none;
-  
+
 }
 
 .kontaktOssGridItem:last-child {
@@ -778,7 +778,7 @@ span{
   border-radius: 5px;
 }
 
-#startEndGridNyStudent { 
+#startEndGridNyStudent {
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -791,7 +791,7 @@ span{
   .gridItem {
     padding-bottom: 2%;
   }
- 
+
   .nyStudentBildeDiv img{
     display : none;
   }
@@ -962,7 +962,7 @@ span{
 #styretGrid > h1, h2, h3 {
   margin: 0 0;
 }
-#startEndGrid { 
+#startEndGrid {
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -992,7 +992,7 @@ span{
     border-radius: 5px;
   }
 
-  #startEndGrid {  
+  #startEndGrid {
     grid-column-start: 1;
     grid-column-end: 2;
   }
@@ -1455,7 +1455,11 @@ span{
   border-color: #C5C5C5;
   border-radius: 6px;
   border-width: 2px;
-  padding: 1% 7% 11% 10%;
+  padding: 1% 7% 8% 10%;
+}
+
+#medlem_medlemsfordeler_overskrift {
+  margin-top: 7%;
 }
 
 #medlem_medlemsfordeler_liste {
@@ -1563,13 +1567,13 @@ html{
 }
 #js-scrollup {
   /*display: none; /* Hidden by default */
-  position: fixed; 
-  bottom: 8%; 
-  right: 2%; 
-  z-index: 100; 
-  border: none; 
+  position: fixed;
+  bottom: 8%;
+  right: 2%;
+  z-index: 100;
+  border: none;
   outline: none;
   background-color: #3A4B69;
-  cursor: pointer; 
+  cursor: pointer;
   border-radius: 8px;
 }
