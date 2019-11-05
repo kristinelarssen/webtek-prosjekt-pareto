@@ -490,13 +490,19 @@ span{
     grid-template-areas:
      "one"
      "two";
-    padding:5rem;
     padding-bottom: 5rem;
     padding-top:0rem;
+    margin:0px;
  }
  #econnectGridOne {
   grid-area: one;
   text-align: center;
+  width:300px;
+  margin:0px;
+  text-align: center;
+  float: none;
+  margin:auto;
+
 }
 
 #econnectGridTwo {
@@ -512,20 +518,19 @@ span{
   display:none;
 }
 
-#econnectGridOne{
-
-  float: none;
-  margin:auto;
-
-}
-
 #econnectBanner{
   display:none;
 }
 
 #econnectBilde{
-  width:300px;
+  margin-top:0px;
 }
+
+span{
+  display:inline-block;
+  margin:0px;
+}
+
 }
 
 
