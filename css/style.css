@@ -160,6 +160,11 @@ div#content {
   text-decoration: underline;
 }
 
+#js-menyknapp {
+  display: none;
+  z-index: 99;
+}
+
 /* Javascript-footerelementer */
 
 #js-footer > * {
@@ -216,12 +221,12 @@ div#content {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 #ulikon > li {
    display: inline;
-   padding-right: 10px;
-   padding-left: 0;
+   padding: 10px 20px 0 20px;
 }
 
 #ulkontakt {
@@ -273,7 +278,7 @@ div#content {
   html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: unset;
     background-color: #f5f5f5;
   }
 
@@ -322,7 +327,7 @@ div#content {
     display: block;
   }
   #js-header-ul {
-    display: block;
+    display: none;
     position: relative;
   }
   .js-header-li {
@@ -330,6 +335,13 @@ div#content {
     padding-top:12px;
     padding-bottom:12px;
     margin:0;
+  }
+
+  #js-menyknapp {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left:10px;
   }
 
   #js-footer-divkontakt {
@@ -351,11 +363,6 @@ div#content {
     left: unset;
     -ms-transform: none;
     transform: none;
-  }
-
-  #ulikon > li {
-    padding: 10px,20px,0,20px;
-    width: unset;
   }
 
   #ulkontakt {
