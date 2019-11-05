@@ -1,4 +1,6 @@
-/* Generelt - p, h1-6, osv. */
+/*************/
+/* Generelt */
+/*************/
 
 * {
   font-family: Roboto, sans-serif, arial;  /* Endret alt. 2 til sans-serif. Hvis det kødder til alt tar vi den bare bort. */
@@ -60,11 +62,6 @@ h3 {
 .italicFont {
   font-style: oblique;
 }
-/*  */
-
-/*  */
-
-/*  */
 
 
 /****************************************/
@@ -161,6 +158,11 @@ div#content {
   text-decoration: underline;
 }
 
+#js-menyknapp {
+  display: none;
+  z-index: 99;
+}
+
 /* Javascript-footerelementer */
 
 #js-footer > * {
@@ -217,12 +219,12 @@ div#content {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 #ulikon > li {
    display: inline;
-   padding-right: 10px;
-   padding-left: 0;
+   padding: 10px 20px 0 20px;
 }
 
 #ulkontakt {
@@ -251,11 +253,6 @@ div#content {
   padding-top: 20px;
 }
 
-#js-scrollup {
-  display: none;
-}
-
-
 /* CSS/Media query < 1000px for footer/header */
 @media only screen and (max-width: 900px) {
   #js-header {
@@ -279,7 +276,7 @@ div#content {
   html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: unset;
     background-color: #f5f5f5;
   }
 
@@ -328,7 +325,7 @@ div#content {
     display: block;
   }
   #js-header-ul {
-    display: block;
+    display: none;
     position: relative;
   }
   .js-header-li {
@@ -336,6 +333,13 @@ div#content {
     padding-top:12px;
     padding-bottom:12px;
     margin:0;
+  }
+
+  #js-menyknapp {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left:10px;
   }
 
   #js-footer-divkontakt {
@@ -359,27 +363,11 @@ div#content {
     transform: none;
   }
 
-  #ulikon > li {
-    padding: 10px,20px,0,20px;
-    width: unset;
-  }
-
   #ulkontakt {
     text-align: center;
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*********************/
@@ -389,49 +377,38 @@ div#content {
 .vedtekter{
   margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 10%;
 }
 
 .overskriftVedtekter{
-  /*font-weight: lighter;*/
+  margin-top: 0;
+  /*font-weight: lighter;
   font-style: normal;
   font-size: 40px;
   color: rgba(0, 0, 0, 0.8);
-  margin-left: 10%;
+  margin-left: 10%;  */
 }
 
 #listeVedtekter{
-
   margin-top: 0%;
   font-style: normal;
   font-weight: 200;
   font-size: 15px;
   line-height: 22px;
-
-  
 }
 
 #vedtekterbox{
 
   margin: 0 11%;
-  padding: 5rem;
+  /*padding: 5rem;*/
   background-color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#vedtektItem {
+  display: inline-block;
+  text-align: left;
+  margin-top: 10%;
+}
 
 
 /********************/
@@ -447,12 +424,7 @@ div#content {
   padding-right:3rem;
 }
 
-/* .econnectContent h1 {
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.8);
-} */
+
 
 /* .econnectContent p {
   font-style: normal;
@@ -524,8 +496,7 @@ span{
 }
 
 #econnectKontakt {
-  text-align: center;		
-  margin-top:-5%;
+  text-align: center;	
   }
 
 
@@ -558,19 +529,12 @@ span{
 }
 
 #econnectGridOne{
+
   float: none;		  
   margin:auto;		
-  width:20rem;
+
 }
 }
-
-
-
-
-
-
-
-
 
 
 /***********************/
@@ -696,6 +660,7 @@ span{
 
 .kontaktOssGridItem{
   border-right:none;
+
   
 }
 
@@ -705,6 +670,32 @@ span{
 
 
 
+
+}
+
+@media only screen and (max-width: 768px){
+  #kontaktOssGrid{
+    margin: 0%;
+
+
+}
+
+.kontaktOssGridItem:last-child {
+  margin-left:0px;
+
+}
+
+#kontaktOssMazemap{
+  margin-bottom:5%;
+  display: block;
+  margin-left:3rem;
+}
+
+#kontaktOssGoogle{
+  margin-left:15%;
+}
+
+}
 
 }
 
@@ -724,15 +715,6 @@ span{
 }
 
 }
-
-
-
-
-
-
-
-
-
 
 
 /********************/
@@ -811,37 +793,28 @@ span{
 } 
 
 
-
-
-
-
-
-
-
-
-
-
 /***********************/
 /* css til ny_student */
 /***********************/
 
-/*Lager grå marger på siden*/
 #box{
   background-color: white;
   margin-left: 11%;
   margin-right: 11%;
 }
 
-/*Sentrerer innholdet*/
 #nyStudentGrid {
   display: grid;
-  /*padding: 5rem; */
   grid-template-columns: 6fr 3fr ;
   column-gap: 3rem;
   background-color: white;
   margin-left: 10%;
   margin-right: 10%;
   padding-bottom: 10%;
+}
+
+#firstP {
+  padding-bottom: 3%;
 }
 
 .gridItem {
@@ -856,7 +829,7 @@ span{
   border-radius: 5px;
 }
 
-#startEndGridNyStudent { /* Gjenbrukes også i ny_student.html */
+#startEndGridNyStudent {
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -865,24 +838,13 @@ span{
 @media only screen and (max-width: 1125px) {
   #nyStudentGrid {
     grid-template-columns:1fr;
-    /*grid-template-areas:
-     "one"
-     "two";
-    /*padding:5rem; */
   }
   .gridItem {
     padding-bottom: 2%;
   }
-  .nyStudentBilde {
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 5px;
-  }
+
   .nyStudentBildeDiv img{
-    display : block;
-    margin-left: auto;
-    margin-right: auto;
+    display : none;
   }
 
   #startEndGridNyStudent {
@@ -890,22 +852,6 @@ span{
     grid-column-end: 2;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*********************/
@@ -1001,6 +947,11 @@ span{
   font-size: 17px;
 }
 
+.faktaboks_tall {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 900px) {
   #om_oss_faktaboks1_grid {
     grid-column-start: 1;
@@ -1033,37 +984,23 @@ span{
   #om_oss_faktaboks2_grid {
     grid-column-start: 3;
     grid-column-end: 4;
+    margin-top: 0;
   }
 
   #om_oss_faktaboks3_grid {
     grid-column-start: 3;
     grid-column-end: 4;
     margin-left: 0;
+    margin-top: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*******************/
 /* css til Styret */
 /*******************/
 
-/*Sentrerer innholdet*/
 #styretGrid {
   display: grid;
-  /*padding: 5rem; */
   grid-template-columns: 3fr 6fr ;
   column-gap: 3rem;
   background-color: white;
@@ -1072,14 +1009,18 @@ span{
   margin-right: 10%;
   padding-bottom: 10%;
 }
-#startEndGrid { /* Gjenbrukes også i ny_student.html */
+
+#styretGrid > h1, h2, h3 {
+  margin: 0 0;
+}
+#startEndGrid {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
 .styrebilde {
   width: 100%;
-  margin-top: 30%;
+  margin-top: 5%;
   margin-bottom: 10%;
 }
 
@@ -1091,14 +1032,10 @@ span{
 /* For mindre skjermer */
 @media only screen and (max-width: 1025px) {
   #styretGrid {
-  grid-template-columns:1fr;
-  /* grid-template-areas:
-     "one"
-     "two";
-    /*padding:3rem; */
+    grid-template-columns:1fr;
     row-gap: 0.2rem;
-
   }
+
   .styrebilde {
     width: 100%;
     margin-top: 5%;
@@ -1106,7 +1043,7 @@ span{
     border-radius: 5px;
   }
 
-  #startEndGrid {  /* Gjenbrukes også i ny_student.html */
+  #startEndGrid {
     grid-column-start: 1;
     grid-column-end: 2;
   }
@@ -1114,26 +1051,11 @@ span{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**********************/
 /* css til Slideshow */
 /**********************/
 
-/** {box-sizing:border-box}*/
+/* Inspirasjon er hentet fra https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
 /* Slideshow container div */
 #slideshow_container {
@@ -1184,31 +1106,14 @@ span{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*************************/
 /* CSS til arrangementer */
@@ -1358,7 +1263,7 @@ span{
 }
 
 .arr_øverste_tekst_arr {
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .arr_link {
@@ -1493,13 +1398,13 @@ span{
     margin-left: 0;
   }
 
-  /*.arr_bilde {
+  .arr_bilde {
     display: block;
   }
 
   .arr_bilde_smal {
     display: none;
-  }*/
+  }
 }
 
 @media only screen and (max-width: 558px) {
@@ -1507,43 +1412,17 @@ span{
     display: block;
     margin-left: 0;
   }
-}
 
-/* Prøver med den ovenfor i stedet for.
-@media only screen and (max-width: 488px) {
   .arr_bilde {
     display: none;
   }
 
   .arr_bilde_smal {
-    display: none;
-  }
-
-  .arr_arrangement_grid {
     display: block;
-    height:100%;
+    height: 120px;
+    margin-left: 25%;
   }
-
-  .arr_øverste_tekst_arr {
-    margin-top: 15px;
-  }
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 /**********************/
@@ -1596,7 +1475,7 @@ span{
   font-size: 80%;
   color: grey;
   margin-top: 5%;
-  line-height: 20px;
+  line-height: 17px;
 }
 
 .medlem_form_label {
@@ -1627,7 +1506,11 @@ span{
   border-color: #C5C5C5;
   border-radius: 6px;
   border-width: 2px;
-  padding: 1% 7% 11% 10%;
+  padding: 1% 7% 8% 10%;
+}
+
+#medlem_medlemsfordeler_overskrift {
+  margin-top: 7%;
 }
 
 #medlem_medlemsfordeler_liste {
@@ -1701,7 +1584,7 @@ span{
   }
 
   #medlem_vipps_bilde {
-    width: 40%;
+    width: 200px;
     margin-bottom: 15%;
   }
 
@@ -1727,61 +1610,21 @@ span{
 
 
 
-
-/*Komiteer */
-#komiteGrid {
-  display: grid;
-  padding: 5rem;
-  grid-template-columns: 5fr 4fr ;
-  column-gap: 2rem;
-
-}
-@media only screen and (max-width: 800px) {
-  #komiteGrid {
-    grid-template-columns:1fr;
-    grid-template-areas:
-     "one"
-     "two";
-    padding:5rem;
-    padding-bottom: 5rem;
- }
- #komiteGridOne {
-  grid-area: one;
-  margin-left:0%;
-}
-
-#komiteGridTwo {
-  grid-area: two;
-  margin-left: 0%;
-}
-
-#komiteGridOne #komite_arrbilde{
-  margin-top: 30px;
-}
-}
-
-/*********/
-/* rollup style*/
+/****************/
+/*Scrollup style*/
+/****************/
 html{
   scroll-behavior: smooth;
 }
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 8%; /* Place the button at the bottom of the page */
-  right: 2%; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  /*border: none; /* Remove borders */
-  /*outline: none; /* Remove outline */
-  background-color: #3A4B69;/* Set a background color */
-  /*color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  /*padding: none; /* Some padding */
-  border-radius: 8px; /* Rounded corners */
-  /*font-size: 18px;  Increase font size */
-
-}
-
-#myBtn:hover {
-  /*background-color: #555; /* Add a dark-grey background on hover */
+#js-scrollup {
+  /*display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 8%;
+  right: 2%;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: #3A4B69;
+  cursor: pointer;
+  border-radius: 8px;
 }

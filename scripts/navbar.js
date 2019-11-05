@@ -36,6 +36,16 @@ function createNavbar(tarElement) {
     createModElement("a", lielements[3], "Bli medlem", "bli_medlem.html", ["class", "js-header-link"]);
     createModElement("a", lielements[4], "Kontakt oss", "kontakt-oss.html", ["class", "js-header-link"]);
     createModElement("a", lielements[5], "Econnect", "econnect.html", ["class", "js-header-link"]);
+
+    // Oppretter knapp og img-element for rollup.js
+    createModElement("button",navbar,"","",[["id","js-scrollup"],["title","Gå til toppen"]]); /* !Button for scrollup! */
+    createModElement("img",document.getElementById("js-scrollup"),"","",[["src","img/scrollupikon.jpg"],["alt","scrollicon"],["width","50"],["height","50"]]);
+
+    // Oppretter knapp som viser/gjemmer navbar for mobil. 
+
+    createModElement("a",navbar,"","#",["id","js-menyknapp"]);
+    createModElement("img",document.getElementById("js-menyknapp"),"","",[["id","js-menysvg"],["src","img/ico/menyknapp.svg"],["alt","Menyknapp"],["width","48"],["height","48"],["type","image/svg+xml"]])
+
 }
 
 function createFooter(tarElement) {
@@ -85,9 +95,6 @@ function createFooter(tarElement) {
     createModElement("li",uladresse,"NTNU Adolf Øien Bygget");
     createModElement("li",uladresse,"Klæbuveien 72");
     createModElement("li",uladresse,"7030 Trondheim");
-
-    createModElement("button",divadresse,"","",["id","js-scrollup"]) /* !Button for scrollup! */
-    
 }
 
 
