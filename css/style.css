@@ -8,7 +8,8 @@ p {
   font-size: 15px;
   font-style: normal;
   font-weight: 200;
-  line-height: 22px;
+  /* line-height: 22px; */
+  line-height: 200%;
   /* Tror det var dette som ødela sidene. Kommenterte det ut for å få det tilbake til vanlig:
   font-size: 1.2vw;
   /*font-weight: normal;
@@ -446,20 +447,20 @@ div#content {
   padding-right:3rem;
 }
 
-.econnectContent h1 {
+/* .econnectContent h1 {
   font-weight: normal;
   font-size: 1rem;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
-}
+} */
 
-.econnectContent p {
+/* .econnectContent p {
   font-style: normal;
   font-weight: normal;
   font-size: 80%;
   line-height: 250%;
   color: rgba(0, 0, 0, 0.6);
-}
+} */
 
 #econnectLogo{
   width: 200px;		  
@@ -605,13 +606,13 @@ span{
   color: rgba(0, 0, 0, 0.8);
 }
 
-#kontaktOssGrid p {
+/* #kontaktOssGrid p {
   font-style: normal;
   font-weight: normal;
   font-size: 80%;
   line-height: 250%;
   color: rgba(0, 0, 0, 0.6);
-}
+} */
 
 #kontaktOssKommentar {
   width: 68%;
@@ -619,7 +620,7 @@ span{
 
 #kontaktOssForm {
   font-size: 75%;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 1);
 }
 
 #kontaktOssForm input {
@@ -701,6 +702,7 @@ span{
 .kontaktOssGridItem:last-child {
   margin-left:0px;
 }
+
 
 
 
