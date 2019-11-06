@@ -13,3 +13,14 @@ function validateEmails() {
 
 email1.addEventListener('input', validateEmails)
 email2.addEventListener('input', validateEmails)
+
+
+/* Legger til et medlem npr man trykker på send inn */
+let button = document.getElementById('medlem_button')
+
+function addMedlem() {
+  let medlemsnummer = document.getElementById('om_oss_medlemsnummer')
+  medlemsnummer.innerHTML = "321";
+}
+
+button.addEventListener('click',addMedlem)
