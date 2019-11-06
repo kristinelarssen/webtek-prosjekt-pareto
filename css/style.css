@@ -1048,13 +1048,6 @@ span{
     row-gap: 0.2rem;
   }
 
-  .styrebilde {
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 5px;
-  }
-
   #startEndGrid {
     grid-column-start: 1;
     grid-column-end: 2;
