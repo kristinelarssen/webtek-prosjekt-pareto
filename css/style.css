@@ -708,7 +708,7 @@ span{
 }
 
 #kontaktOssGoogle{
-  margin-left:3rem;
+  margin-left:15%;
 }
 
 }
@@ -858,6 +858,12 @@ span{
   #startEndGridNyStudent {
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .body {
+    background-color: white;
   }
 }
 
@@ -1023,11 +1029,12 @@ span{
 }
 
 #styretGrid > h1, h2, h3 {
-  margin: 0 0;
+  margin: 0 0 0 0;
 }
-#startEndGrid {
-  grid-column-start: 1;
-  grid-column-end: 3;
+
+.styreGridItem {
+  display: inline-block;
+  text-align: left;
 }
 
 .styrebilde {
@@ -1036,16 +1043,21 @@ span{
   margin-bottom: 10%;
 }
 
-.styreGridItem {
-  display: inline-block;
-  text-align: left;
+#startEndGrid {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
-/* For mindre skjermer */
+
+/*For mindre skjermer */
 @media only screen and (max-width: 1025px) {
   #styretGrid {
     grid-template-columns:1fr;
     row-gap: 0.2rem;
+  }
+
+  .styrebilde {
+    border-radius: 5px;
   }
 
   #startEndGrid {
@@ -1053,7 +1065,13 @@ span{
     grid-column-end: 2;
   }
 
+  .styreGridItem {
+    overflow: hidden;
+  }
+
 }
+
+
 
 
 /**********************/
