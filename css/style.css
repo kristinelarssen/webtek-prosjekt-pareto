@@ -743,6 +743,15 @@ span{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+@media only screen and (max-width: 768px) {
+  .dropdownItems {
+    top:100px;
+    left:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
 #Dropdown > a{
   display: block;
   font-size: 120%;
@@ -782,9 +791,11 @@ span{
     display: block;
   } */
 
-  .dropdown:hover > a:hover {
+  /* .dropdown:hover > a:hover {
     display:block;
-  }
+  } */
+
+  /* ^--- Det her som var feilen med menyen i "mobilmodus", den var ikke kommentert ut */
 
   /* .show {display: block;} */
 }
