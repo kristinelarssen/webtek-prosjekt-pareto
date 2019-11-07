@@ -965,10 +965,41 @@ span{
   font-size: 17px;
 }
 
-.faktaboks_tall {
+.om_oss_faktaboks_tall {
   font-size: 30px;
   margin-bottom: 0;
+  /*margin-top: -70px;*/
 }
+
+#om_oss_konfetti {
+  width: 100%;
+  display: none;
+}
+
+/* trenget ikke denne tror jeg
+#om_oss_konfetti a:hover {
+  display: block;
+}*/
+
+/* Funker kinda:
+.om_oss_faktabokser:hover {
+    position: relative;
+}
+.om_oss_faktabokser:hover {
+    background-image: url(../img/confetti.gif);
+    display: block;
+}*/
+
+/* Dette var W3 sin metode, men det funket heller ikke helt
+.overlay {
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.om_oss_faktabokser:hover .overlay {
+  opacity: 1;
+}*/
 
 @media only screen and (max-width: 900px) {
   #om_oss_faktaboks1_grid {
@@ -1499,6 +1530,7 @@ span{
 
 #medlem_form_overskrift {
   margin-top: 7%;
+  margin-bottom: 6%;
 }
 
 #medlem_skjema_info {
@@ -1514,7 +1546,7 @@ span{
 }
 
 .medlem_skjema_input {
-  padding: 1%;
+  padding: 2%;
   font-size: 12px;
   border-radius: 3px;
   border-color: grey;
@@ -1528,6 +1560,11 @@ span{
   font-size: 13px;
   background-color: rgba(52, 177, 50, 0.67);
   color: white;
+}
+
+#medlem_innsending_mottatt {
+  display: none;
+  margin-bottom: 0;
 }
 
 /* Medlemsfordeler */
@@ -1649,11 +1686,11 @@ html{
 #js-scrollup {
 
   display: none; /*default */
-  position: fixed; 
-  bottom: 8%; 
-  right: 2%; 
-  z-index: 100; 
-  border: none;   
+  position: fixed;
+  bottom: 8%;
+  right: 2%;
+  z-index: 100;
+  border: none;
   outline: none;
   background-color: #3A4B69;
   cursor: pointer;
