@@ -27,7 +27,7 @@ hvilket punkt fra oppgaven vi skriver om.-->
             <ul>
                 <li>Vår klient: Linjeforeningen Pareto</li>
                 <li>Kontaktperson: Oda Katrine Valen Leynse, leder av Pareto</li>
-                <li>Link til vår nettside: HER</li>
+                <li>Link til nettsiden: <a target="_blank" href="http://pareto.now.sh">HER</a></li>
             </ul>
 
         </div>
@@ -242,7 +242,7 @@ hvilket punkt fra oppgaven vi skriver om.-->
                 </li>
 
                 <li>
-                    <b>Endringer til dropdown-menyen</b>
+                    <b>Endringer til dropdown.js</b>
                     <p>
                         I dropdownen er den største endringen at vi har flere sider i dropdownen. Siden med
                         «styret» ble lagt til etter etterspørsel fra klienten. Siden «om Pareto» var egentlig
@@ -257,13 +257,40 @@ hvilket punkt fra oppgaven vi skriver om.-->
                 </li>
 
                 <li>
-                    <b>Endringer i planlagt CSS</b>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <b>Endringer til bli_medlem.js</b>
+                    <p>
+                        Denne skulle opprinnelig hete skjema.js.
+                    </p>
                     <br>
+                </li>
+
+                <li>
+
+                <li>
+                    <b>Endringer til rollup.js</b>
+                    <p>
+                        Denne skulle opprinnelig hete scroll.js.
+                    </p>
+                    <br>
+                </li>
+
+                <li>
+                    <b>Endringer til navbar.js</b>
+                    <p>
+
+                    </p>
+                    <br>
+                </li>
+
+
+                <b>Ting vi har lagt til</b>
+                <ul>
+                    <li>mobilnavbarknapp.js som er en knapp for å utvide navbar på mobil (mindre enn, eller lik 768px)
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <br>
                 </li>
 
 
@@ -315,11 +342,14 @@ implemented the pull-down menu for each page-->
 
                 </li>
 
-                <!-- Bjørn Are og Navbar -->   
+                <!-- Bjørn Are og Navbar -->
                 <li>
-                    I tillegg til de funksjonene vi fastsatte i P2, så har vi også lagt til funksjon for å vise/gjemme navbar på mobil,
-                    da denne blir vertikal på mobil. Det er både plassbesparende og brukeren trenger ikke få opp menyen når
-                    hen trykker seg inn på ny side, slik at hen må bla lengre for å komme til informasjonen hen leter etter. Implementert
+                    I tillegg til de funksjonene vi fastsatte i P2, så har vi også lagt til funksjon for å vise/gjemme
+                    navbar på mobil,
+                    da denne blir vertikal på mobil. Det er både plassbesparende og brukeren trenger ikke få opp menyen
+                    når
+                    hen trykker seg inn på ny side, slik at hen må bla lengre for å komme til informasjonen hen leter
+                    etter. Implementert
                     av Bjørn Are.
                 </li>
 
@@ -332,10 +362,14 @@ implemented the pull-down menu for each page-->
             <!--Indicate how the modularity requirement was handled and who was responsible for
 the implementation-->
             <p>
-                Kravet om modularitet er oppfylt gjennom navbar.js, som vha. javascript konstruerer navbar/header og footer, samt 
-                knapper og elementer for scrollup, dropdown og menyknapp for mobil. Scriptet targeter div som er plassert i header og
-                footer for body. Gjennom en egenlaget funksjon, som benytter seg blant annet av .createElement() og setAttribute(), som
-                lar oss sette inn ulike tags i forskjellige kombinasjoner, som gjør at det å legge til eller fjerne elementer i html for
+                Kravet om modularitet er oppfylt gjennom navbar.js, som vha. javascript konstruerer navbar/header og
+                footer, samt
+                knapper og elementer for scrollup, dropdown og menyknapp for mobil. Scriptet targeter div som er
+                plassert i header og
+                footer for body. Gjennom en egenlaget funksjon, som benytter seg blant annet av .createElement() og
+                setAttribute(), som
+                lar oss sette inn ulike tags i forskjellige kombinasjoner, som gjør at det å legge til eller fjerne
+                elementer i html for
                 header eller footer kan gjøres relativt raskt. Implementert av Bjørn Are.
             </p>
         </div>
