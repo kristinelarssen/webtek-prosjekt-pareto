@@ -269,17 +269,28 @@ and rollovers on members.html. Tom validated form inputs on orform.html and
 implemented the pull-down menu for each page-->
             <ul>
                 <!-- Kristine og slideshow-->
-                <li>Kristine oppfyltet sine JavaScript krav ved å lage en funksjon som endrer bildet, en som viser
+                <li>
+                    Kristine oppfyltet sine JavaScript krav ved å lage en funksjon som endrer bildet, en som viser
                     bildet, samt en funksjon som bytter bilde automatisk. Alle bildefilene har blitt lagt til i en liste
                     i slideshow.js. Videre har hun implementere slideshow.js i index.html</li>
                 <!--Frida og scrollup knapp-->
                 <li></li>
                 <!-- Hilde og nedtrekksmeny-->
-                <li>Hilde oppfylte sine JavaScriptkrav ved å lage en funskjon som bestemmer om dropdownmenyen i navbaren 
+                <li>
+                    Hilde oppfylte sine JavaScriptkrav ved å lage en funskjon som bestemmer om dropdownmenyen i navbaren 
                     vises eller sjules avhengig av om man har trykket på "om oss" eller noen av listeelementene i menyen.
                 </li>
                 <!-- BA og Ingrid og Skjemavalidering -->
-                <li></li>
+                <li>
+                    
+                </li>
+
+                <li>
+                    I tillegg til de funksjonene vi fastsatte i P2, så har vi også lagt til funksjon for å vise/gjemme navbar på mobil,
+                    da denne blir vertikal på mobil. Det er både plassbesparende og brukeren trenger ikke få opp menyen når
+                    hen trykker seg inn på ny side, slik at hen må bla lengre for å komme til informasjonen hen leter etter. Implementert
+                    av Bjørn Are.
+                </li>
             </ul>
         </div>
         <br>
@@ -289,7 +300,11 @@ implemented the pull-down menu for each page-->
             <!--Indicate how the modularity requirement was handled and who was responsible for
 the implementation-->
             <p>
-
+                Kravet om modularitet er oppfylt gjennom navbar.js, som vha. javascript konstruerer navbar/header og footer, samt 
+                knapper og elementer for scrollup, dropdown og menyknapp for mobil. Scriptet targeter div som er plassert i header og
+                footer for body. Gjennom en egenlaget funksjon, som benytter seg blant annet av .createElement() og setAttribute(), som
+                lar oss sette inn ulike tags i forskjellige kombinasjoner, som gjør at det å legge til eller fjerne elementer i html for
+                header eller footer kan gjøres relativt raskt. Implementert av Bjørn Are.
             </p>
         </div>
         <br>
@@ -359,12 +374,13 @@ the implementation-->
                 </li>
                 <li>scripts/
                     <ul>
+                        <li>navbar.js</li> <!-- Oppdatert/modularitet -->
                         <li>slideshow.js</li> <!-- Oppdatert -->
                         <li>scroll.js</li>
                         <li>bli_medlem.js</li> <!-- Oppdatert -->
-                        <li>meny.js</li>      
+                        <li>meny.js</li> <!-- Skal denne fjernes? -BA -->     
                         <li>dropdown.js</li>
-
+                        <li>mobilnavbarknapp.js</li> <!-- Ny -->
                     </ul>
                 </li>
                 <li>css/
@@ -482,11 +498,16 @@ the implementation-->
                     </tr>
 
                     <tr>
+                        <td>mobilnavbarknapp.js</td>
+                        <td>Knapp for å utvide navbar på mobil (mindre enn, eller lik 768px)</td>
+                        <td>Bjørn Are</td>
+                    </tr>
+
+                    <tr>
                         <td>Siste kontroll</td>
                         <td>Dobbelsjekke hver fil for feil</td>
                         <td>Alle</td>
                     </tr>
-
 
                 </tbody>
             </table>
