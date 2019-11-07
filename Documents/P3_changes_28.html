@@ -297,6 +297,7 @@ implemented the pull-down menu for each page-->
                     i slideshow.js. Videre har hun implementere slideshow.js i index.html
                 </li>
 
+
                 <!--Frida og scrollup knapp-->
                 <li>
 
@@ -314,10 +315,14 @@ implemented the pull-down menu for each page-->
 
                 </li>
 
-                <!-- Bjørn Are og Navbar -->
+                <!-- Bjørn Are og Navbar -->   
                 <li>
-
+                    I tillegg til de funksjonene vi fastsatte i P2, så har vi også lagt til funksjon for å vise/gjemme navbar på mobil,
+                    da denne blir vertikal på mobil. Det er både plassbesparende og brukeren trenger ikke få opp menyen når
+                    hen trykker seg inn på ny side, slik at hen må bla lengre for å komme til informasjonen hen leter etter. Implementert
+                    av Bjørn Are.
                 </li>
+
             </ul>
         </div>
         <br>
@@ -327,7 +332,11 @@ implemented the pull-down menu for each page-->
             <!--Indicate how the modularity requirement was handled and who was responsible for
 the implementation-->
             <p>
-
+                Kravet om modularitet er oppfylt gjennom navbar.js, som vha. javascript konstruerer navbar/header og footer, samt 
+                knapper og elementer for scrollup, dropdown og menyknapp for mobil. Scriptet targeter div som er plassert i header og
+                footer for body. Gjennom en egenlaget funksjon, som benytter seg blant annet av .createElement() og setAttribute(), som
+                lar oss sette inn ulike tags i forskjellige kombinasjoner, som gjør at det å legge til eller fjerne elementer i html for
+                header eller footer kan gjøres relativt raskt. Implementert av Bjørn Are.
             </p>
         </div>
         <br>
@@ -397,6 +406,7 @@ the implementation-->
                 </li>
                 <li>scripts/
                     <ul>
+
                         <li>slideshow.js</li>
                         <li>rollup.js</li>
                         <li>bli_medlem.js</li>
@@ -508,6 +518,7 @@ the implementation-->
                     </tr>
 
                     <tr>
+
                         <td>bli_medlem.js</td>
                         <td>Bli-medlem form-validering</td>
                         <td>Ingrid</td>
@@ -515,7 +526,7 @@ the implementation-->
 
                     <tr>
                         <td>mobilnavbarknapp.js</td>
-                        <td>Navigeringsbar på mobil</td>
+                        <td>Knapp for å utvide navbar på mobil (mindre enn, eller lik 768px)</td>
                         <td>Bjørn Are</td>
                     </tr>
 
@@ -526,17 +537,18 @@ the implementation-->
                     </tr>
 
                     <tr>
+
                         <td>style.css</td>
                         <td>CSS fil som inneholder all styling til websiden</td>
                         <td>Alle</td>
                     </tr>
 
                     <tr>
+
                         <td>Siste kontroll</td>
                         <td>Dobbelsjekke hver fil for feil</td>
                         <td>Alle</td>
                     </tr>
-
 
                 </tbody>
             </table>
