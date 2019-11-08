@@ -46,19 +46,24 @@
 
           <div id="om_oss_faktaboks_tom1_grid"> </div>
 
-          <div class="om_oss_faktabokser" id="om_oss_faktaboks1_grid">
-            <p class="faktaboks_tall">3</p>
-            <p>Komiteer</p>
+          <div class="om_oss_faktabokser" id="om_oss_faktaboks1_grid" onmouseover="show_konfetti()" onmouseout="hide_konfetti()">
+            <img src="./img/confetti.gif" alt="Konfetti" class="om_oss_konfetti">
+            <p class="om_oss_faktaboks_tall">3</p>
+            <p class="om_oss_faktaboks_tekst">Komiteer</p>
           </div>
 
-          <div class="om_oss_faktabokser" id="om_oss_faktaboks2_grid">
-            <p class="faktaboks_tall">320</p>
-            <p>Medlemmer</p>
+          <div class="om_oss_faktabokser" id="om_oss_faktaboks2_grid" onmouseover="show_konfetti()" onmouseout="hide_konfetti()">
+            <img src="./img/confetti.gif" alt="Konfetti" class="om_oss_konfetti">
+            <p class="om_oss_faktaboks_tall" id="om_oss_medlemsnummer">320</p>
+            <p class="om_oss_faktaboks_tekst">Medlemmer</p>
           </div>
 
-          <div class="om_oss_faktabokser" id="om_oss_faktaboks3_grid">
-            <p class="faktaboks_tall">1993</p>
-            <p>År stiftet</p>
+          <div class="om_oss_faktabokser" id="om_oss_faktaboks3_grid" onmouseover="show_konfetti()" onmouseout="hide_konfetti()">
+            <!--<div class="overlay">-->
+              <img src="./img/confetti.gif" alt="Konfetti" class="om_oss_konfetti">
+            <!--</div>-->
+            <p class="om_oss_faktaboks_tall">1993</p>
+            <p class="om_oss_faktaboks_tekst">År stiftet</p>
           </div>
 
           <div id="om_oss_faktaboks_tom2_grid"> </div>
@@ -76,6 +81,8 @@
     <script src="scripts/dropdown.js"></script>
     <script src="scripts/rollup.js"></script>
     <script src="scripts/mobilnavbarknapp.js"></script>
+    <script src="scripts/bli_medlem.js"></script>
+    <script src="scripts/om_pareto.js"></script>
   </body>
 
 </html>
