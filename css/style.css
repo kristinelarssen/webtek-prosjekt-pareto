@@ -215,7 +215,7 @@ div#content {
   text-align: center;
   list-style: inside url("../img/ico/email.png");
   font-size: calc(4px + 0.5rem);
-  padding-inline-start: 10px;
+  padding-inline-start: 0px;
 }
 
 #ulkontakt > li {
@@ -227,6 +227,10 @@ div#content {
 #ulkontakt > li > a {
   color: white;
   z-index: 5;
+}
+
+#ulkontakt > li:nth-child(2) {
+  list-style: inside url("../img/ico/facebookbullet.png");
 }
 
 #uladresse {
