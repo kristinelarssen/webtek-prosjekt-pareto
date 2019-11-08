@@ -976,10 +976,16 @@ span{
 .om_oss_faktaboks_tall {
   font-size: 30px;
   margin-bottom: 0;
+  /*position: absolute;*/
   /*margin-top: -70px;*/
 }
 
-#om_oss_konfetti {
+/*.om_oss_faktaboks_tekst {
+  position: absolute;
+  text-align: center;
+}*/
+
+.om_oss_konfetti {
   width: 100%;
   display: none;
 }
