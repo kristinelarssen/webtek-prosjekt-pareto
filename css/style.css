@@ -215,7 +215,7 @@ div#content {
   text-align: center;
   list-style: inside url("../img/ico/email.png");
   font-size: calc(4px + 0.5rem);
-  padding-inline-start: 10px;
+  padding-inline-start: 0px;
 }
 
 #ulkontakt > li {
@@ -229,12 +229,20 @@ div#content {
   z-index: 5;
 }
 
+#ulkontakt > li:nth-child(2) {
+  list-style: inside url("../img/ico/facebookbullet.png");
+}
+
 #uladresse {
   list-style: none;
   text-align: center;
   font-size: calc(5px + 0.5rem);
   padding: 0;
-  padding-top: 20px;
+  padding-top: 5px;
+}
+
+#uladresse > li {
+  padding: 5px 0 5px 0;
 }
 
 /* CSS/Media query < 1000px for footer/header */
