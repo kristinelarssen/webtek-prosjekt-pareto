@@ -238,7 +238,11 @@ div#content {
   text-align: center;
   font-size: calc(5px + 0.5rem);
   padding: 0;
-  padding-top: 20px;
+  padding-top: 5px;
+}
+
+#uladresse > li {
+  padding: 5px 0 5px 0;
 }
 
 /* CSS/Media query < 1000px for footer/header */
