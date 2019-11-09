@@ -20,7 +20,7 @@ email2.addEventListener('input', validateEmails)
 
 function addMedlem() {
   if(localStorage.getItem("medlemmer")=== null) {
-    localStorage.setItem("medlemmer", 320)
+    localStorage.setItem("medlemmer", 320 + 1 )
   } else {
     let medlemmer = parseInt(localStorage.getItem("medlemmer")) + 1
     localStorage.setItem("medlemmer", medlemmer)

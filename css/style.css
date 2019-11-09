@@ -215,7 +215,7 @@ div#content {
   text-align: center;
   list-style: inside url("../img/ico/email.png");
   font-size: calc(4px + 0.5rem);
-  padding-inline-start: 0px;
+  padding: 0;
 }
 
 #ulkontakt > li {
