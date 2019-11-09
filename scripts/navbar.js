@@ -76,9 +76,9 @@ function createFooter(tarElement) {
     createModElement("a",ulikon.children[1],"","https://www.facebook.com/paretolinjeforening/",["id","js-faceico"])
     createModElement("a",ulikon.children[2],"","https://www.instagram.com/paretolinjeforening",["id","js-instaico"])
 
-    createModElement("img",document.getElementById("js-parico"),"","",[["src","img/ico/pareto.png"],["alt","Pareto"],["width","32"]])
-    createModElement("img",document.getElementById("js-faceico"),"","",[["src","img/ico/facebook.png"],["alt","Facebook"],["width","32"]])
-    createModElement("img",document.getElementById("js-instaico"),"","",[["src","img/ico/instagram.png"],["alt","Instagram"],["width","32"]])
+    createModElement("img",document.getElementById("js-parico"),"","",[["src","img/ico/pareto.png"],["alt","Pareto-ikon"],["width","32"]])
+    createModElement("img",document.getElementById("js-faceico"),"","",[["src","img/ico/facebook.png"],["alt","Facebook-ikon"],["width","32"]])
+    createModElement("img",document.getElementById("js-instaico"),"","",[["src","img/ico/instagram.png"],["alt","Instagram-ikon"],["width","32"]])
     
     createModElement("li",ulkontakt,"Styret: ");
     createModElement("li",ulkontakt);
