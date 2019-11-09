@@ -715,19 +715,10 @@ span{
 
 
 
-@media only screen and (max-width: 768px){
-  
-
-#kontaktOssMazemap{
-  margin-bottom:5%;
-  display: block;
-  margin-left:3rem;
-}
-
-#kontaktOssGoogle{
-  margin-left:3rem;
-}
-
+@media only screen and (max-width: 350px) {
+  #kontaktOssEpost{
+    display:none;
+  }
 }
 
 
