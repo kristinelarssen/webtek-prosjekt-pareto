@@ -510,7 +510,6 @@ span{
   margin:0px;
   float: none;
   margin:auto;
-  display: inline-block;
   overflow: hidden;
   
 
@@ -520,7 +519,7 @@ span{
   grid-area: two;
   text-align: center;
   display: inline-block;
-  text-align: left;
+  text-align: center;
 }
 
 #econnectOm {
@@ -545,6 +544,13 @@ span{
 }
 
 }
+
+@media only screen and (max-width: 450px) {
+  #econnectBilde{
+    display:none;
+  }
+}
+
 
 
 /***********************/
@@ -702,7 +708,7 @@ span{
 }
 
 #kontaktOssGoogle{
-  margin-left:15%;
+  margin-left:3rem;
 }
 
 }
@@ -710,9 +716,7 @@ span{
 
 
 @media only screen and (max-width: 768px){
-  #kontaktOssGrid{
-    margin: 0%;
-}
+  
 
 #kontaktOssMazemap{
   margin-bottom:5%;
@@ -721,7 +725,7 @@ span{
 }
 
 #kontaktOssGoogle{
-  margin-left:15%;
+  margin-left:3rem;
 }
 
 }
