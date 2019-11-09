@@ -229,29 +229,36 @@ suggestions for improvements are difficult or impossible to tackle. -->
                 at det var sosiale-medier elementer der allerede fra start.
             </p>
 
-            <p>
-                <b>Bugs ved bruk av nettbrett/mobil: </b>
-                <ul>
-                    <li>
-                        En av feilene som vi er klar over per nå, men som ikke
-                        berørte noen
-                        av testpersonene, er at om bredden på vinduet er liten nok til at navbar kollapser, åpner og
-                        lukker
-                        denne, og
-                        deretter
-                        resizer vinduet til større enn 768px (breakpoint for mobil/pc-visning), så vil ikke navbaren
-                        automatisk
-                        settes som synlig.
-                        Siden det kreves resizing og at man klikker på siden for å gjøre dette, så ville det ikke vært
-                        det
-                        første vi løste, men
-                        antar at løsningen på dette vil være å legge til skript som fjerner inline-style som
-                        mobilnavbarknapp.js
-                        legger til når
-                        siden går over breakpoint for mediaquery som endrer navbaren.
-                    </li>
-                </ul>
-            </p>
+            <p><b>Bugs ved bruk av nettbrett/mobil: </b></p>
+            <ul>
+                <li>
+                    En av feilene som vi er klar over per nå, men som ikke
+                    berørte noen
+                    av testpersonene, er at om bredden på vinduet er liten nok til at navbar kollapser, åpner og
+                    lukker
+                    denne, og
+                    deretter
+                    resizer vinduet til større enn 768px (breakpoint for mobil/pc-visning), så vil ikke navbaren
+                    automatisk
+                    settes som synlig.
+                    Siden det kreves resizing og at man klikker på siden for å gjøre dette, så ville det ikke vært
+                    det
+                    første vi løste, men
+                    antar at løsningen på dette vil være å legge til skript som fjerner inline-style som
+                    mobilnavbarknapp.js
+                    legger til når
+                    siden går over breakpoint for mediaquery som endrer navbaren.
+                </li>
+                
+                <li>
+                    I løpet av testingen ble vi også klar over at minst to personer opplevde at menyknapp for mobil låste seg når de byttet mellom nettleser og annen app på mobil.
+                    Felles for begge var at de hadde iOS-telefoner og benyttet safari. Den ene av personene hadde iPhone 7, men har ikke nærmere beskrivelse på den andre. Vi har selv ikke klart å reprodusere denne feilen
+                    med våre egne telefoner, og vil derfor tro at det kan være enten OS eller Safari som forårsaker dette. I begge av disse tilfellene var det nok for brukerne å laste inn siden på nytt, så var det i orden.
+                    Med mer testing selv, med samme oppsett som disse brukerne benyttet, så ville prøvd å finne ut om det er en funksjon, enten i Javascript eller CSS som ikke er støttet av Safari, og ev. lagt inn workarounds
+                    for de spesifikke tilfellene, eller satt opp funksjonen på nytt, slik at den støtter alle nettlesere fra start.
+                </li>
+            </ul>
+
 
 
         </div>
