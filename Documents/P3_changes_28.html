@@ -161,33 +161,33 @@
                 <li>
                     <b>Endringer til bli_medlem.html</b>
                     <p>
-                      Avsnittet øverst inneholder ikke allikevel tekst om hvorfor du burde bli medlem eller hvor
-                      mange medlemmer Pareto har per nå, men bare prisinformasjon. Mindre tekst og «unødvendig»
-                      innhold gjør siden raskere å orientere seg i. Grunner til å bli medlem finner man uansett
-                      fortsatt i bolken med medlemsfordeler. Det var ikke nødvendig med mer betalingsinformasjon
-                      enn vippsinformasjonen og avsnittet øverst. Derfor har vi droppet å ha med betalingsinformasjon
-                      i den uordnede listen med medlemsfordeler.
-                      <br><br>
-                      Vi sa opprinnelig at når man trykker «send inn» så skal man få en mail med bekreftelse på
-                      at innsendingen ble mottatt, samt en forespørsel om å bekrefte mailen som ble brukt. Dette
-                      har vi ikke implementert ettersom at det krever et backend-system som ikke går innenfor rammene
-                      til prosjektet. Vi har imidlertid beholdt pop-up beskjeden som sier «Innsendingen er mottatt»
-                      slik at brukeren får en tilbakemelding. Ettersom at vi ikke kan bruke backend til å lagre
-                      informasjonen som brukeren skriver inn har vi i tillegg lagt til en mail-to funksjon som gjør
-                      at når man trykker «send inn» så åpnes en ferdig utfylt mail til Pareto med informasjonen som
-                      brukeren har skrevet inn. Dette er en ganske primitiv erstatning, men er en løsning som vil
-                      fungere. Da vil Pareto motta registreringen som brukeren har gjort når han sender mailen.
-                      <br><br>
-                      Det samme problemet gjelder for +1-funksjonen på medlemscounteren. Når man trykker «send inn»
-                      på innmeldingsskjemaet skal antall medlemmer som står på Om Pareto-siden oppdateres med 1.
-                      Ettersom at vi ikke har en database å lagre antall medlemmer i, har vi valgt å bruke local
-                      storage som en erstatning for dette. Når en ny enhet åpner nettsiden for første gang vil
-                      antall medlemmer være satt til 320. Når man melder seg inn i Pareto på denne enheten vil
-                      medlemsnummeret oppdateres til 321. Slik fortsetter det for hver gang noen melder seg inn
-                      på denne enheten. En annen enhet vil derimot ikke oppleve de samme oppdateringene. Det samme
-                      gjelder hvis brukeren av enheten tømmer sitt local storage. Da vil medlemsnummeret settes
-                      tilbake til 320. Dette er ikke en funksjon vi ville brukt i praksis om nettsiden faktisk
-                      skulle bli lansert, men er en visuell erstatning for hvordan vi ville gjort det med backend.
+                        Avsnittet øverst inneholder ikke allikevel tekst om hvorfor du burde bli medlem eller hvor
+                        mange medlemmer Pareto har per nå, men bare prisinformasjon. Mindre tekst og «unødvendig»
+                        innhold gjør siden raskere å orientere seg i. Grunner til å bli medlem finner man uansett
+                        fortsatt i bolken med medlemsfordeler. Det var ikke nødvendig med mer betalingsinformasjon
+                        enn vippsinformasjonen og avsnittet øverst. Derfor har vi droppet å ha med betalingsinformasjon
+                        i den uordnede listen med medlemsfordeler.
+                        <br><br>
+                        Vi sa opprinnelig at når man trykker «send inn» så skal man få en mail med bekreftelse på
+                        at innsendingen ble mottatt, samt en forespørsel om å bekrefte mailen som ble brukt. Dette
+                        har vi ikke implementert ettersom at det krever et backend-system som ikke går innenfor rammene
+                        til prosjektet. Vi har imidlertid beholdt pop-up beskjeden som sier «Innsendingen er mottatt»
+                        slik at brukeren får en tilbakemelding. Ettersom at vi ikke kan bruke backend til å lagre
+                        informasjonen som brukeren skriver inn har vi i tillegg lagt til en mail-to funksjon som gjør
+                        at når man trykker «send inn» så åpnes en ferdig utfylt mail til Pareto med informasjonen som
+                        brukeren har skrevet inn. Dette er en ganske primitiv erstatning, men er en løsning som vil
+                        fungere. Da vil Pareto motta registreringen som brukeren har gjort når han sender mailen.
+                        <br><br>
+                        Det samme problemet gjelder for +1-funksjonen på medlemscounteren. Når man trykker «send inn»
+                        på innmeldingsskjemaet skal antall medlemmer som står på Om Pareto-siden oppdateres med 1.
+                        Ettersom at vi ikke har en database å lagre antall medlemmer i, har vi valgt å bruke local
+                        storage som en erstatning for dette. Når en ny enhet åpner nettsiden for første gang vil
+                        antall medlemmer være satt til 320. Når man melder seg inn i Pareto på denne enheten vil
+                        medlemsnummeret oppdateres til 321. Slik fortsetter det for hver gang noen melder seg inn
+                        på denne enheten. En annen enhet vil derimot ikke oppleve de samme oppdateringene. Det samme
+                        gjelder hvis brukeren av enheten tømmer sitt local storage. Da vil medlemsnummeret settes
+                        tilbake til 320. Dette er ikke en funksjon vi ville brukt i praksis om nettsiden faktisk
+                        skulle bli lansert, men er en visuell erstatning for hvordan vi ville gjort det med backend.
                     </p>
                     <br>
                 </li>
@@ -341,7 +341,7 @@
                             når du hovrer over dem.
                         </li>
                         <li>Lagt til en mailto-funksjon som kjøres når man sender inn innmeldingsskjemaet på
-                          Bli Medlem-siden.
+                            Bli Medlem-siden og Kontakt oss.
                         </li>
                     </ul>
                     <br>
@@ -397,13 +397,13 @@
 
                 <!--Ingrid og Skjemavalidering -->
                 <li>
-                  Ingrid oppfylte sine validerings-krav ved å bruke både html og JavaScript. I html brukte hun
-                  "required" på alle input-elementene for at skjemaet ikke skulle kunne sendes inn tomt/mangelfullt.
-                  Hun brukte "pattern" til å godta kun bokstaver i fornavn og etternavn, og type="email"
-                  for å passe på at det som blir skrevet inn i email-feltet faktisk er en email.
-                  For å sjekke at emailene som blir skrevet inn er like hverandre lagde Ingrid eg JavaScript-funksjon
-                  som henter inn emailene som ble oppgitt og gir ut en feilmelding dersom emailene ikke stemmer
-                  overens.
+                    Ingrid oppfylte sine validerings-krav ved å bruke både html og JavaScript. I html brukte hun
+                    "required" på alle input-elementene for at skjemaet ikke skulle kunne sendes inn tomt/mangelfullt.
+                    Hun brukte "pattern" til å godta kun bokstaver i fornavn og etternavn, og type="email"
+                    for å passe på at det som blir skrevet inn i email-feltet faktisk er en email.
+                    For å sjekke at emailene som blir skrevet inn er like hverandre lagde Ingrid eg JavaScript-funksjon
+                    som henter inn emailene som ble oppgitt og gir ut en feilmelding dersom emailene ikke stemmer
+                    overens.
                 </li>
 
                 <!-- Bjørn Are og Navbar -->
@@ -463,6 +463,7 @@
                 <li>img/
                     <ul>
                         <li>pareto_logo.png</li>
+                        <li>pareto_logofull.png</li>
                         <li>econnect_logo.png</li>
                         <li>econnect_banner.png</li>
                         <li>mazemap.png</li>
@@ -495,6 +496,9 @@
                         <li>kalenderikon_liten.png</li>
                         <li>ringeklokkeikon_liten.png</li>
                         <li>scrollupikon.jpeg</li>
+                        <li>confetti.gif</li>
+                        <li>confetti_liten.gif</li>
+                        <li>cropped-logo-navbar.jpeg</li>
                         <li>ico/
                             <ul>
                                 <li>email.png</li>
