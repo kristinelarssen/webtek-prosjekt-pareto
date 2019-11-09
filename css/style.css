@@ -464,6 +464,7 @@ div#content {
 
 #econnectOm{
   font-weight:normal;
+  
 }
 
 #econnectGridOne {
@@ -507,15 +508,19 @@ span{
   text-align: center;
   width:300px;
   margin:0px;
-  text-align: center;
   float: none;
   margin:auto;
+  display: inline-block;
+  overflow: hidden;
+  
 
 }
 
 #econnectGridTwo {
   grid-area: two;
   text-align: center;
+  display: inline-block;
+  text-align: left;
 }
 
 #econnectOm {
