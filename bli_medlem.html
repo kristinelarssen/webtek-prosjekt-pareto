@@ -26,7 +26,7 @@
         </div>
 
         <div id="medlem_skjema_grid">
-          <form action="mailto:pareto.linjeforening@gmail.com?subject=Nytt%20medlem" method="POST" enctype="text/plain" target="_blank">
+          <form onsubmit='changeDisplay()' action="mailto:pareto.linjeforening@gmail.com?subject=Nytt%20medlem" method="POST" enctype="text/plain" target="_blank">
             <div>
               <header></header>
             </div>
@@ -64,7 +64,7 @@
             </p>
             <br>
 
-            <button id="medlem_button" onclick='changeDisplay()'>Send inn</button>
+            <input type="submit" id="medlem_button" value="Send inn">
             <p id="medlem_innsending_mottatt">Insendingen din ble mottatt.</p>
           </div>
 

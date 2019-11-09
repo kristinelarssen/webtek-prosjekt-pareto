@@ -17,14 +17,26 @@ email2.addEventListener('input', validateEmails)
 
 
 /* Legger til et medlem når man trykker på send inn */
-let send_inn_knapp = document.getElementById('medlem_button')
+
 
 function addMedlem() {
-  let medlemsnummer = document.getElementById('om_oss_medlemsnummer').innerText;
-  medlemsnummer.innerText = "321";
-}
+  if(localStorage.getItem("medlemmer")=== null) {
+    localStorage.setItem("medlemmer", 320)
+  } else {
+    let medlemmer = parseInt(localStorage.getItem("medlemmer")) + 1
+    localStorage.setItem("medlemmer", medlemmer)
+  }
 
-send_inn_knapp.addEventListener('click',addMedlem)
+  /*
+  let medlemsnummer = document.getElementById('om_oss_medlemsnummer');
+  console.log(medlemsnummer)
+  medlemsnummer.innerText = "321";*/
+}
+let send_inn_knapp = document.getElementById('medlem_button')
+
+send_inn_knapp.addEventListener('click',function() {
+  addMedlem()
+})
 
 
 
@@ -33,4 +45,5 @@ const popup = document.getElementById('medlem_innsending_mottatt')
 
 function changeDisplay() {
   popup.style.display = 'block'
+
 }

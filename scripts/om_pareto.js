@@ -2,6 +2,14 @@ let konfetti = document.getElementsByClassName('om_oss_konfetti')
 let liste_tall = document.getElementsByClassName('om_oss_faktaboks_tall')
 let liste_tekst = document.getElementsByClassName('om_oss_faktaboks_tekst')
 
+
+
+
+function medlemmer() {
+  let medlemsnummer = document.getElementById('om_oss_medlemsnummer');
+  medlemsnummer.innerText = localStorage.getItem("medlemmer");
+}
+medlemmer()
 function show_konfetti() {
   for(a=0; a<3; a++) {
     konfetti[a].style.display = 'block';
