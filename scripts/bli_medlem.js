@@ -18,7 +18,6 @@ email2.addEventListener('input', validateEmails)
 
 /* Legger til et medlem når man trykker på send inn */
 
-
 function addMedlem() {
   if(localStorage.getItem("medlemmer")=== null) {
     localStorage.setItem("medlemmer", 320)
@@ -27,10 +26,7 @@ function addMedlem() {
     localStorage.setItem("medlemmer", medlemmer)
   }
 
-  /*
-  let medlemsnummer = document.getElementById('om_oss_medlemsnummer');
-  console.log(medlemsnummer)
-  medlemsnummer.innerText = "321";*/
+
 }
 let send_inn_knapp = document.getElementById('medlem_button')
 

@@ -8,10 +8,6 @@
     <title>P3 Design Changes</title>
 </head>
 
-
-<!--Vi beholder alle overskriftene på engelsk, slik at det skal være lett å se
-hvilket punkt fra oppgaven vi skriver om.-->
-
 <body>
     <div id="wrapper">
         <!-- Punkt 1 -->
@@ -134,6 +130,12 @@ hvilket punkt fra oppgaven vi skriver om.-->
                         ble endret til 95 x 95 px i stedet for 100 x 100 px. Boksene er satt til en
                         spesifikk størrelse og i motsetning til bildet ikke bli mindre ved mindre skjerm,
                         men heller hoppe under hverandre.
+                        <br><br>
+                        Etter testing la vi også på en konfetti-effekt som får det til å regne konfetti
+                        inni faktaboksene når man hovrer over dem. Dette var noe vi hadde en idé om å gjøre
+                        i utgangspunktet, men som ikke ble skrevet i P2 da det ikke var noe vi kom til å
+                        prioritere, men heller kunne slenge på hvis vi fikk tid. Etter tilbakemelding fra
+                        testingen med ønske om mer farge og liv på siden la vi på funksjonen.
                     </p>
                     <br>
                 </li>
@@ -159,7 +161,33 @@ hvilket punkt fra oppgaven vi skriver om.-->
                 <li>
                     <b>Endringer til bli_medlem.html</b>
                     <p>
-
+                      Avsnittet øverst inneholder ikke allikevel tekst om hvorfor du burde bli medlem eller hvor
+                      mange medlemmer Pareto har per nå, men bare prisinformasjon. Mindre tekst og «unødvendig»
+                      innhold gjør siden raskere å orientere seg i. Grunner til å bli medlem finner man uansett
+                      fortsatt i bolken med medlemsfordeler. Det var ikke nødvendig med mer betalingsinformasjon
+                      enn vippsinformasjonen og avsnittet øverst. Derfor har vi droppet å ha med betalingsinformasjon
+                      i den uordnede listen med medlemsfordeler.
+                      <br><br>
+                      Vi sa opprinnelig at når man trykker «send inn» så skal man få en mail med bekreftelse på
+                      at innsendingen ble mottatt, samt en forespørsel om å bekrefte mailen som ble brukt. Dette
+                      har vi ikke implementert ettersom at det krever et backend-system som ikke går innenfor rammene
+                      til prosjektet. Vi har imidlertid beholdt pop-up beskjeden som sier «Innsendingen er mottatt»
+                      slik at brukeren får en tilbakemelding. Ettersom at vi ikke kan bruke backend til å lagre
+                      informasjonen som brukeren skriver inn har vi i tillegg lagt til en mail-to funksjon som gjør
+                      at når man trykker «send inn» så åpnes en ferdig utfylt mail til Pareto med informasjonen som
+                      brukeren har skrevet inn. Dette er en ganske primitiv erstatning, men er en løsning som vil
+                      fungere. Da vil Pareto motta registreringen som brukeren har gjort når han sender mailen.
+                      <br><br>
+                      Det samme problemet gjelder for +1-funksjonen på medlemscounteren. Når man trykker «send inn»
+                      på innmeldingsskjemaet skal antall medlemmer som står på Om Pareto-siden oppdateres med 1.
+                      Ettersom at vi ikke har en database å lagre antall medlemmer i, har vi valgt å bruke local
+                      storage som en erstatning for dette. Når en ny enhet åpner nettsiden for første gang vil
+                      antall medlemmer være satt til 320. Når man melder seg inn i Pareto på denne enheten vil
+                      medlemsnummeret oppdateres til 321. Slik fortsetter det for hver gang noen melder seg inn
+                      på denne enheten. En annen enhet vil derimot ikke oppleve de samme oppdateringene. Det samme
+                      gjelder hvis brukeren av enheten tømmer sitt local storage. Da vil medlemsnummeret settes
+                      tilbake til 320. Dette er ikke en funksjon vi ville brukt i praksis om nettsiden faktisk
+                      skulle bli lansert, men er en visuell erstatning for hvordan vi ville gjort det med backend.
                     </p>
                     <br>
                 </li>
@@ -309,7 +337,12 @@ hvilket punkt fra oppgaven vi skriver om.-->
                         <li>Mobilnavbarknapp.js som er en knapp for å utvide navbar på mobil (mindre enn, eller lik
                             768px)
                         </li>
-                        <li>Lagt til om_pareto.js som legger på konfetti i årstallsboksen på om pareto siden</li>
+                        <li>Lagt til om_pareto.js som legger på konfetti i faktaboksene på Om Pareto-siden
+                            når du hovrer over dem.
+                        </li>
+                        <li>Lagt til en mailto-funksjon som kjøres når man sender inn innmeldingsskjemaet på
+                          Bli Medlem-siden.
+                        </li>
                     </ul>
                     <br>
                 </li>
@@ -333,9 +366,9 @@ hvilket punkt fra oppgaven vi skriver om.-->
         <div class="box">
             <h3>Hvordan vi oppfylte minimunskravene</h3>
             <!--How each of the team members fulfilled their minimum requirements. For example:
-Rachel fulfilled her JavaScript requirements with a user-defined function on intro.html
-and rollovers on members.html. Tom validated form inputs on orform.html and
-implemented the pull-down menu for each page-->
+                Rachel fulfilled her JavaScript requirements with a user-defined function on intro.html
+                and rollovers on members.html. Tom validated form inputs on orform.html and
+                implemented the pull-down menu for each page-->
             <ul>
                 <!-- Kristine og slideshow-->
                 <li>
@@ -364,7 +397,13 @@ implemented the pull-down menu for each page-->
 
                 <!--Ingrid og Skjemavalidering -->
                 <li>
-
+                  Ingrid oppfylte sine validerings-krav ved å bruke både html og JavaScript. I html brukte hun
+                  "required" på alle input-elementene for at skjemaet ikke skulle kunne sendes inn tomt/mangelfullt.
+                  Hun brukte "pattern" til å godta kun bokstaver i fornavn og etternavn, og type="email"
+                  for å passe på at det som blir skrevet inn i email-feltet faktisk er en email.
+                  For å sjekke at emailene som blir skrevet inn er like hverandre lagde Ingrid eg JavaScript-funksjon
+                  som henter inn emailene som ble oppgitt og gir ut en feilmelding dersom emailene ikke stemmer
+                  overens.
                 </li>
 
                 <!-- Bjørn Are og Navbar -->
@@ -387,7 +426,7 @@ implemented the pull-down menu for each page-->
         <div class="box">
             <h3>Modularitet</h3>
             <!--Indicate how the modularity requirement was handled and who was responsible for
-the implementation-->
+                the implementation-->
             <p>
                 Kravet om modularitet er oppfylt gjennom navbar.js, som vha. javascript konstruerer navbar/header og
                 footer, samt
@@ -589,7 +628,7 @@ the implementation-->
 
                     <tr>
                         <td>om_pareto.js</td>
-                        <td>Konfetti i årstallboks på om pareto siden</td>
+                        <td>Konfetti i årstallboks på Om Pareto-siden</td>
                         <td>Ingrid</td>
 
                     </tr>
