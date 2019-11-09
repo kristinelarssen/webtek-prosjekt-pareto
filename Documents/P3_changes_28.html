@@ -109,8 +109,10 @@ hvilket punkt fra oppgaven vi skriver om.-->
                         vi endret utseende på pilene, ettersom klienten heller ville ha mindre piler enn først planlagt.
                     </p>
                     <p>
-                        ------ Bjørn Are -> si litt om hvorfor vi ike tok med tekst og ting under slideshow??
-
+                        I P2 presenterte vi to muligheter for index.html, den ene kun med bildeslideshow, og den andre med content
+                        nedenfor dette. I løpet av arbeidet med å kode nettsiden, så hadde vi ingen informasjon som skulle legges inn
+                        som samtidig ikke var godt dekket av de andre sidene. Klienten hadde heller ingen spesifikke ønsker om
+                        innhold eller behov for dette på hovedsiden utover det som står der nå. Derfor gikk vi videre med forslag 1 fra P2.
                     </p>
                     <br>
                 </li>
@@ -176,7 +178,7 @@ hvilket punkt fra oppgaven vi skriver om.-->
                 <li>
                     <b>Endringer til vedtekter.html</b>
                     <p>
-
+                        Font størrelsen på p er standard, 15px, og underoverskriftene (h4) har fått bold skrift type.
                     </p>
                     <br>
                 </li>
@@ -185,6 +187,14 @@ hvilket punkt fra oppgaven vi skriver om.-->
                     <b>Endringer til komiteer.html</b>
                     <p>
 
+                        Bildene på siden har fått rundere kanter.
+
+                        Når siden er mindre enn 1125px i bredden, forsvinner bildene. 
+
+                        Underoverskriftene (h2), har fått kursiv font.
+
+                        Bildene har blitt litt større en paragrafene, for å få litt avstand mellom dem, og for at det skal se mer
+                        oversiktelig ut.
                     </p>
                     <br>
                 </li>
@@ -272,6 +282,8 @@ hvilket punkt fra oppgaven vi skriver om.-->
                     <b>Endringer til scroll.js</b>
                     <p>
                         Endret navn på filen til "rollup.js".
+                        Endret posisjonen til knappen, slik at den er fixed på siden når man begynner å scrolle,
+                        også ender den opp i footeren når man er nederst på siden.
                     </p>
                     <br>
                 </li>
@@ -279,7 +291,8 @@ hvilket punkt fra oppgaven vi skriver om.-->
                 <li>
                     <b>Endringer til navbar.js</b>
                     <p>
-
+                        I tillegg til header og footer, så er det også lagt inn så dette skriptet også legger inn elementer for
+                        dropdownmeny.js, samt rollup.js da disse skal være med på samtlige sider.
                     </p>
                     <br>
                 </li>
@@ -328,7 +341,10 @@ implemented the pull-down menu for each page-->
 
                 <!--Frida og scrollup knapp-->
                 <li>
-
+                    Frida oppfylte sine JavaScript-krav ved å lage en funksjon som som gjør at man kan scrolle seg
+                    til toppen ved å trykke på en knapp på siden. Har implementert rollup.js in i et button element som ligger
+                    i navbar.js, slik at den dukker opp på alle sidene.
+                    Fikset at siden scrollet "smooth" via css. 
                 </li>
 
                 <!-- Hilde og nedtrekksmeny-->
@@ -350,9 +366,9 @@ implemented the pull-down menu for each page-->
                     navbar på mobil,
                     da denne blir vertikal på mobil. Det er både plassbesparende og brukeren trenger ikke få opp menyen
                     når
-                    hen trykker seg inn på ny side, slik at hen må bla lengre for å komme til informasjonen hen leter
-                    etter. Implementert
-                    av Bjørn Are.
+                    hen trykker seg inn på ny side, slik at man må bla lengre for å komme til informasjonen brukeren leter
+                    etter. I tillegg til dette, så er også elementer som trengs av dropdown.js og rollup.js blitt lagt til
+                    i scriptet navbar.js, som er nærmere beskrevet under. Implementert av Bjørn Are.
                 </li>
 
             </ul>
@@ -364,15 +380,11 @@ implemented the pull-down menu for each page-->
             <!--Indicate how the modularity requirement was handled and who was responsible for
 the implementation-->
             <p>
-                Kravet om modularitet er oppfylt gjennom navbar.js, som vha. javascript konstruerer navbar/header og
-                footer, samt
-                knapper og elementer for scrollup, dropdown og menyknapp for mobil. Scriptet targeter div som er
-                plassert i header og
+                Kravet om modularitet er oppfylt gjennom navbar.js, som vha. javascript konstruerer navbar/header og footer, samt
+                knapper og elementer for scrollup, dropdown og menyknapp for mobil. Scriptet targeter div som er plassert i header og
                 footer for body. Gjennom en egenlaget funksjon, som benytter seg blant annet av .createElement() og
-                setAttribute(), som
-                lar oss sette inn ulike tags i forskjellige kombinasjoner, som gjør at det å legge til eller fjerne
-                elementer i html for
-                header eller footer kan gjøres relativt raskt. Implementert av Bjørn Are.
+                setAttribute(), som lar oss sette inn ulike tags i forskjellige kombinasjoner, gjør at det å legge til eller fjerne
+                elementer i html for header eller footer kan gjøres relativt raskt. Implementert av Bjørn Are.
             </p>
         </div>
         <br>
@@ -413,6 +425,9 @@ the implementation-->
                         <li>email</li>
                         <li>pb.png</li>
                         <li>photoshow.png</li>
+                        <li>turkom.png</li>
+                        <li>arrkom.png</li>
+                        <li>scrollupikon.jpg</li>
                         <li>...</li>
                         <li>face.png</li>
                         <li>pareto_vipps.png</li>
@@ -436,6 +451,7 @@ the implementation-->
                                 <li>instagram.png</li>
                                 <li>menyknapp.svg</li>
                                 <li>pareto.png</li>
+                                <li>facebookbullet.png</li>
                             </ul>
                         </li>
                     </ul>
