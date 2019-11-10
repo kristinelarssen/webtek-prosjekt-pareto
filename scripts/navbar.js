@@ -44,7 +44,7 @@ function createNavbar(tarElement) {
     // Oppretter knapp som viser/gjemmer navbar for mobil. 
 
     createModElement("a",navbar,"","#",["id","js-menyknapp"]);
-    createModElement("img",document.getElementById("js-menyknapp"),"","",[["id","js-menysvg"],["src","img/ico/menyknapp.svg"],["alt","Menyknapp"],["width","48"],["height","48"],["type","image/svg+xml"]])
+    createModElement("img",document.getElementById("js-menyknapp"),"","",[["id","js-menysvg"],["src","img/ico/menyknapp.svg"],["alt","Menyknapp"],["width","48"],["height","48"]])
 
 }
 
