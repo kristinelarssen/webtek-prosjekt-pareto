@@ -1025,12 +1025,18 @@ span{
   .styreGridItem {
     overflow: hidden;
   }
-  .boldFont {
-    font-size: 20px;
-  }
+  
 
 }
 
+@media only screen and (max-width: 420px) {
+  .boldFont {
+    font-size: 15px;
+  }
+  .italicFont {
+    font-size: 15px;
+  }
+}
 
 
 
