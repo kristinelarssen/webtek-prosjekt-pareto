@@ -411,6 +411,10 @@ div#content {
   padding-right:3rem;
 }
 
+#econnectOverskrift{
+  margin-top:-1rem;
+}
+
 
 
 /* .econnectContent p {
@@ -431,14 +435,14 @@ div#content {
 #econnectLink:link {
   font-size: 1rem;
   line-height: 150%;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 
 #econnectLink:hover {
-  color:rgba(0, 0, 0, 0.8);
+  color:rgba(0, 0, 0, 1);
   background-color: transparent;
   text-decoration: underline;
 }
@@ -510,11 +514,26 @@ span{
 
 }
 
+#econnectLinkTekst{
+  text-align: center;
+}
+
+#econnectOverskrift{
+  text-align: center;
+}
+#econnectTopParagrahp{
+  text-align: center;
+}
+
 #econnectGridTwo {
   grid-area: two;
   text-align: center;
   display: inline-block;
   text-align: center;
+}
+
+#econnectOverskrift{
+  margin-top:0rem;
 }
 
 #econnectOm {
@@ -541,7 +560,7 @@ span{
 }
 
 @media only screen and (max-width: 450px) {
-  #econnectBilde{
+  #econnectGridOne{
     display:none;
   }
 }
